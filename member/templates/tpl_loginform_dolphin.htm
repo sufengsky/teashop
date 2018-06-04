@@ -1,0 +1,42 @@
+<link href="css/loginform_dolphin.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{#CP#}js/loginform.js"></script>
+
+<div id="loginform_notLogin" class="loginform_dolphin">
+
+<form id="loginform_Form" method="post" action="">
+<div  id="loginnotice" class="noticediv"></div>
+<div class="col">用户</div>
+<div class="con"><input type="text" id="muser" name="muser"  class="input" maxlength=20 style="width:97px"></div>
+
+<div class="col">密码</div>
+<div class="con"><input type="password" id="mpass" name="mpass" class="input"  style="width:97px" maxlength="20"></div>
+
+<div class="col">验证</div>
+<div class="yanzheng">
+<input type="text" id="ImgCode" name="ImgCode" style="width:50px"  class="inputcheck" style="border:1px #d5d4d5 solid;margin:0px 1px 0px 3px;" />
+</div>
+<div class="yanzheng">
+<img id="loginCodeimg" src="{#RP#}codeimg.php" width="50" height="18" style="border:1px #d5d4d5 solid;cursor:pointer;margin-top:1px;">
+</div>
+<div style="clear:both;">
+
+<div style="float:left;padding-top:10px;height:32px;padding-left:4px;white-space:nowrap;">
+<input name="imageField" type="image" src="images/login.jpg" style="width:64px;margin-right:2px;height:22" />
+<a href="{#CP#}reg.php" ><img src="images/reg.jpg" width="67" height="22" border="0"></a>
+<input name="act" type="hidden" id="act" value="memberlogin" />
+</div>
+<div class="lostpass"><a href="{#CP#}lostpass.php" >忘记密码 请按这里</a></div>
+</div>
+
+</form>
+</div>
+
+<div id="loginform_isLogin" class="loginform_dolphin_islogin">
+
+<span id="loginform_username"></span>您好，您已登录
+<br /><a href="{#RP#}member/member_msn.php"><span class="islogintext">您有</span><span id="loginform_countmsn" style="color:#555"></span><span class="islogintext">条新到站内短信</span></a>
+<br /><a href={#RP#}member/><span class="islogintext">会员中心</span></a> <span id="loginform_logout" style="cursor:pointer;">退出登录</span>
+	
+</div>
+<div style="clear:both;"></div>
+

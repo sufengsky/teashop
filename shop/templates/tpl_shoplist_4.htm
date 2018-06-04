@@ -1,0 +1,37 @@
+<!-start->
+<link href="css/shoplist_4.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/cart.js"></script>
+<!-start->
+<!-list->
+<div class="shoplist_4">
+    <div class="shoplist_4_left">
+		<div class="fang" style="width:{#picw#}px;height:{#pich#}px">
+		<div class="picFit" style="width:{#picw#}px;height:{#pich#}px">
+		<a href="{#link#}" target="{#target#}" ><img src="{#src#}" style="width:{#picw#}px;height:{#pich#}px" border="0" /></a>
+		</div>
+		</div>
+	</div>
+	<div class="shoplist_4_right">
+		<a href="{#link#}" target="{#target#}" class="prodtitle" {#bold#} {#red#} >{#title#}</a>
+		<span class="prop" >
+		{#memo#}<br />
+		价格：<span class="price">￥{#price#}</span><br />
+		<div class="buttonzone"><a href="{#link#}"><img src="images/b3.gif" alt="查看商品介绍" border="0"></a> <img class="addtocart" src="images/b8.gif" alt="订购" border="0" onClick="addtocart('{#gid#}','1','')"></div>
+		</span>
+		
+	</div>
+</div>
+<!-list->
+<!-end->
+<script>
+$(function() {
+$().picFit("{#fittype#}");
+});
+</script>
+
+
+<!-end->
+
+<!-m1->
+{#propname#}：{#prop#}<br />
+<!-m1->

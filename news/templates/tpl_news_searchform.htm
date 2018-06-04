@@ -1,0 +1,41 @@
+<link href="css/searchform.css" rel="stylesheet" type="text/css" />
+<div class="newssearchform">
+<form id="searchform" method="get" action="{#CP#}class/index.php">
+  <div class="searchform">
+    <select name="catid" id="catid"  >
+      <option value="0" >请选择分类</option>
+      
+	  {#catlist#}
+    
+    </select>  
+  </div>
+  
+   <div class="searchform">
+    <select name="myord" id="myord"  >
+      <option value="uptime" >按更新时间排序</option>
+	  <option value="dtime" >按发布时间排序</option>
+	  <option value="cl" >按点击次数排序</option>
+    
+    </select>  
+  </div>
+   <div class="searchform">
+    <select name="myshownums" id="myshownums"  >
+      <option value="20" >每页20条</option>
+	   <option value="30">每页30条</option>
+	   <option value="50" >每页50条</option>
+    
+    </select>
+	 <script>
+	selOption(searchform.myshownums,'{#myshownums#}');
+	selOption(searchform.myord,'{#myord#}');
+</script>
+	
+  </div>
+    <div class="searchform">
+    <input name="key" type="text" id="key" value="{#key#}" size="16" class="input">
+  </div>
+  <div class="searchform">
+  <input name="imageField" id="button" type="image" src="images/search5.gif" >
+  </div>
+</form>
+</div>

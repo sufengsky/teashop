@@ -1,0 +1,75 @@
+/* ============ап╠М============== */
+
+div.shoplist_recomm{
+margin:0px;
+padding:0px 12px 0px 0px;
+text-align:left;
+float:left;
+white-space:nowrap;
+height:173px;
+}
+
+div.shoplist_recomm div.fang{
+border:1px #cecece solid;
+text-align:center;
+padding:1px;
+margin-bottom:10px;
+}
+
+div.shoplist_recomm div.picFit{
+overflow: hidden;
+}
+
+div.shoplist_recomm div.picFit img{
+}
+
+div.shoplist_recomm a.prodtitle:link,div.shoplist_recomm a.prodtitle:visited,div.shoplist_recomm a.prodtitle:active{
+display:block;
+color:#666;
+font:12px/16px 'SimSun',Arial,Sans-Serif;
+text-decoration: none;
+margin-bottom:5px;
+text-align:left;
+}
+
+div.shoplist_recomm a.prodtitle:hover{
+display:block;
+color:#ff0000;
+text-decoration: underline;
+font:12px/16px 'SimSun',Arial,Sans-Serif;
+margin-bottom:5px;
+}
+
+div.shoplist_recomm span.memo{
+font:12px/16px 'SimSun',Arial,Sans-Serif;
+color:#393939;
+word-break:break-all; 
+}
+
+div.shoplist_recomm span.prop{
+font:12px/16px 'SimSun',Arial,Sans-Serif;
+color:#393939;
+word-break:break-all; 
+}
+
+div.shoplist_recomm span.price{
+color:#d5090a;
+font:bold 12px/27px 'SimSun',Arial,Sans-Serif;
+}
+
+div.shoplist_recomm span.marketprice{
+color:#707070;
+font:12px/16px 'SimSun',Arial,Sans-Serif;
+text-decoration:line-through;
+}
+
+div.shoplist_recomm div.buttonzone{
+margin:10px 0px 0px 0px;
+}
+
+
+img.addtocart{
+cursor:pointer;
+}
+
+

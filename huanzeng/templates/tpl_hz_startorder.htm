@@ -1,0 +1,127 @@
+
+<!-start->
+<link href="css/startorder.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/startorder.js"></script>
+<!-start->
+
+<!-err1->
+<div id="notLogin">
+	您尚未登录，如果您是会员请 <span class="loginlink">登录</span> | 还不是会员？<a href="{#RP#}member/reg.php" class="nomal">立即注册</a>
+</div>
+<!-err1->
+
+<!-m0->
+<table width="100%" height="27" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td class="startordertitle">兑换礼品清单</td>
+  </tr>
+</table>
+<br>
+<br>
+<table width="100%" border="0" cellpadding="3" cellspacing="0" class="startorder">
+		  <tr >
+		    <td class="cap" width="3" height="23" >&nbsp;</td> 
+			<td class="cap" width="50" height="23" >序号</td>
+			<td class="cap" height="23"   >赠品名称</div></td>
+			<td class="cap" width="85" height="23" >所需积分(分)</td>
+			<td width="50" height="23" class="cap"  >数量</td>
+			<td class="cap" width="85" height="23" >小计(分)</td>
+		  </tr>
+<!-m0->
+
+<!-list->
+		 
+		  <tr>
+		    <td width="3" height="28" ></td>
+			<td width="50" height="28" >{#gid#}</td>
+			<td height="28" ><a href="{#goodsurl#}">{#goodsname#}</a></td>
+			<td width="85" height="28"  >{#cent#}</td>
+			<td width="50" height="28"  >{#acc#}</td>
+			<td width="85" height="28"  >{#jcent#}</td>
+  </tr>
+<!-list->
+<!-m1->
+</table>
+ 			 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+               <tr>
+                 <td><table border="0" cellpadding="3" cellspacing="0" style="margin:5px 0px">
+                   <tr >
+                     <td height="20">
+					 所需总积分:&nbsp;{#tcent#}&nbsp;分&nbsp;&nbsp;&nbsp;&nbsp;当前剩余积分:&nbsp;{#symcent#}&nbsp;分&nbsp;&nbsp;
+					 <input type="hidden" id="tcent" value="{#tcent#}">
+					 </td>
+                     <td  {#showcent#}>&nbsp;</td>
+                   </tr>
+                 </table></td>
+                 <td width="23" align="right"><img src="images/smallcart.png" width="16" height="16"></td>
+                 <td width="75" align="center"><a href="cart.php">返回礼品车</a></td>
+               </tr>
+             </table>
+ 			
+<!-m1->
+<!-m2->
+<br />
+
+ <table width="100%" height="27" border="0" cellpadding="0" cellspacing="0" >
+               <tr>
+                 <td class="startordersel">填写订单信息</td>
+               </tr>
+</table>
+
+	<div  id="notice" class="noticediv"></div>
+	<div class="orderform">
+		
+		<form id="OrderForm" method="post" action="">
+          
+          <table width="100%"  border="0" cellspacing="1" cellpadding="2" >
+            <tr>
+              <td height="23" colspan="3" class="biaoti">收货人信息</td>
+            </tr>
+            <tr>
+              <td height="8" colspan="3" align="right">&nbsp;</td>
+            </tr>
+            <tr>
+              <td height="23" align="right">收 货 人：</td>
+              <td height="23"><span style="color:#ff0000;">*</span></td>
+              <td height="23"><input name="name" type="text"  class="input" id="name"  value="" size="20" />                  </td>
+            </tr>
+			<tr>
+              <td width="96" height="23" align="right">送货地址：</td>
+              <td height="23"><span style="color:#ff0000;">*</span></td>
+              <td height="23"><input name="address" type="text"  class="input" id="address"  value="" size="60" />              </td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">邮政编码：</td>
+              <td width="3" height="23"><span style="color:#ff0000;">*</span></td>
+              <td height="23"><input name="postcode" type="text"  class="input" id="postcode"  value="" size="12" />              </td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">联系电话：</td>
+              <td width="3" height="23"><span style="color:#ff0000;">*</span></td>
+              <td height="23"><input name="tel" type="text"  class="input" id="tel"  value="" size="30" />              </td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">我的留言：</td>
+              <td width="3" height="23">&nbsp;</td>
+              <td height="23"><textarea name="bz" cols="60"  rows="5" class="textarea" id="bz" ></textarea></td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">&nbsp;</td>
+              <td width="3" height="23">&nbsp;</td>
+              <td height="23"><input name="imageField" type="image" src="images/order.gif" width="106" height="36" border="0">
+			    <input name="act" type="hidden" id="act" value="orderformsubmit">              </td>
+            </tr>
+            <tr>
+              <td height="23" align="right">&nbsp;</td>
+              <td height="23">&nbsp;</td>
+              <td height="23">&nbsp;</td>
+            </tr>
+          </table>	
+		  
+      </form>
+</div>
+	
+<!-m2->
+<!-end->
+<br />
+<!-end->

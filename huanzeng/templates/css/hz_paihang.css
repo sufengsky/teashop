@@ -1,0 +1,26 @@
+/* ============ндубап╠М============== */
+
+ul.hz_paihang{
+	margin:0px;
+	padding:0px;
+}
+
+li.hz_paihang {
+	margin:0;
+	padding-left:16px;
+	list-style-type: none;
+	color:#404040;
+	border-bottom:1px #ffe7e7 solid;
+}
+
+a.hz_paihang:link,a.hz_paihang:visited,a.hz_paihang:active{
+	color:#404040;
+	text-decoration: none;
+	font:12px/32px simsun;
+}
+
+a.hz_paihang:hover{
+	color:#ff0000;
+	text-decoration: underline;
+	font:12px/32px simsun;
+}

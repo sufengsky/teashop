@@ -1,0 +1,40 @@
+/* ============Æ·ÅÆÏêÇé============== */
+
+div#branddetail{
+margin:0;
+border:0;
+padding:0;
+}
+
+div#branddetail #brandlogo{
+float:left;
+width:200px;
+margin:0px 20px 20px 0px;
+overflow:hidden;
+}
+
+div#branddetail #brandintrozone{
+border:0px;
+margin-left:10px;
+}
+
+div#branddetail #brandname{
+margin:0px 0px 10px 0px;
+text-align: left;
+height:25px;
+font:bold 16px/25px Verdana, Arial, Helvetica, sans-serif;
+padding:0px;
+}
+
+div#branddetail #brandintro{
+padding:0px;
+margin:10px 0px 10px 0px;
+text-align:left;
+font: 12px/20px Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#branddetail #brandurl{
+margin:10px 0px 10px 0px;
+text-align:left;
+font: 12px/20px Verdana, Arial, Helvetica, sans-serif;
+}

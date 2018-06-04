@@ -1,0 +1,83 @@
+.shopclassdrop{
+text-align:center;
+}
+
+.shopclassdrop .shopclassdrop_top{ 
+float:left;
+height:32px;
+color:#fff;
+font:14px/32px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+cursor: pointer;
+width:104px;
+background:url(../images/line.jpg) right 10px no-repeat; 
+}
+
+.shopclassdrop .shopclassdrop_top a{
+color:#fff;
+font:14px/32px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+text-decoration: none;
+display:block;
+width:104px;
+background:url(../images/line.jpg) right 10px no-repeat;
+}
+
+.shopclassdrop .shopclassdrop_top a:link{
+color:#fff;
+}
+
+.shopclassdrop .shopclassdrop_top a:visited{
+color:#fff;
+}
+
+.shopclassdrop .shopclassdrop_top a:hover{ 
+color:#326a05;
+background:url(../images/dropnow.jpg) 0px 0px no-repeat;
+background-position: center;
+}
+
+.shopclassdrop .shopclassdrop_top_current{ 
+color:#326a05;
+background:url(../images/dropnow.jpg) 0px 0px no-repeat;
+background-position: center;
+}
+
+.shopclassdrop ul{ 
+margin:0px;
+display:none;
+position:absolute;
+left:0px;
+top:32px;
+background:#fff;
+border-left:1px #3c952a solid;
+border-right:1px #3c952a solid;
+border-bottom:1px #3c952a solid;
+padding-bottom:8px;
+width:240px;
+}
+
+.shopclassdrop ul li{
+list-style-type: none;
+height:30px;
+font:14px/32px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+margin:0px; 
+padding:0px;
+color: #3e9728;
+white-space:nowrap;
+}
+
+.shopclassdrop ul li a{
+color: #3e9728;
+font:bold 14px/32px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+text-decoration: none;
+margin:0px;
+border-bottom:1px #d9d9d9 dotted;
+display:block;
+}
+
+.shopclassdrop ul li a:visited{
+color: #3e9728;
+}
+
+.shopclassdrop ul li a:hover{ 
+color: #ff0000;
+}

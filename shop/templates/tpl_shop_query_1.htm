@@ -1,0 +1,48 @@
+<!-start->
+<link href="css/shopquery_1.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/cart.js"></script>
+<!-start->
+<!-list->
+<div class="shopquery_1">
+    <div class="shopquery_1_left">
+		<div class="fang" style="width:{#picw#}px;height:{#pich#}px">
+		<div class="picFit" style="width:{#picw#}px;height:{#pich#}px">
+		<a href="{#link#}" target="{#target#}" ><img src="{#src#}" style="width:{#picw#}px;height:{#pich#}px" border="0" /></a>
+		</div>
+		</div>
+	</div>
+	<div class="shopquery_1_right">
+		<a href="{#link#}" target="{#target#}" class="prodtitle" {#bold#} {#red#} >{#title#}</a>
+		
+		<span class="prop" >
+		品牌：{#brand#} &nbsp;
+		{#propstr#}
+		</span><br />
+		<span class="memo" >简介：{#memo#}</span><br />
+		<span class="prop" >
+		市场价：<span class="marketprice">{#price0#}</span> &nbsp;
+		价格：<span class="price">￥{#price#}</span><br />
+		<div class="buttonzone"><a href="{#link#}"><img src="images/b3.gif" alt="查看商品介绍" border="0"></a> <img class="addtocart" src="images/b8.gif" alt="订购" border="0" onClick="addtocart('{#gid#}','1','')"></div>
+		</span><br />
+		
+		
+	</div>
+</div>
+<!-list->
+<!-end->
+<script>
+$(function() {
+$().picFit("{#fittype#}");
+});
+</script>
+
+<div id="showpages" >
+	  <div id="pagesinfo">共{#totalnums#}条 每页{#pagesshownum#}条 页次：{#pagesnow#}/{#pagestotal#}</div>
+	  <div id="pages">{#showpages#}</div>
+     </div>
+
+<!-end->
+
+<!-m1->
+{#propname#}：{#prop#} &nbsp;
+<!-m1->

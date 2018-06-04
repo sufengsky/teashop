@@ -1,0 +1,81 @@
+<!-start->
+<link href="css/shopcontent.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/shopcontent.js"></script>
+
+<div id="shopcontent">
+	  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="230" valign="top">
+		  <div class="piczone">
+				<table align="center" cellpadding="0" cellspacing="0">
+				<tr>
+				<td align="center">
+				<div id="shopview">
+					<img src="images/loading.gif" border="0" id="shoploading" class="shoploading">
+				</div>
+				</td>
+				</tr>
+				</table>
+			</div>
+			<div id="contentpages"></div>
+		  </td>
+          <td>
+		  <div id="prodtitle">{#title#}</div>
+			<div id="prop">
+				编号：{#bn#}<br />
+				品牌：{#brand#} &nbsp; <span style="font:12px simsun">[<a href='{#CP#}class/?showbrandid={#brandid#}' >查询该品牌全部商品]</a></span><br />
+				单位：{#danwei#}<br />
+				重量：{#weight#} 克<br />
+				{#propstr#}
+				
+				<div id="memo" class="memo" style="display:{#showmemo#}">{#memo#}</div>
+			</div>
+			<div style="padding:5px;">
+			商品售价：<span class="price">￥{#price#}</span><br />
+			</div>
+			<div id="prop">
+			订购数量：
+              <input name="buynums" type="text" class="input" id="buynums" style="height:18px" value="1" size="3" maxlength="6" /> 
+              <input name="gid" type="hidden" id="gid" value="{#gid#}" />
+              {#danwei#}
+</div>
+			
+			<div class="buttonzone"> 
+			<img src="images/addcart.gif" alt="订购" width="102" height="27" border="0" class="addtocart"  id="addtocart" >
+			<img src="images/addtofav.gif" alt="加入收藏" width="102" height="27" border="0" class="addtofav"  id="addtofav" >
+			</div>
+			
+		  </td>
+        </tr>
+      </table>
+
+	
+	<br clear="all" />
+	<div class="bzone">
+		<div class="source" >浏览 ({#cl#}) | <a href="{#commentutl#}">评论</a> ({#commentcount#}) | 评分({#centavg#}) &nbsp; {#stars#} &nbsp; 
+		<input type="hidden" id="shopid" value="{#id#}"> 
+		</div>
+	</div>
+	<div class="bodyzone_cap">
+	<div class="bodyzone_cap_left"></div>
+	<div id="switch_body" class="bodyzone_cap_now">商品介绍</div>
+	<div id="switch_canshu" class="bodyzone_cap_list">详细资料</div>
+	<div class="bodyzone_cap_right"></div>
+	
+	
+	</div>
+
+	<div id="bodyzone" class="bodyzone">{#body#}</div>
+	<div id="canshuzone" class="canshuzone">{#canshu#}</div>
+	<input type="hidden" id="shopid" value="{#id#}"> 
+
+</div>
+<!-start->
+<!-list->
+{#propname#}：{#prop#}<br>
+<!-list->
+
+<!-end->
+<!-end->
+<!-err1-><div class="notice">当前ID不存在或尚未发布</div><!-err1->
+<!-err2-><div class="notice">对不起,本内容设置了阅读权限,您无权访问当前内容</div><!-err2->

@@ -1,0 +1,144 @@
+div#search {
+margin:0px;
+border:0px;
+text-align:left;
+}
+div#search ul{
+margin:0;
+padding:0;
+}
+div#search li{
+padding:10px 15px;
+list-style-type: none;
+font: 16px Verdana, Arial, Helvetica, sans-serif;
+line-height:18px;
+overflow: hidden;
+}
+
+div#search a:link,div#search a:visited,div#search a:active{
+font: 16px Verdana, Arial, Helvetica, sans-serif;
+color:#261cdc;
+text-decoration: underline;
+}
+div#search a:hover{
+font: 16px Verdana, Arial, Helvetica, sans-serif;
+color:#261cdc;
+text-decoration: underline;
+}
+
+div#search .title{
+float:left;
+width:650px; 
+}
+
+div#search .keyword{
+font: 16px Verdana, Arial, Helvetica, sans-serif;
+color:#261cdc;
+text-decoration: underline;
+color:#ff0000;
+}
+
+div#search .bodykeyword{
+color:#ff0000;
+}
+
+
+
+div#search .time{
+float:right;
+width:135px; 
+padding-right:5px;
+white-space: nowrap;
+overflow: hidden;
+font: 12px Verdana, Arial, Helvetica, sans-serif;
+line-height:20px;
+}
+
+div#search .memo{
+float:left;
+width:650px;
+padding:10px 0px 0px 0px;
+font: 12px Verdana, Arial, Helvetica, sans-serif;
+line-height:20px;
+text-align: left;
+}
+
+div#search .showlink{
+float:left;
+width:650px;
+padding:5px 0px;
+font: 12px Verdana, Arial, Helvetica, sans-serif;
+color:#008000;
+text-align: left;
+}
+
+/* ============·­Ò³============== */
+
+div#showpages {
+clear:both;
+padding:0px;
+margin:20px 0px;
+width:100%;
+height:30px;
+white-space: nowrap;
+}
+
+div#pagesinfo {
+float:left;
+padding:3px 8px;
+white-space: nowrap;
+}
+
+div#pages {
+float:right;
+padding-right:8px;
+white-space: nowrap;
+}
+
+div#pages ul{
+margin:0;
+padding:0;
+}
+
+div#pages a:link,div#pages a:visited,div#pages a:active{
+color:#505050;
+text-decoration: none;
+}
+
+div#pages a:hover{
+color:#ff0000;
+text-decoration: none;
+}
+
+div#pages li{
+margin:3px;
+padding:2px 5px;
+list-style-type: none;
+float:left;
+background:#fff;
+color:#505050;
+border:1px #cde6ff solid;
+white-space: nowrap;
+}
+
+div#pages li.pagesnow{
+color:#505050;
+background-color:#e4f2ff;
+white-space: nowrap;
+border:1px #cde6ff solid;
+}
+
+div#pages li.pbutton{
+color:#505050;
+background-color:#e4f2ff;
+padding:3px 5px 1px 5px;
+white-space: nowrap;
+border:1px #cde6ff solid;
+}
+
+div#pages li.opt{
+color:#505050;
+padding:0px 2px;
+white-space: nowrap;
+border:0px;
+}

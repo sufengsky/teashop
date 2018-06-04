@@ -1,0 +1,77 @@
+/* ============ÄÚÈÝ·­Ò³============== */
+
+div#contentpages {
+padding:0px;
+margin:20px 0px;
+width:100%;
+white-space: nowrap;
+}
+
+div#contentpages .pagesinfo {
+float:right;
+padding:3px 8px;
+white-space: nowrap;
+}
+
+div#contentpages .pages {
+float:left;
+padding-right:8px;
+white-space: nowrap;
+}
+
+div#contentpages .pages ul{
+margin:0;
+padding:0;
+}
+
+div#contentpages a:link,div#contentpages a:visited,div#contentpages a:active{
+color:#505050;
+text-decoration: none;
+display:block;
+padding:2px 5px;
+}
+
+div#contentpages a:hover{
+color:#ff0000;
+text-decoration: none;
+display:block;
+padding:2px 5px;
+}
+
+div#contentpages li{
+margin:3px;
+list-style-type: none;
+float:left;
+color:#505050;
+border:1px #cde6ff solid;
+white-space: nowrap;
+background-color:#fff;
+}
+
+div#contentpages li.pagesnow{
+color:#505050;
+background-color:#e4f2ff;
+white-space: nowrap;
+padding:2px 5px;
+}
+
+div#contentpages li.pbutton{
+color:#505050;
+background-color:#e4f2ff;
+white-space: nowrap;
+}
+
+div#contentpages li.pbuttonnow{
+color:#505050;
+background-color:#e4f2ff;
+white-space: nowrap;
+padding:2px 5px;
+}
+
+
+div#contentpages li.opt{
+color:#505050;
+padding:0px 2px;
+white-space: nowrap;
+border:0px;
+}

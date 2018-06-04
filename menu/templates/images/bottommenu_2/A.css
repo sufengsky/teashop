@@ -1,0 +1,46 @@
+/*=========½Å×¢²Ëµ¥===========*/
+div#bottommenu_2{
+margin: 0;
+padding:0;
+border: 0;
+color:#fff;
+text-align:center;
+overflow: hidden;
+}
+
+div#bottommenu_2 .bottominer {
+height:25px;
+padding:0;
+line-height:25px;
+overflow: hidden;
+margin:0px 0px 0px 62px; 
+}
+
+div#bottommenu_2 .menuleft {
+	float:left;
+    height:25px;
+	width:88px;
+	padding:0;
+    overflow: hidden;
+    margin:0px;
+	background:url(left.jpg) 0px 0px no-repeat;
+}
+
+div#bottommenu_2 a.bottommenu_2:link,div#bottommenu_2 a.bottommenu_2:visited,div#bottommenu_2 a.bottommenu_2:active{
+float:left;
+margin:0px;
+padding:0px;
+color:#fff;
+font:12px/26px 'SimSun',Arial,Sans-Serif;
+text-decoration: none;
+background:url(sep.jpg) 0px 0px no-repeat;
+height:25px;
+width:89px;
+}
+
+div#bottommenu_2 a.bottommenu_2:hover{
+margin:0px;
+color:#fff;
+font:12px/26px 'SimSun',Arial,Sans-Serif;
+text-decoration: underline;
+}

@@ -1,0 +1,22 @@
+div.titlemenu_1{
+margin:0px;
+padding:14px 22px 35px 22px;
+}
+
+div.titlemenu_1 a.titlemenu_1:link,div.titlemenu_1 a.titlemenu_1:visited,div.titlemenu_1 a.titlemenu_1:active{
+display:block;
+text-decoration: none;
+font:12px/34px Verdana, Arial, Helvetica, sans-serif;
+height:32px;
+text-align:left;
+border-bottom:1px #d4d4d4 solid;
+padding-left:53px;
+margin:0px;
+color:#2e2e2e;
+}
+
+div.titlemenu_1 a.titlemenu_1:hover{
+display:block;
+color:#e10000; 
+text-decoration: none;
+}

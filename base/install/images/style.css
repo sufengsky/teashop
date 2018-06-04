@@ -1,0 +1,9 @@
+body{margin:0;padding:0;border:0;height:100%;text-align:left;background:#396DA5} 
+div,td,p,select,input,textarea,button,input{font:14px/20px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;color:#505050 ;text-decoration: none}
+A:link,A:visited,A:active{TEXT-DECORATION: none;color:#505050;font:14px/20px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;color:#505050 ; }
+A:hover {TEXT-DECORATION: underline;color:#ff6600}
+A.un:link,A.un:visited,A.un:active{TEXT-DECORATION: underline;color:#ff6600;font:14px/20px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;color:#505050 ;}
+A.un:hover {TEXT-DECORATION: underline;color:#ff6600}
+td.font_13_w {font-size: 14px; color: #ffffff; font-weight:bold;}
+input{border:1px #b0b0b0 solid;background:#e0e0e0;height:22px}
+.button{border:1px outset;background:#ccc;height:26px;font:bold 14px/22px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;}

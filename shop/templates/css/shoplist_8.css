@@ -1,0 +1,40 @@
+/* ============ап╠М============== */
+
+div.shoplist_8{
+clear:both;
+margin:0px;
+}
+
+
+div.shoplist_8 a.prodtitle:link,div.shoplist_8 a.prodtitle:visited,div.shoplist_8 a.prodtitle:active{
+display:block;
+color:#393939;
+font:12px/22px Verdana, Arial, Helvetica, sans-serif;
+text-decoration: none;
+background:url(../images/li.gif) left center no-repeat;
+padding-left:15px;
+}
+
+div.shoplist_8 a.prodtitle:hover{
+display:block;
+color:#ff0000;
+text-decoration: underline;
+font:12px/22px Verdana, Arial, Helvetica, sans-serif;
+background:url(../images/li.gif) 3px center no-repeat;
+padding-left:15px;
+}
+
+
+div.shoplist_8 div.price{
+float:right;
+color:#ff8100;
+font:12px/22px Verdana, Arial, Helvetica, sans-serif;
+}
+
+
+img.addtocart{
+cursor:pointer;
+}
+
+
+

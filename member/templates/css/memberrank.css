@@ -1,0 +1,30 @@
+/* ============ª·‘±≈≈––∞Ò============== */
+
+ul.memberrank{
+margin:0px;
+padding:0px;
+}
+
+li.memberrank {
+margin:0;
+padding-left:16px;
+list-style-type: none;
+}
+
+li.memberrank .cent{
+float:right;
+font:12px/22px Verdana, Arial, Helvetica, sans-serif;
+color:#777;
+}
+
+a.memberrank:link,a.memberrank:visited,a.memberrank:active{
+color:#505050;
+text-decoration: none;
+font:12px/22px simsun;
+}
+
+a.memberrank:hover{
+color:#ff0000;
+text-decoration: underline;
+font:12px/22px simsun;
+}

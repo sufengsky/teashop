@@ -1,0 +1,28 @@
+/* ============分类列表============== */
+
+ul.newsclassfc{
+margin:0px;
+padding:0px;
+}
+
+
+li.newsclassfc{
+float:left;
+margin-right:20px;
+padding-left:16px;
+list-style-type: none;
+white-space: nowrap;
+background: transparent url(../images/78.gif) left no-repeat;
+}
+
+a.newsclassfc:link,a.newsclassfc:visited,a.newsclassfc:active{
+color:#555;
+text-decoration: none;
+font: 12px/18px simsun;
+}
+
+a.newsclassfc:hover{
+color:#ff0000;
+text-decoration: underline;
+font: 12px/18px simsun;
+}

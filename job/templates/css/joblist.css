@@ -1,0 +1,9 @@
+/* ============最新职位============== */
+
+ul.joblist{margin:0;padding:0;border:0;}
+ul.joblist li{list-style-type: none;padding:0px 5px 0px 8px;height:20px;}
+ul.joblist li.cap{background:#f0f0f0;border-bottom:1px #e0e0e0 solid;padding:0px 5px 0px 8px;margin-bottom:5px;line-height:25px;height:25px}
+ul.joblist a.bt{font: 12px/20px Verdana, Arial, Helvetica, sans-serif;background:url(../images/li.gif) left no-repeat;padding-left:12px;}
+ul.joblist span.au{float:right;width:36px;text-align:center}
+
+

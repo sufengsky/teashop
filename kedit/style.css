@@ -1,0 +1,37 @@
+/* ==»´æ÷…Ë÷√== */
+
+BODY{
+background:#ffffff;
+color:#333333;
+font-size:12px;
+line-height:130%;
+background-position:center;
+text-decoration: none;
+margin:10px;
+
+} 
+
+TD{
+color:#333333;
+font-size:12px;
+line-height:150%;
+}
+
+
+
+
+A{text-decoration: underline;}
+A:link {color:#333333;text-decoration: underline;}
+A:visited {color:#333333;text-decoration: underline;}
+A:active {color:#333333;text-decoration: underline;}
+A:hover{color:#ff6611;text-decoration: underline;}
+
+
+li{line-height:130%}
+li.fang {LIST-STYLE-TYPE: square;}
+li.img  {LIST-STYLE-IMAGE: url(li.gif)}
+
+ul {MARGIN: 0px 5px 0px 25px}
+ul.fang {LIST-STYLE-TYPE: square }
+ul.img  {LIST-STYLE-IMAGE: url(li.gif)}
+

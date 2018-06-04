@@ -1,0 +1,76 @@
+<link href="css/reg.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="{#CP#}js/zone.js"></script>
+<script language="javascript" src="{#CP#}js/reg.js"></script>
+
+<div id="reg" >
+<div  id="notice" class="noticediv"></div>
+<form id="RegStep"  method="post" action="" name="regform" >
+<div id="stepname" class="stepname"></div>
+<div class="zone">
+
+<div class="row">
+	<div class="left">公司名称：</div> <div class="mustfill">*</div>
+	<div class="con">
+	<input type="text" id="company"  name="company"  class="input"  value="{#company#}" size="35" />
+	
+	</div>
+</div>
+
+
+
+
+<div class="row">
+	<div class="left">所在地区：</div> <div class="mustfill"></div>
+	<div class="con">{#ZoneList#}
+                        <select onKeyUp='if(window.event.keyCode==13) document.regform.zoneid.focus();'  onChange=provinceSelChange(regform.zoneid,regform.Province.value,'{#zoneid#}') name="Province"  style="color:#666666;font-size:12px" >
+                         	 <script language=javascript>document.write(pList.getOptionString('{#Province#}'));
+								</script>
+                        </select>
+                        <div id='zonediv' style='position:absolute; width:150px; height:26px; z-index:1'>
+                          <select onKeyUp='if(window.event.keyCode==13) document.regform.regCardNum.focus();'  name="zoneid"  style="color:#666666;font-size:12px">
+                            <script language=javascript>
+							document.write(pList.getOptionAreasString(regform.Province.value,regform.zoneid,'{#zoneid#}',1));
+    						</script>
+                          </select>
+                        </div>
+	</div>
+</div>
+
+
+
+
+
+<div class="row">
+	<div class="left">公司网址：</div> <div class="mustfill"></div>
+	<div class="con">
+	<input type="text" name="url"  class="input"  value="{#url#}" size="35" />
+	</div>
+</div>
+
+
+<div class="row">
+	<div class="left">公司简介：</div> <div class="mustfill"></div>
+	<div class="con">
+	<textarea name="bz" class="textarea" cols="60" rows="8">{#bz#}</textarea>
+	</div>
+</div>
+
+
+
+<div class="row" style="margin:10px 0px">
+	<div class="left"></div> <div class="mustfill"></div>
+	<div class="con">
+	<input type="submit" name="Submit" value="下一步" class="submit" />
+	 <input name="nowstep" type="hidden" id="nowstep" value="detail" />
+	  <input name="nextstep" type="hidden" id="nextstep" value="enter" />
+	 <input name="membertypeid" type="hidden" id="membertypeid" value="{#membertypeid#}" />
+    <input type="hidden" name="act" value="memberdetail" />
+    <input type="hidden" name="name"  value="{#name#}" />
+	<p></p><p></p>
+	</div>
+</div>
+</div>
+</form>
+</div>
+
+

@@ -1,0 +1,39 @@
+/* ============ª·‘±≈≈––∞Ò============== */
+
+
+div.memberrank_head {
+clear:both;
+margin:0px 0px 5px 0px;
+padding:0px 0px 5px 0px;
+list-style-type: none;
+border-bottom:1px #ddd dotted;
+}
+
+div.memberrank_head div.face{
+float:left;
+border:1px #ddd solid;
+width:36px;
+height:36px;
+margin-right:10px;
+}
+
+div.memberrank_head div.pname{
+height:20px;
+}
+
+div.memberrank_head div.memo{
+font:12px/18px simsun;
+color:#555;
+}
+
+a.memberrank_head:link,a.memberrank_head:visited,a.memberrank_head:active{
+color:#555;
+text-decoration: none;
+font:bold 12px/16px simsun;
+}
+
+a.memberrank_head:hover{
+color:#ff0000;
+text-decoration: underline;
+font:bold 12px/16px simsun;
+}

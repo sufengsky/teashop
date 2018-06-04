@@ -1,0 +1,12 @@
+<!-start->
+<script type=text/javascript src="{#CP#}js/advsflashlb.js"></script>
+<div id="swfContent"></div>
+<script type="text/javascript">
+	var xmlData="{#xmlData#}";
+	
+	var flashvars = {xmlData:xmlData};
+	var params = {menu:false,wmode:"opaque"};
+	var attributes = {};
+	swfobject.embedSWF("images/advsflashlb.swf", "swfContent", "{#w#}", "{#h#}", "6","expressInstall.swf", flashvars, params, attributes);
+</script>
+<!-start->

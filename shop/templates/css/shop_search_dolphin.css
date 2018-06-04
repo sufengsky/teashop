@@ -1,0 +1,87 @@
+/* ============ËÑË÷±íµ¥============== */
+div.shopsearchformzone{
+	height:100%;
+	margin:0px;
+	padding:0px;
+}
+
+div.shopsearchformzone div.shopsearchform{
+	height: 20px;
+	line-height:19px;
+	margin-right:3px;
+	margin-top:1px;
+	float:left;
+}
+
+div.shopsearchformzone div.shopsearchform3 .input{
+	border:1px #ddd solid;
+	height:19px;
+	line-height:17px;
+}
+
+div.shopsearchformzone div.shopsearchform2{
+	height: 20px;
+	line-height:19px;
+	padding:0px;
+	margin-top:1px;
+}
+
+div.shopsearchformzone div.shopsearchform3{
+	height: 20px;
+	line-height:19px;
+	float:left;
+	margin-right:3px;
+}
+
+div.shopsearchformzone div.shopsearchform .box{
+    BORDER: #e3e9ef 1px solid;
+	FONT-SIZE: 10pt;
+	color:#505050;
+	FONT-FAMILY: 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+}
+
+div.shopsearchformzone div.shopsearchform .selectBoxSelectedArea {
+    PADDING-LEFT: 3px;
+	FONT-SIZE: 12px;
+	COLOR: #505050;
+	LINE-HEIGHT: 17px;
+	PADDING-TOP: 1px;
+	BACKGROUND-COLOR:#ffffff;
+}
+div.shopsearchformzone div.shopsearchform .selectBoxSelectedAreaFocus {
+    PADDING-LEFT: 3px;
+	FONT-SIZE: 12px;
+	COLOR: #333333;
+	LINE-HEIGHT: 17px; 
+	PADDING-TOP: 1px;  
+	BACKGROUND-COLOR: #ffffff
+}
+div.shopsearchformzone div.shopsearchform .selectBoxOption {
+    PADDING-LEFT: 3px; 
+	FONT-SIZE: 12px; 
+	COLOR: #505050; 
+	LINE-HEIGHT: 17px; 
+	PADDING-TOP: 2px;  
+	BACKGROUND-COLOR: #ffffff;
+	
+}
+div.shopsearchformzone div.shopsearchform .selectBoxOptionOver {
+    PADDING-LEFT: 3px; 
+	FONT-SIZE: 12px; 
+	COLOR: #333333; 
+	LINE-HEIGHT: 17px; 
+	PADDING-TOP: 2px;  
+	BACKGROUND-COLOR: #ffffff
+}
+div.shopsearchformzone div.shopsearchform .selectBoxOptionInnerLayer {
+    BORDER: #e3e9ef 1px solid; 
+	SCROLLBAR-FACE-COLOR: #ffffff; 
+	SCROLLBAR-HIGHLIGHT-COLOR: #b4b4b4; 
+	OVERFLOW: auto;
+	SCROLLBAR-SHADOW-COLOR: #b4b4b4; 
+	SCROLLBAR-3DLIGHT-COLOR: #ffffff; 
+	SCROLLBAR-ARROW-COLOR: #838383; 
+	SCROLLBAR-TRACK-COLOR: #eaeaea; 
+	SCROLLBAR-DARKSHADOW-COLOR: #ffffff; 
+	BACKGROUND-COLOR: #ffffff;
+}

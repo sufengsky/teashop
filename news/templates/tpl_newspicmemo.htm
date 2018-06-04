@@ -1,0 +1,29 @@
+<!-start->
+<link href="css/newspicmemo.css" rel="stylesheet" type="text/css" />
+<ul class="newspicmemo">
+<!-start->
+<!-list->
+<li>
+
+<div class="picFit" style="width:{#picw#}px;height:{#pich#}px">
+<a href="{#link#}" target="{#target#}" ><img src="{#src#}" border="0" style="width:{#picw#}px;height:{#pich#}px" /></a>
+</div>
+<div class="tm">
+<a href="{#link#}" target="{#target#}" class="title" {#bold#} {#red#} >{#title#}</a>
+<div class="memo">
+{#memo#}
+</div>
+</div>
+
+</li>
+<!-list->
+
+<!-end->
+</ul>
+<script>
+$(function() {
+$().picFit("{#fittype#}");
+});
+</script>
+
+<!-end->

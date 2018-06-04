@@ -1,0 +1,82 @@
+.shoptwoclass{
+width:100%;
+margin:0px 0px 10px 0px;
+}
+
+.shoptwoclass .shoptwoclass_top{ 
+clear:both;
+height:23px;
+color: #999999;
+background:url(../images/catcap.gif) left repeat-x;  
+font:12px/23px Verdana, Arial, Helvetica, sans-serif;
+border-top:1px #d4d4d4 solid;
+border-bottom:1px #d4d4d4 solid;
+margin-top:-1px;
+}
+
+
+
+.shoptwoclass .shoptwoclass_top a{
+color: #505050;
+font:bold 12px/23px Verdana, Arial, Helvetica, sans-serif;
+padding-left:12px;
+text-decoration: none;
+}
+
+.shoptwoclass .shoptwoclass_top a:visited{
+color: #505050;
+text-decoration: none;
+}
+
+.shoptwoclass .shoptwoclass_top a:hover{ 
+color: #ff6600;
+text-decoration: underline;
+}
+
+.shoptwoclass .shoptwoclass_topright{
+float:right;
+width:24px;
+height:23px;
+background:url(../images/catcap_1.gif) left no-repeat;  
+cursor: pointer;
+}
+
+.shoptwoclass .shoptwoclass_topright_open{
+float:right;
+width:24px;
+height:23px;
+background:url(../images/catcap_2.gif) left no-repeat;  
+cursor: pointer;
+}
+
+
+.shoptwoclass ul{ 
+margin:12px;
+}
+
+.shoptwoclass ul li{
+list-style-type: none;
+float:left;
+height:22px;
+font:11px/22px Verdana, Arial, Helvetica, sans-serif;
+margin:0px; 
+padding:0px;
+color: #999999;
+white-space:nowrap;
+}
+
+.shoptwoclass ul li a{
+color: #505050;
+font:12px/22px Verdana, Arial, Helvetica, sans-serif;
+text-decoration: none;
+margin:0px 3px 0px 3px
+}
+
+.shoptwoclass ul li a:visited{
+color: #505050;
+}
+
+.shoptwoclass ul li a:hover{ 
+color: #ff6600;
+}
+

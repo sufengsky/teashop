@@ -1,0 +1,68 @@
+<!-start->
+<link href="css/newsmember.css" rel="stylesheet" type="text/css" />
+<link href="css/pages.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/newsmember.js"></script>
+<div class="newssearch">
+ <form method="get" id="searchform" action="news_gl.php" >
+
+       <select id="showcatid" name="showcatid" >
+	   <option value="0">选择文章分类</option>
+	   {#catlist#}
+        </select>
+		<select id="showpcatid" name="showpcatid" >
+		 <option value="0">选择自定义分类</option>
+	   {#pcatlist#}
+        </select>
+		
+		<select id="shownum"  name="shownum">
+          <option value="10" >每页10条</option>
+          <option value="20" >每页20条</option>
+          <option value="30" >每页30条</option>
+          <option value="50" >每页50条</option>
+        </select>
+		<script>
+	selOption(searchform.shownum,'{#shownum#}');
+	</script>
+		<input type="text" name="key" size="23" class="input" value="{#key#}" />       
+        <input name="imageField" type="image" src="images/search5.gif" width="53" height="21" border="0"> 
+  </form>
+</div>
+<table width="100%" border="0" cellspacing="0" cellpadding="5" class="newsgl">
+  <tr>
+    <td width="50" height="26" align="center" class="biaoti">编号</td>
+    <td width="38" height="26" class="biaoti">题图</td>
+    <td height="26" class="biaoti">文章标题</td>
+    <td width="90" height="26" class="biaoti">发布/更新时间</td>
+    <td width="33" height="26" class="biaoti">审核</td>
+    <td width="33" height="26" class="biaoti">刷新</td>
+    <td width="33" height="26" class="biaoti">修改</td>
+  <td width="33" height="26" class="biaoti">删除</td>
+  </tr>
+ 
+<!-start->  
+<!-list->
+   <tr>
+     <td width="50" align="center" class="hang">{#id#}</td>
+    <td width="38"  class="hang">
+	<img id="preview_{#id#}" class="preview" src="images/{#icon#}"  border="0" />
+	<input type="hidden" id="previewsrc_{#id#}"  value="{#src#}">
+	</td>
+     <td  class="hang"><a href="{#link#}" class="title" target="_blank"  >{#title#}</a></td>
+    <td width="90"  class="hang">{#uptime#}</td>
+    <td width="33"  class="hang"> {#check#}</td>
+    <td width="33"  class="hang">
+      <img src="images/update.png"  style="cursor:pointer;" onClick="window.location='news_gl.php?step=update&id={#id#}&page={#page#}'" /></td>
+    <td width="33"  class="hang"><img src="images/edit.png"  style="cursor:pointer;"  onClick="window.location='news_modify.php?id={#id#}'"/>
+     </td>
+  <td width="33"  class="hang"><img src="images/delete.png"  style="cursor:pointer;" onClick="window.location='news_gl.php?step=del&id={#id#}&page={#page#}'" /></td>
+   </tr>
+<!-list->
+<!-end-> 
+</table>
+<div id="showpages" >
+	  <div id="pagesinfo">共{#totalnums#}条 每页{#pagesshownum#}条 页次：{#pagesnow#}/{#pagestotal#}</div>
+	  <div id="pages">{#showpages#}</div>
+</div>
+
+<!-end->
+

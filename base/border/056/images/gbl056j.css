@@ -1,0 +1,68 @@
+/*===放标签的层===*/
+
+div.gbl056j_out{
+float:left;
+width:180px;
+white-space:nowrap;
+position:relative;
+margin:0px;
+height:100%;
+}
+ 
+div.gbl056j_out ul.gblable{            
+margin:0;
+padding:0;
+}
+
+/*===切换标签的样式
+=====必须指定边框编号防止冲突
+===*/
+
+li.gbl056j{
+list-style-type:none;
+height:28px;
+margin:-1px 0px 0px 0px;
+color:#fff;
+text-align:left;
+padding-left:28px;
+font:14px/28px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+border:1px #fff solid;
+background:#886640 url(arrow.gif) 10px no-repeat;
+cursor:pointer;
+}
+
+/*===切换标签当前选中的样式===*/
+
+
+li.gbl056j_current{
+list-style-type:none;
+height:33px;
+margin:0px 0px 1px 0px;
+border:3px #886640 solid;
+color:#000;
+text-align:left;
+padding-left:33px;
+font:bold 14px/33px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+background:#ffffff url(search.gif) 10px no-repeat;
+cursor:pointer;
+}
+
+
+/*===more区域样式===*/
+
+div.gbl056j_more{
+list-style-type:none;
+height:28px;
+margin:0px 0px 1px 0px;
+color:#555;
+text-align:left;
+padding-left:15px;
+font:12px/28px simsun;
+background:#fff;
+}
+
+div.gbl056j_more a{
+font:12px/28px simsun;
+color:#666;
+}
+

@@ -1,0 +1,43 @@
+<!-start->
+<link href="css/jobquery.css" rel="stylesheet" type="text/css" />
+
+<div id="jobquery">
+<ul >
+	<li class="cap">
+	
+	<div class="bt"><strong>招聘职位</strong></div>
+	<div class="cl"><strong>详情</strong></div>
+	<div class="au"><strong>招聘人数</strong></div>
+	<div class="bk"><strong>工作地点</strong></div>
+	
+	</li>
+</ul>
+<ul class="queryul">
+<!-start->
+<!-list-> 
+<li>
+	
+	<div class="bt"><a href="{#link#}" target="{#target#}" >{#jobname#}</a></div>
+	<div class="cl"><a href="{#link#}" target="{#target#}" >详情</a></div>
+	<div class="au">{#pnums#}</div>
+	<div class="bk">{#jobaddr#}</div>
+	
+
+
+</li>
+<!-list->
+<!-end->
+</ul>
+</div>
+
+
+<div id="showpages">
+	  <div id="pagesinfo">共{#totalnums#}个职位 每页{#pagesshownum#}个 页次：{#pagesnow#}/{#pagestotal#}</div>
+	  <div id="pages">{#showpages#}</div>
+</div>
+
+
+
+
+
+<!-end->

@@ -1,0 +1,39 @@
+/* ============»áÔ±ÍÆ¼ö============== */
+
+div.membertags{
+clear:both;
+margin:0px 0px 8px 0px;
+}
+
+div.membertags div.face{
+float:left;
+margin-right:15px;
+padding:3px;
+text-align:center;
+border:1px #ddd solid;
+}
+
+div.pname a.pname:link,div.pname a.pname:visited,div.pname a.pname:active{
+font:bold 14px/22px simsun;
+color:#555;
+text-decoration: none;
+}
+
+div.pname a.pname:hover{
+font:bold 14px/22px simsun;
+color:#886640;
+text-decoration: underline;
+}
+
+
+div.membertags div.memo{
+font:12px/18px simsun;
+margin-top:3px;
+color:#555;
+}
+
+div.membertags div.memo span.cent{
+font:12px/18px simsun;
+margin-top:3px;
+color:#555;
+}

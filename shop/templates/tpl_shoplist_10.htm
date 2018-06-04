@@ -1,0 +1,35 @@
+<!-start->
+<link href="css/shoplist_10.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/cart.js"></script>
+<div class="shoplist_10_out">
+
+<!-start->
+<!-list->
+<div class="shoplist_10">
+		<div class="fang" style="width:{#picw#}px;height:{#pich#}px">
+			<div class="picFit" style="width:{#picw#}px;height:{#pich#}px">
+			<a href="{#link#}" target="{#target#}" ><img src="{#src#}" style="width:{#picw#}px;height:{#pich#}px" border="0" /></a>
+			</div>
+		</div>
+		<div class="prop">
+		<span class="price">￥{#price#}</span><br />
+		</div>
+		<a href="{#link#}" target="{#target#}" class="prodtitle" {#bold#} {#red#} >{#title#}</a>
+		
+</div>
+<!-list->
+<!-m1->
+{#propname#}：{#prop#}<br />
+<!-m1->
+
+<!-end->
+</div>
+<script>
+$(function() {
+$().picFit("{#fittype#}");
+});
+</script>
+
+
+
+<!-end->

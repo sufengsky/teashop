@@ -1,0 +1,65 @@
+.arrowlistmenu{
+width: 100%; /*width of accordion menu*/
+margin-bottom:5px;
+}
+
+.arrowlistmenu .menuheader{ 
+height:23px;
+font:14px/23px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+color: #505050;
+background:url(close.gif) 8px no-repeat;  
+margin-bottom: 1px; /*bottom spacing between header and rest of content*/
+text-transform: uppercase;
+padding-left:25px; 
+cursor: pointer;
+}
+
+.arrowlistmenu .openheader{ /*CSS class to apply to expandable header when it's expanded*/
+background:url(open.gif) 8px no-repeat;  
+}
+
+.arrowlistmenu ul{ /*CSS for UL of each sub menu*/
+list-style-type: none;
+padding:3px 0px;
+margin-bottom:1px;
+}
+
+.arrowlistmenu ul li{
+height:20px;
+padding-bottom: 0px; /*bottom spacing between menu items*/
+margin-bottom:0px;
+}
+
+.arrowlistmenu ul li .opensubheader{ /*Open state CSS for sub menu header*/
+background: lightblue !important;
+}
+
+.arrowlistmenu ul li .closedsubheader{ /*Closed state CSS for sub menu header*/
+background: lightgreen !important;
+}
+
+.arrowlistmenu ul li a{
+color: #505050;
+display: block;
+font:14px/20px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+padding-left:38px;
+background:url(li.gif) 25px no-repeat;  
+text-decoration: none;
+}
+
+span.nums{
+color: #909090;
+font:12px/20px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+}
+
+
+.arrowlistmenu ul li a:visited{
+color: #505050;
+}
+
+.arrowlistmenu ul li a:hover{ /*hover state CSS*/
+color: #ff6600;
+}
+
+.arrowlistmenu ul li a.subexpandable:hover{ /*hover state CSS for sub menu header*/
+}

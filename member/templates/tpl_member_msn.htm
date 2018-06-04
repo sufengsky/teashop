@@ -1,0 +1,39 @@
+<!-start->
+<link href="css/member.css" rel="stylesheet" type="text/css" />
+<link href="css/pages.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/member.js"></script>
+<table width="100%" border="0" cellspacing="0" cellpadding="5" class="table">
+  <tr>
+    <td width="110" height="26" align="center" class="biaoti">发信人</td>
+    <td  height="26" class="biaoti">短信内容</td>
+  <td width="60" align="center" class="biaoti">&nbsp;</td>
+  </tr>
+ 
+<!-start->  
+<!-list->
+   <tr id="tr_{#id#}"> 
+     <td width="110" align="center" valign="top" class="hang">
+	 <a href="{#memberurl#}"><img src="{#face#}" width="70" border="0" /></a>
+	 </td>
+    <td valign="top" class="hang">
+	
+	<span class="dtime">{#dtime#}  BY  <a href="{#memberurl#}" class="fromname">{#pname#}</a></span> 
+	<span class="msnbody">{#body#}</span>
+	</td>
+   <td width="60" align="center" valign="top" class="hang"> 
+   
+   <div id="sendmsg_{#mid#}" class="send_msg" style="display:{#showback#}">回复</div>
+   <div id="del_{#id#}" class="delmsn">删除</div>
+   </td>
+   </tr>
+<!-list->
+<!-end-> 
+</table>
+
+
+<div id="showpages">
+	  <div id="pagesinfo">共{#totalnums#}条 每页{#pagesshownum#}条 页次：{#pagesnow#}/{#pagestotal#}</div>
+	  <div id="pages">{#showpages#}</div>
+</div>
+<!-end->
+

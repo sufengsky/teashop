@@ -1,0 +1,139 @@
+/* ==排版编辑样式表== */
+
+.pdv_class .pdv_drag{ position: absolute;cursor:move;background:transparent url(../images/space.gif);width:100%;height:100%;left:0px;top:0px;}
+.pdv_class .pdv_resize{position:absolute;background:#ccc;cursor:nw-resize;height:12px;width:12px;right:1px;bottom:1px;background:url(../images/adminbar.gif) -488px -172px  no-repeat;}
+.pdv_class .blue_set {position:absolute;top:3px;right:1px;height:25px;}
+.pdv_class .blue_set .blue_sethide{position:absolute;cursor:pointer;right:3px;width:18px;height:17px;background:url(../images/adminbar.gif) -336px 0px  no-repeat;}
+.pdv_class .blue_set .blue_setremove{position:absolute;cursor:pointer;right:5px;width:18px;height:17px;background:url(../images/adminbar.gif) -336px 0px  no-repeat;}
+.pdv_class .blue_set .blue_setdo{position:absolute;cursor:pointer;right:25px;width:18px;height:17px;background:url(../images/adminbar.gif) -316px 0px  no-repeat;}
+
+/* ==管理面板菜单== */
+
+.adminmenu{position:relative;display:none;width:100%;height:32px;margin-right: auto; margin-left: auto;background:url(../images/admin_bg.png) 0px 0px repeat-x}
+.adminclose{float:right;display:inline;width:66px;height:24px;line-height:24px;text-align:center;margin:3px 0px 0px 0px;cursor:pointer;background:url(../images/adminbar.gif) -434px 0px no-repeat}
+.adminlogo{float:left;width:163px;height:32px;}
+.admintip{float:left;display:inline;margin:5px 30px 0px 30px;padding:1px 10px 0px 30px;border:1px #d2d2d2 dotted;line-height:18px;background:#fff url(../images/adminbar.gif) -410px -196px no-repeat}
+.adminclose span{margin-left:18px}
+
+.adminbar_showme{position:absolute;display:none;z-index:99;cursor:pointer;right:5px;top:0px;width:86px;height:27px;line-height:25px;text-align:left;background:url(../images/adminbar.gif) -366px -99px no-repeat}
+.adminbar{position:relative;display:none;width:100%;height:288px;margin-right: auto; margin-left: auto;background:url(../images/admin_bg.png) 0px 0px repeat-x}
+.adminmenuleft{position: absolute;top:0;left:0;width:12px;height:288px;background:url(../images/admin_bg.png) 0px -782px no-repeat}
+.adminmenuright{float:right;position:relative;width:10px;height:288px;background:url(../images/admin_bg.png) -17px -782px no-repeat}
+
+.adminbarmenu{position:absolute;top:0;left:0;width:100%;height:32px;}
+.adminbutton1{float:left;width:127px;height:32px;margin:0px -1px;text-align:center;font-size:14px;line-height:35px;background:url(../images/adminbar.gif) -225px -111px no-repeat;color:#555;cursor:pointer;}
+.adminbutton2{float:left;width:129px;height:32px;margin:0px;text-align:center;font-size:14px;font-weight:bold;line-height:35px;background:url(../images/adminbar.gif) -224px -144px no-repeat;color:#555;cursor:pointer;}
+.adminhidden{float:right;display:inline;width:87px;height:24px;line-height:24px;text-align:center;margin:3px 5px 0px 0px;cursor:pointer;background:url(../images/adminbar.gif) -366px -72px no-repeat}
+.adminsave{float:right;display:inline;width:66px;height:24px;line-height:24px;text-align:center;margin:3px 0px 0px 0px;cursor:pointer;background:url(../images/adminbar.gif) -367px 0px no-repeat}
+.admincancle{float:right;display:inline;width:66px;height:24px;line-height:24px;text-align:center;margin:3px 0px 0px 0px;cursor:pointer;background:url(../images/adminbar.gif) -434px 0px no-repeat}
+.adminsave span{margin-left:18px}
+.admincancle span{margin-left:18px}
+.adminhidden span{margin-left:17px}
+.adminbar_showme span{margin-left:27px}
+
+/* ==插件设置== */
+
+.admin_plusbar{display:none;position:absolute;top:39px;left:5px;height:223px}
+.admin_plusbarleft{position: absolute;top:0;left:0;width:3px;height:223px;background:url(../images/admin_bg.png) 0px -1084px no-repeat}
+.admin_plusbarright{float:right;position:relative;width:3px;height:223px;background:url(../images/admin_bg.png) -24px -1084px no-repeat}
+.admin_plusmemo{position:absolute;top:199px;left:10px;text-align:center;line-height:25px;color:#555;}
+
+.admin_pluscolbar{position:absolute;top:0;left:10px;width:130px;height:223px;background:url(../images/admin_bg.png) 0px -302px repeat-x}
+.admin_pluscol{position:absolute;top:5px;left:6px;margin:0;padding:0;background:#fff;border:0;width:119px;height:192px;overflow:auto}
+.admin_collist{width:100px;height:35px;line-height:32px;color:#555;text-align:center;cursor:pointer;list-style-type:none;background:url(../images/adminbar.gif) -192px -330px  no-repeat;z-index:1}
+.admin_collistnow{width:100px;height:35px;line-height:32px;color:#555;text-align:center;cursor:pointer;list-style-type:none;background:url(../images/adminbar.gif) -192px -367px  no-repeat;z-index:1}
+.admin_collisttext{white-space:nowrap;overflow:hidden;font-weight:300;z-index:2}
+
+.admin_plusselbar{position:absolute;top:0;left:145px;width:400px;height:223px;background:url(../images/admin_bg.png) 0px -302px repeat-x}
+.admin_plussel{position:absolute;top:5px;left:6px;margin:0;padding:0;background:#fff;border:0;width:389px;height:192px;overflow:auto}
+.admin_plussellist{float:left;width:185px;height:53px;color:#555;cursor:pointer;list-style-type:none;background:url(../images/adminbar.gif) 0px -270px  no-repeat;}
+.admin_plussellistnow{float:left;width:185px;height:53px;color:#555;cursor:pointer;list-style-type:none;background:url(../images/adminbar.gif) -192px -270px  no-repeat;}
+.admin_plusselpic{float:left;display:inline;margin:8px 0px 0px 10px;width:32px;height:32px}
+.admin_plusseltext{float:left;white-space:nowrap;overflow:hidden;font-weight:300;width:125px;margin:9px 0px 0px 8px}
+
+.admin_plusnowbar{position:absolute;top:0;left:550px;width:215px;height:223px;background:url(../images/admin_bg.png) 0px -302px repeat-x}
+.admin_plusnow{position:absolute;top:5px;left:6px;margin:0;padding:0;background:#fff;border:0;width:204px;height:192px;overflow:auto}
+.admin_pluslist{width:185px;height:53px;color:#555;cursor:pointer;list-style-type:none;background:url(../images/adminbar.gif) 0px -189px  no-repeat;}
+.admin_pluslistnow{width:185px;height:53px;color:#555;cursor:pointer;list-style-type:none;background:url(../images/adminbar.gif) -192px -189px  no-repeat;}
+.admin_pluslistpic{float:left;display:inline;margin:8px 0px 0px 10px;width:32px;height:32px}
+.admin_pluslisttext{float:left;white-space:nowrap;overflow:hidden;font-weight:300;width:125px;margin:9px 0px 0px 8px}
+.admin_pluslisttext1{float:left;white-space:nowrap;overflow:hidden;width:73px;margin:3px 12px 0px 8px}
+.admin_pluslistedit{float:left;display:inline;white-space:nowrap;overflow:hidden;width:18px;height:17px;margin:3px 0px 0px 0px;background:url(../images/adminbar.gif) -316px 0px  no-repeat;}
+.admin_pluslistdel{float:left;display:inline;white-space:nowrap;overflow:hidden;width:18px;height:17px;margin:3px 0px 0px 3px;background:url(../images/adminbar.gif) -336px 0px  no-repeat;}
+
+.admin_plusplanbar{position:absolute;top:0;left:770px;width:215px;height:223px;background:url(../images/admin_bg.png) 0px -302px repeat-x}
+.admin_plusplan{position:absolute;top:5px;left:6px;margin:0;padding:0;background:#fff;border:0;width:204px;height:192px;overflow:auto}
+.admin_plusplan .plusplanadd{margin:8px 0px 5px 5px}
+.admin_plusplan .planname{border:0px;border-bottom:1px #def solid;width:86px;padding:0px 3px;background:#f7fbfe;height:16px;line-height:14px;color:#ff6600}
+.admin_plusplan .plusplanzone{margin:0px 0px 10px 5px}
+.admin_plusplan .plusplanlist{width:175px;height:31px;cursor:pointer;background:url(../images/adminbar.gif) -187px -415px  no-repeat;color:#555;list-style-type:none;}
+.admin_plusplan .plusplanlistnow{width:175px;height:31px;cursor:pointer;background:url(../images/adminbar.gif) -187px -446px  no-repeat;color:#555;list-style-type:none;}
+.admin_plusplan span.plusplan{line-height:28px;margin-left:10px;width:120px;white-space:nowrap;overflow:hidden}
+.admin_plusplan .plusplandel{float:right;display:inline;cursor:pointer;width:18px;height:17px;margin:5px 8px 0px 0px;background:url(../images/adminbar.gif) -336px 0px  no-repeat;}
+.admin_plusplan .plusplanuse{float:right;display:inline;cursor:pointer;width:18px;height:17px;margin:5px 3px 0px 0px;background:url(../images/adminbar.gif) -372px -426px  no-repeat;}
+
+.plus_data{display:none;position:absolute;white-space:nowrap;top:300px;left:0px;width:90px;height:100px;background:#eee;color:#666;z-index:99;padding:10px;line-height:16px;border:1px #ccc solid}
+
+
+/* ==页面设置== */
+.admin_pagebar{display:none;position:absolute;top:39px;left:5px;height:223px}
+.admin_pagebarleft{position: absolute;top:0;left:0;width:3px;height:223px;background:url(../images/admin_bg.png) 0px -1084px no-repeat}
+.admin_pagebarright{float:right;position:relative;width:3px;height:223px;background:url(../images/admin_bg.png) -24px -1084px no-repeat}
+.admin_pagememo{position:absolute;top:199px;left:10px;text-align:center;line-height:25px;color:#555;}
+
+
+.admin_pagecontainbar{position:absolute;top:0;left:10px;width:170px;height:223px;background:url(../images/admin_bg.png) 0px -302px repeat-x}
+.admin_pagecontain{position:absolute;top:5px;left:6px;margin:0;padding:0;background:#fff;border:0;width:159px;height:192px;overflow:auto}
+.admin_pagetemplist{width:140px;height:35px;line-height:32px;color:#555;list-style-type:none;background:url(../images/adminbar.gif) 0px -114px  no-repeat;z-index:1}
+.admin_pagetemplistnow{width:140px;height:35px;line-height:32px;color:#555;list-style-type:none;background:url(../images/adminbar.gif) 0px -151px  no-repeat;z-index:1}
+.admin_pagetemplisttext{white-space:nowrap;overflow:hidden;cursor:pointer;width:90px;font:12px/30px;height:30px;margin-left:12px;z-index:2}
+#pagetempnameset{display:none}
+.pagetempdel{float:right;display:inline;cursor:pointer;width:18px;height:17px;margin:7px 11px 0px 0px;background:url(../images/adminbar.gif) -336px 0px  no-repeat;}
+
+
+.admin_pagebgcolorbar{position:absolute;top:0;left:185px;width:195px;height:223px;background:url(../images/admin_bg.png) 0px -302px repeat-x}
+.admin_pagebgcolor{position:absolute;top:8px;left:7px;margin:0;padding:0;background:#fff;border:0;width:183px;height:192px;overflow:hidden}
+.admin_pagebgcolor .colorlist{float:left;border:1px #fff solid;cursor:pointer;width:13px;height:10px;font: 0px Arial}
+input#pageshowcolor{width:66px;background:fff;border:1px #def solid;margin-left:1px;text-align:center;height:15px;font:12px/15px arial}
+span#pagetransparent{background:fff;border:1px #def solid;white-space:nowrap;margin-left:1px;padding:2px 2px;text-align:center;height:15px;font:12px/15px arial;cursor:hand}
+
+.admin_pagebgimgbar{position:absolute;top:0;left:385px;width:284px;height:223px;background:url(../images/admin_bg.png) 0px -302px repeat-x}
+.admin_pagebgimg{position:absolute;top:8px;left:7px;margin:0;padding:0;background:#fff;border:0;width:271px;height:192px;overflow:auto}
+.pagesourcediv{float:left;width:60px;height:60px;cursor:pointer;margin:0px 3px 3px 0px}
+#showbg_big{color:#555;font:12px simsun;cursor:pointer}
+#showbg_mid{color:#555;font:12px simsun;cursor:pointer}
+#showbg_small{color:#555;font:12px simsun;cursor:pointer}
+#showbg_upload{color:#555;font:12px simsun;cursor:pointer}
+
+.admin_pageconsetbar{position:absolute;top:0;left:674px;width:235px;height:223px;background:url(../images/admin_bg.png) 0px -302px repeat-x}
+.admin_pageconset{position:absolute;top:5px;left:6px;margin:0;padding:0px;background:#fff;border:0;width:224px;height:192px;overflow:auto}
+.pageconsetitem{clear:both;height:20px;font:12px/20px arial;margin:3px 7px;}
+.pageconsetitem .input{background:#f7fbfe;border:1px #def solid;height:16px;font:12px/16px Arial}
+.pageconsetglb{height:20px;font:12px/20px arial;margin:3px 0px 0px 3px;}
+
+.admin_metabar{display:none;position:absolute;top:39px;left:5px;height:223px}
+.admin_pagemetabar{position:absolute;top:0;left:10px;width:395px;height:223px;background:url(../images/admin_bg.png) 0px -302px repeat-x}
+.admin_pagemeta{position:absolute;top:5px;left:6px;margin:0;padding:0px;background:#fff;border:0;width:384px;height:192px;overflow:auto}
+.pagesetauto{margin:5px 0px 0px 68px;background:#fff;border:1px #def solid;height:22px;font:12px/18px Arial}
+
+
+/* ==右键菜单== */
+
+#contextMenu{display:none}
+li#cm_up{background:url(../images/adminbar.gif) -477px -29px  no-repeat;}
+li#cm_top{background:url(../images/adminbar.gif) -477px -58px  no-repeat}
+li#cm_under{background:url(../images/adminbar.gif) -477px -87px  no-repeat}
+li#cm_down{background:url(../images/adminbar.gif) -477px -117px  no-repeat}
+li#cm_copy{background:url(../images/adminbar.gif) -477px -238px  no-repeat}
+
+
+/* ==设置窗口== */
+
+#plusWindow {display:none;cursor:default;}
+#plusWindow .border{border:1px #97A0AA solid;}
+#plusWindow .ntc{padding:30px;text-align:left;background:#fff;font: 14px/1.6 Verdana, Arial, Helvetica, sans-serif;}
+#plusWindow .buttonzone{padding:15px;text-align:center;padding-top:10px;background:#f7f7f7;}
+#plusWindow .plusFrm{width:100%;height:500px;border:0}
+#plusWindow .fileUpFrm{width:100%;height:150px;border:0}
+#plusWindow .topBar{height:20px;line-height:20px;background:#cbddef;text-align:left;padding:0px 0px 5px 5px ;font-size:12px;}
+#plusWindow .topBar .pwClose{position: absolute;top:0px;right:8px;width:45px;height:18px;background:url(../images/adminbar.gif) -226px 0px no-repeat;cursor:pointer}

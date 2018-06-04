@@ -1,0 +1,129 @@
+<!-start->
+<link href="css/comment.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="{#CP#}js/comment.js"></script>
+<div id="commentList">
+<div class="capbg">
+	<div class="captitle">最新点评</div>
+	<a href="{#moreurl#}" class="capmore" title="查看本商品的全部点评">更多点评</a>
+	<a href="#feedback" class="capmore" title="对本商品发表点评">发表点评</a>
+</div>
+<ul id="commentUl">
+<!-start->
+<!-list->
+<li id="commentli_{#commentid#}">
+
+  <table width="100%"  border="0" cellpadding="0" cellspacing="0">
+    <tr>
+      <td width="70" valign="top">
+		<div class="face"><a href="{#memberurl#}"><img src="{#face#}" width="60" border="0" /></a>
+		</div></td>
+      <td valign="top">
+	  <div style="float:left;">
+		<a href="{#link#}" target="{#target#}" class="ctitle" >{#title#}</a>
+		</div>
+		<div style="float:right"><a href="{#memberurl#}">{#pname#}</a> 发表于: {#dtime#}
+		
+		</div>
+		<div style="clear:both;margin-top:8px;line-height:18px">
+		{#body#}
+		<div style="margin-top:8px;color:#666">评价：{#pjstr#}</div>
+		</div>
+		</td>
+    </tr>
+  </table>
+
+
+</li>
+<!-list->
+
+<!-end->
+</ul>
+</div>
+<a name="feedback"></a>
+
+<div id="commentForm">
+<div class="formtitlebg">
+	<div class="formtitle">发表点评</div>
+</div>
+<div class="formzone">
+<div  id="notice" class="noticediv"></div>
+<form id="commentSend" action="" method="post" name="commentSend">
+      
+<div class="row">
+<div class="left">您的评价</div>
+<div class="con">
+	<table  border="0" cellpadding="0" cellspacing="1">
+            <tr>
+              <td><img id='star1' class="pstar" src="images/icon_star_2.gif" alt="差(1)" width="14" height="12"></td>
+              <td><img id='star2' class="pstar" src="images/icon_star_2.gif" alt="一般(2)" width="14" height="12"></td>
+              <td><img id='star3' class="pstar" src="images/icon_star_2.gif" alt="好(3)" width="14" height="12"></td>
+              <td><img id='star4' class="pstar" src="images/icon_star_1.gif" alt="很好(4)" width="14" height="12"></td>
+              <td><img id='star5' class="pstar" src="images/icon_star_1.gif" alt="非常好(5)" width="14" height="12"></td>
+            </tr>
+          </table><input name="pj1" type="hidden" id="pj1" value="3">
+	
+</div>
+</div>
+
+<div class="row">
+<div class="left">评论标题</div>
+<div class="con">
+<input name="title" type="text" class="input" value="对{#title#}的评论" style="width:480px" />
+</div>
+</div>
+
+<div class="row">
+<div class="left">评论内容</div>
+<div class="con">
+<textarea name="body"  class="textarea" rows="6" style="width:480px"></textarea>
+</div>
+</div>
+
+
+
+<div class="row">
+<div class="left">验 证 码</div>
+<div class="con">
+<table border="0" cellspacing="1" cellpadding="0" height="20">
+<tr>
+<td >
+<input type="text" name="ImgCode" style="width:55px"  class="input" >
+</td>
+<td>
+<img id="codeimg" src="{#RP#}codeimg.php" width="60" height="20" style="border:1px #dddddd solid">
+							 
+</td>
+<td><span id="getImgCode" style="cursor:pointer;margin-left:10px;line-height:20px">看不清？更换一张</span></td>
+</tr>
+</table>
+</div>
+</div>
+
+
+
+<div class="row">
+
+	<div  style="float:left;line-height:30px;margin:0px 10px 0px 90px">
+	<input id="nomember"  name="nomember" type="checkbox" value="1" checked="true" /> 匿名发表&nbsp; 
+	</div>
+
+	<div id="notLogin" style="display:none;float:left;line-height:33px">您尚未登录 <span class="loginlink">登录</span> | <a href="{#RP#}member/reg.php" class="nomal">注册</a></div>
+	<div id="isLogin" style="display:none;float:left;line-height:33px">您已登录,登录账号: <span id="username"></span> &nbsp; | &nbsp;<a href="{#RP#}member/" class="nomal">会员中心</a> | &nbsp;<span class="logoutlink">退出</span></div>
+</div>
+
+<div class="row">
+	<div style="text-align:left;padding:5px 3px 0px 93px">
+	<input type="submit" name="Submit" value="提交"  class="submit" />
+	<input type="hidden" name="act" value="commentsend" />
+	<input name="rid" type="hidden" id="rid" value="{#rid#}" />
+	<input type="hidden" name="pid" value="{#pid#}" />
+	<input name="catid" type="hidden" id="catid" value="{#commentcatid#}" />
+	<input name="nowpage" type="hidden" id="nowpage" value="" />
+	</div>
+</div>
+        
+</form>
+</div>
+</div>
+
+<!-end->

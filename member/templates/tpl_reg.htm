@@ -1,0 +1,92 @@
+<link href="css/reg.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="{#CP#}js/reg.js"></script>
+<div id="reg" >
+<form id="memberReg" method="post" action="reg.php" name="regform" >
+<div id="stepname" class="stepname"></div>
+<div class="zone">
+<div  id="notice" class="noticediv"></div> 
+
+<div class="row">
+	<div class="left">会员类型：</div> <div class="mustfill"></div>
+	<div class="con">
+	 <select id="membertypeid" name="membertypeid" >
+	{#typelist#}
+	</select>
+	</div>
+</div>
+
+<div class="row">
+	<div class="left">登录账号：</div> <div class="mustfill">*</div>
+	<div class="con">
+	<input type="text" id="user" name="user"  class="input" style="width:200px" value="{#user#}" />
+	</div>
+</div>
+
+<div class="row">
+	<div class="left">登录密码：</div> <div class="mustfill">*</div>
+	<div class="con">
+	<input id="password" type="password" name="password" style="width:200px" class="input" value="{#password#}"  />
+	</div>
+</div>
+
+<div class="row">
+	<div class="left">重复密码：</div> <div class="mustfill">*</div>
+	<div class="con">
+	<input id="repass" type="password" name="repass"  class="input" style="width:200px" value="{#repass#}" />
+	</div>
+</div>
+
+<div class="row">
+	<div class="left">电子邮件：</div> <div class="mustfill">*</div>
+	<div class="con">
+	<input id="email" type="text" name="email"  class="input"  value="{#email#}" style="width:200px"  />
+	</div>
+</div>
+
+
+
+
+<div class="row">
+	<div class="left">验 证 码：</div> <div class="mustfill">*</div>
+	<div class="con">
+	  <table border="0" cellspacing="0" cellpadding="1">
+        <tr>
+          <td><input id="ImgCode" type='text' name='ImgCode' style='width:33px' maxlength="4 " class="input" /></td>
+          <td><img id="codeimg" src='{#RP#}codeimg.php' width='60' height='20' style='border:1px #dddddd solid;cursor:pointer'  /></td>
+		   <td><span id="getImgCode" style="cursor:pointer;margin-left:5px;">看不清？更换一张</span></td>
+        </tr>
+      </table>
+	  
+	   
+	 
+	</div>
+</div>
+
+<div class="row" style="margin:10px 0px">
+	<div class="left"></div> <div class="mustfill"></div>
+	<div class="con">
+	<input type="checkbox" id="tongyi" value="1">
+	&nbsp;同意会员注册协议 &nbsp; <span id="lookxieyi" style="cursor:pointer">查看注册协议</span>
+	</div>
+</div>
+
+
+<div class="row" style="margin:10px 0px">
+	<div class="left"></div> <div class="mustfill"></div>
+	<div class="con">
+	 
+      
+      <input id="tijiao" type="submit" name="cc" value="下一步" class="submit" disabled />
+      <input name="act" type="hidden" id="act" value="memberreg" />
+	  <input name="nowstep" type="hidden" id="nowstep" value="account" />
+	   <input name="nextstep" type="hidden" id="nextstep" value="enter" />
+	 </div>
+</div>
+
+
+
+</div>
+</form>
+</div>
+
+

@@ -1,0 +1,110 @@
+<!-start->
+<link href="css/shoporderdetail.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="{#CP#}js/orderdetail.js"></script>
+
+<div id="shoporderdetail">
+<div class="ordertitle">
+<div style="float:right;font:bold 14px/35px Verdana, Arial, Helvetica, sans-serif;">
+订单号：{#OrderNo#} &nbsp; </div>
+{#sitename#}订单</div>
+
+<div class="tit">订购人信息</div>
+<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#ddeeff" >
+ 
+  <tr >
+    <td height="25" align="center" valign="top" class="itemname">订 购 人</td>
+    <td valign="top" bgcolor="#ffffff" >{#name#}</td>
+    <td align="center"  class="itemname">会员帐号</td>
+    <td height="25" valign="top" bgcolor="#ffffff" >{#user#} </td>
+  </tr>
+  <tr >
+    <td width="80" height="25" align="center" valign="top" class="itemname">联系电话</td>
+    <td width="220" valign="top" bgcolor="#ffffff" >{#tel#}</td>
+    <td width="80" align="center"  class="itemname">手机号码</td>
+    <td height="25" valign="top" bgcolor="#ffffff" >{#mobi#}</td>
+  </tr>
+  <tr >
+    <td height="25" align="center" valign="top" class="itemname">电子邮箱</td>
+    <td width="220" valign="top" bgcolor="#ffffff" >{#email#}</td>
+    <td align="center"  class="itemname">QQ号码</td>
+    <td height="25" valign="top" bgcolor="#ffffff" ><span class="itemname">{#qq#}</span></td>
+  </tr>
+  
+  
+</table>
+
+<div class="tit">收货人信息</div>
+<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#ddeeff" >
+ 
+  <tr >
+    <td width="80" height="25" align="center" class="itemname">收 货 人</td>
+    <td width="220" valign="top" bgcolor="#FFFFFF" >{#s_name#}</td>
+    <td width="80" align="center" valign="top"  class="itemname">配送地区</td>
+    <td height="25" valign="top" bgcolor="#FFFFFF" >{#zonestr#}</td>
+  </tr>
+  <tr >
+    <td height="25" align="center" class="itemname">联系电话</td>
+    <td width="220" valign="top" bgcolor="#FFFFFF" >{#s_tel#}</td>
+    <td align="center" valign="top"  class="itemname">详细地址</td>
+    <td height="25" valign="top" bgcolor="#FFFFFF" ><span class="itemname">{#s_addr#}</span></td>
+  </tr>
+  <tr >
+    <td height="25" align="center" class="itemname">手机号码</td>
+    <td valign="top" bgcolor="#FFFFFF" >{#s_mobi#}</td>
+    <td align="center" valign="top"  class="itemname">邮政编码</td>
+    <td height="25" valign="top" bgcolor="#FFFFFF" ><span class="itemname">{#s_postcode#}</span></td>
+  </tr>
+  <tr >
+    <td height="25" align="center" class="itemname">QQ号码</td>
+    <td width="220" valign="top" bgcolor="#FFFFFF" >{#s_qq#}</td>
+    <td align="center" valign="top"  class="itemname">配送方法</td>
+    <td height="25" valign="top" bgcolor="#FFFFFF" >{#yuntype#}</td>
+  </tr>
+  
+</table>
+
+<div class="tit1">商品清单</div>
+
+<table width="100%" border="0" cellpadding="3" cellspacing="1" bgcolor="#ddeeff" style="margin-bottom:10px">
+  <tr valign="top">
+    <td width="75" align="center"  class="itemname">商品编号</td>
+    <td height="25" align="center"  class="itemname" >商品名称</td>
+    <td width="80" align="center"  class="itemname">单价 (元)</td>
+    <td width="50" align="center"  class="itemname">数量</td>
+    <td width="50" align="center"  class="itemname">单位</td>
+    <td width="80" align="center"  class="itemname">小计 (元)</td>
+    <td width="50" align="center"  class="itemname">发货</td>
+    </tr>
+  
+  <!-start->
+  <!-list->
+  <tr bgcolor="#FFFFFF">
+    <td width="75" align="center" bgcolor="#FFFFFF" >{#bn#}</td>
+    <td height="20" align="center" >{#goods#}</td>
+    <td width="80" align="center" bgcolor="#FFFFFF" >{#price#}</td>
+    <td width="50" align="center" bgcolor="#FFFFFF" >{#nums#}</td>
+    <td width="50" align="center" bgcolor="#FFFFFF" >{#danwei#}</td>
+    <td width="80" align="center" bgcolor="#FFFFFF" >{#jine#}</td>
+    <td width="50" align="center" bgcolor="#FFFFFF" >{#itemyun#}</td>
+    </tr>
+
+  <!-list->
+<!-end->
+</table>
+<div class="tit">订购备注</div>
+<div class="bz">{#bz#}</div>
+
+<div class="totaldiv">商品总价：{#goodstotal#} 元 &nbsp; 配送费用：{#yunfei#} 元 &nbsp; 保险费：{#yunbaofei#} 元 &nbsp; 订单总金额：{#paytotal#} 元 &nbsp; 
+<br />
+订购时间：{#dtime#} &nbsp; 付款方式：{#paytype#} &nbsp; 付款时间：{#paytime#}
+  </div>
+</div>
+<div id="printout"><div id="print_button">[打印订单]</div>
+订单状态： [{#paystat#}] [{#yunstat#}] [{#okstat#}] </div>
+<!-end->
+
+<!-err1->
+<link href="css/shoporderdetail.css" rel="stylesheet" type="text/css" />
+<div class="ordererr">{#ntc#}</div>
+<!-err1->
+

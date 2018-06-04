@@ -1,0 +1,27 @@
+ul.titlemenu_b1{
+margin:0;
+padding:0;
+}
+
+li.titlemenu_b1{
+list-style-type:none;
+text-align:center;
+margin:5px 0px;
+background:url(../images/titlemenu_b1.gif) left no-repeat;
+width:172px;
+height:30px;
+}
+
+a.titlemenu_b1:link,a.titlemenu_b1:visited,a.titlemenu_b1:active{
+color: #555; 
+text-decoration: none;
+font:14px/25px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+margin-right:25px;
+}
+
+a.titlemenu_b1:hover{
+color: #ff6600; 
+text-decoration: none;
+font:bold 14px/25px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+margin-right:25px;
+}

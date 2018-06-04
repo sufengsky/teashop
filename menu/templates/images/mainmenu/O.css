@@ -1,0 +1,43 @@
+#menumain{
+   margin:0;
+   white-space:nowrap;
+   overflow:hidden;
+   width:100%;
+   color:#fff;
+   background-color:#c677ee;
+}
+
+#menumain .menumain{
+   float:left;
+   width:99px;
+   height:30px;
+   color:#fff;
+   border-left:1px solid #ddadf5;
+   border-top:1px solid #ddadf5;
+   line-height:30px;
+   text-align:center;
+   margin:-1px 1px 1px -1px ;
+}
+
+
+#menumain .menumain a:link {
+   color: #fff; 
+   display:block;
+   text-decoration: none;
+   line-height:30px;
+}
+
+#menumain .menumain a:visited {
+   color: #fff; 
+   display:block;
+   text-decoration: none;
+   line-height:30px;
+}
+
+#menumain .menumain a:hover {
+   color: #fff; 
+   text-decoration: none;
+   background-color:#d59af2;
+   line-height:30px;
+} 
+

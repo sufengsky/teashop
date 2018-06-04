@@ -1,0 +1,120 @@
+/* ============ÏÂÔØ¼ìË÷============== */
+
+div#newsmemoquery {
+margin:0px;
+}
+div#newsmemoquery ul{
+margin:0;
+padding:0;
+}
+
+div#newsmemoquery li{
+padding:15px 0px 15px 18px;
+list-style-type: none;
+border-bottom:1px #ddd dotted;
+background: transparent url(../images/queryli.gif) left 20px no-repeat;
+overflow: hidden;
+
+}
+div#newsmemoquery a:link,div#newsmemoquery a:visited,div#newsmemoquery a:active{
+font:bold 14px/16px simsun;
+color:#505050;
+text-decoration: none;
+}
+
+div#newsmemoquery a:hover{
+font:bold 14px/16px simsun;
+color:#ff0000;
+text-decoration: underline;
+}
+
+div#newsmemoquery .title{
+float:left;
+}
+
+div#newsmemoquery .time{
+float:right;
+padding-right:5px;
+white-space: nowrap;
+overflow: hidden;
+font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#newsmemoquery .memo{
+clear:both;
+padding:0px;
+font: 12px Verdana, Arial, Helvetica, sans-serif;
+line-height:18px;
+text-align: left;
+}
+
+/* ============·­Ò³============== */
+
+div#showpages {
+clear:both;
+padding:0px;
+margin:20px 0px;
+width:100%;
+height:30px;
+white-space: nowrap;
+}
+
+div#pagesinfo {
+float:left;
+padding:3px 8px;
+white-space: nowrap;
+}
+
+div#pages {
+float:right;
+padding-right:8px;
+white-space: nowrap;
+}
+
+div#pages ul{
+margin:0;
+padding:0;
+}
+
+div#pages a:link,div#pages a:visited,div#pages a:active{
+color:#505050;
+text-decoration: none;
+}
+
+div#pages a:hover{
+color:#ff0000;
+text-decoration: none;
+}
+
+div#pages li{
+margin:3px;
+padding:2px 5px;
+list-style-type: none;
+float:left;
+background:#fff;
+color:#505050;
+border:1px #cde6ff solid;
+white-space: nowrap;
+}
+
+div#pages li.pagesnow{
+color:#505050;
+background-color:#e4f2ff;
+white-space: nowrap;
+border:1px #cde6ff solid;
+}
+
+div#pages li.pbutton{
+color:#505050;
+background-color:#e4f2ff;
+padding:3px 5px 1px 5px;
+white-space: nowrap;
+border:1px #cde6ff solid;
+}
+
+div#pages li.opt{
+color:#505050;
+padding:0px 2px;
+white-space: nowrap;
+border:0px;
+}

@@ -1,0 +1,170 @@
+<!-start->
+<link href="css/shopquery_diy.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/cart.js"></script>
+<script type=text/javascript src="{#CP#}js/selectbox1.js"></script>
+<div class="shopquery_cap">
+	<div class="shopquery_cap_left"></div>
+	<div class="shopquery_cap_right"></div>
+	<div class="shopquery_paixu">
+	<form id="shopquerysxform" method="get" action="{#CP#}class/index.php">
+	
+	 <select id="shopquery_paixu" name="myord" class="box1" style="display:none; background:#ffffff; width:136px; height:19px;" onChange="document.getElementById('shopquerysxform').submit()">
+      <option value="uptime" >按商品更新时间排序</option>
+	  <option value="priceasc" >按价格由低到高排序</option>
+	  <option value="pricedesc" >按价格由高到低排序</option>
+	  <option value="dtime" >按商品上架时间排序</option>
+	   <option value="salenums">按销量从高到低排序</option>
+	  <option value="cl" >按浏览次数排序</option>
+    </select>
+	<script>
+	makeSelectBox1('shopquery_paixu','{#RP#}');
+	</script>
+	<select id="shopquery_shownums" name="myshownums" class="box1" style="display:none; background:#ffffff; width:100px; height:19px;" onChange="document.getElementById('shopquerysxform').submit()">
+      <option value="9" >每页9个商品</option>
+		  <option value="15" >每页15个商品</option>
+		  <option value="30" >每页30个商品</option>
+	 
+    </select>
+	<script>
+	makeSelectBox1('shopquery_shownums','{#RP#}');
+	</script>
+	 <input name="catid" type="hidden"  value="{#catid#}">
+	 <input name="showbrandid" type="hidden" value="{#showbrandid#}">
+	 <input id="showmethod" name="showmethod" type="hidden" value="{#showmethod#}">
+	 <input name="pricefrom" type="hidden" value="{#pricefrom#}">
+	 <input name="priceto" type="hidden" value="{#priceto#}">
+	 <input name="key" type="hidden" value="{#key#}">
+	 
+	 <script>
+	$(function() {
+	 	$("#shopquery_paixu").attr("value","{#myord#}");
+	 	$("#shopquery_shownums").attr("value","{#myshownums#}");
+		$("#showquery_showmethod_cc")[0].className="showquery_showmethod_cc";
+		$("#showquery_showmethod_lb")[0].className="showquery_showmethod_lb";
+		$("#showquery_showmethod_tu")[0].className="showquery_showmethod_tu";
+		$("#showquery_showmethod_{#showmethod#}")[0].className="showquery_showmethod_{#showmethod#}_now";
+		$("#showquery_showmethod_cc").click(function(){
+			$("input#showmethod")[0].value="cc";
+			$("#shopquerysxform").submit();
+		});
+		$("#showquery_showmethod_lb").click(function(){
+			$("input#showmethod")[0].value="lb";
+			$("#shopquerysxform").submit();
+		});
+		$("#showquery_showmethod_tu").click(function(){
+			$("input#showmethod")[0].value="tu";
+			$("#shopquerysxform").submit();
+		});
+	 
+	});
+	</script>
+	</form>
+	</div>
+	<div class="showquery_showmethod">
+	显示方式:
+	</div>
+	<div id="showquery_showmethod_cc" class="showquery_showmethod_cc_now" title="橱窗"></div>
+	<div id="showquery_showmethod_lb" class="showquery_showmethod_lb" title="列表"></div>
+	<div id="showquery_showmethod_tu" class="showquery_showmethod_tu"  title="图片"></div>
+	
+</div>
+<div class="shopquery_out">
+
+<!-start->
+<!-list->
+<div class="shopquery">
+		<div class="fang" style="width:{#picw#}px;height:{#pich#}px">
+			<div class="picFit" style="width:{#picw#}px;height:{#pich#}px">
+			<a href="{#link#}" target="{#target#}" ><img src="{#src#}" style="width:{#picw#}px;height:{#pich#}px" border="0" /></a>
+			</div>
+			<div></div>
+		</div>
+		<div class="prop">
+		价格：<span class="hb">￥</span><span class="price">{#price#}</span><br />
+		</div>
+		<a href="{#link#}" target="{#target#}" class="prodtitle" {#bold#} {#red#} >{#title#}</a>
+		<div class="memo" >
+		{#memo#}
+		</div>
+</div>
+<!-list->
+
+
+<!-menu->
+<div class="shopquery_lb">
+
+	<div class="shopquery_lb_right">
+		<span class="prop" >
+			售价：<span class="hb">￥</span><span class="price">{#price#}</span><br />
+			
+			已销售：<span class="salenums">{#salenums#}</span> {#danwei#} <br />
+			<br />
+			{#stars#} <br />
+			共有<span class="salenums">{#commentcount#}</span> 条评论
+			<br />
+			<br />
+			<div class="buttonzone">
+			<img src="images/addcart.gif" alt="订购" width="102" height="27" border="0" class="addtocart" onClick="addtocart('{#gid#}','1','')">
+			</div>
+		</span>
+		<br />
+		
+	</div>
+    <div class="shopquery_lb_left">
+		<div class="fang" style="width:{#picw#}px;height:{#pich#}px">
+		<div class="picFit" style="width:{#picw#}px;height:{#pich#}px">
+		<a href="{#link#}" target="{#target#}" ><img src="{#src#}" style="width:{#picw#}px;height:{#pich#}px" border="0" /></a>
+		</div>
+		</div>
+		<br />
+		<br />
+	</div>
+	<div class="shopquery_lb_center">
+		<a href="{#link#}" target="{#target#}" class="prodtitle" {#bold#} {#red#} >{#title#}</a>
+		
+		<span class="memo" >
+		品牌：{#brand#} &nbsp;<br />
+		{#memo#}
+		</span><br />
+		
+		
+		
+	</div>
+	
+</div>
+<!-menu->
+
+<!-con->
+
+<div class="shopquery_tu">
+		<div class="fang" style="width:{#picw#}px;height:{#pich#}px">
+		<div class="picFit" style="width:{#picw#}px;height:{#pich#}px">
+		<a href="{#link#}" target="{#target#}" ><img src="{#src#}" style="width:{#picw#}px;height:{#pich#}px" border="0" /></a>
+		</div>
+		</div>
+		<a href="{#link#}" target="{#target#}" class="prodtitle" {#bold#} {#red#} >{#title#}</a>
+		<span class="hb">￥</span><span class="price">{#price#}</span><br />
+		
+</div>
+
+<!-con->
+
+<!-m1->
+{#propname#}：{#prop#}<br />
+<!-m1->
+
+<!-end->
+</div>
+<script>
+$(function() {
+$().picFit("{#fittype#}");
+});
+</script>
+<br clear="all" />
+<br />
+<div id="showpages" >
+	  <div id="pagesinfo">共{#totalnums#}条 每页{#pagesshownum#}条 页次：{#pagesnow#}/{#pagestotal#}</div>
+	  <div id="pages">{#showpages#}</div>
+ </div>
+
+<!-end->

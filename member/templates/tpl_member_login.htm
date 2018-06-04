@@ -1,0 +1,69 @@
+<script type="text/javascript" src="{#CP#}js/login.js"></script>
+<link href="css/memberlogin.css" rel="stylesheet" type="text/css" />
+<div style="width:600px;text-align:left;border:1px #D5E7F4 solid; background-color:#F3F8FC;padding:30px;margin:0px">
+<div style="width:210px;float:left;text-align:left;border:1px #D5E7F4 solid;padding:20px;background-color:#ffffff;">
+<form id="memberLogin" method="post" action="" >
+<div  id="notice" class="noticediv"></div>
+
+  <table width="100%"  border="0" cellspacing="0" cellpadding="3">
+    <tr>
+      <td width="80">登录账号</td>
+      <td ><input type="text" id="muser" name="muser"  class="input" maxlength=20 style="width:135px"></td>
+    </tr>
+    <tr>
+      <td width="80">登录密码</td>
+      <td><input type="password" id="mpass" name="mpass" class="input"  style="width:135px" maxlength="20"></td>
+    </tr>
+    <tr>
+      <td width="80">验 证 码</td>
+      <td><table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><input type="text" id="ImgCode" name="ImgCode" style="width:59px"  class="input" /></td>
+    <td><img id="codeimg" src="{#RP#}codeimg.php" width="70" height="20" style="border:1px #dddddd solid;cursor:pointer"></td>
+  </tr>
+</table>
+
+	  
+</td>
+    </tr>
+    <tr>
+      <td width="80"><input name="act" type="hidden" id="act" value="memberlogin" /></td>
+      <td><input name="imageField" type="image" src="images/denglu.gif"  border="0" />
+<a href="{#CP#}reg.php" style="padding-left:1px"><img src="images/zhuce.gif" width="40" height="19" border="0"></a></td>
+    </tr>
+  </table>
+
+
+
+
+
+</form>
+</div>
+
+
+<div style="width:290px;padding:20px;float:right;text-align:left;border:1px #D5E7F4 solid;background-color:#ffffff;">
+<ul style="margin:0px;padding:0px">
+<li style=" list-style-type: none;line-height:30px; background:url(images/cateitems.gif) left no-repeat;padding-left:20px">
+如果您已经是会员，请在左侧登录
+</li>
+
+<li style="list-style-type: none;line-height:30px; background:url(images/cateitems.gif) left no-repeat;padding-left:20px">
+如果您还没有注册会员，<a href="{#CP#}reg.php"><font color="#FF6600">点这里注册新会员</font></a>
+</li>
+
+
+<li style="list-style-type: none;line-height:30px; background:url(images/cateitems.gif) left no-repeat;padding-left:20px">
+如果您忘记了密码， <a href="{#CP#}lostpass.php" ><font color="#99CC00">点这里重设一个密码</font></a>
+</li>
+
+<li style="list-style-type: none;line-height:30px; background:url(images/cateitems.gif) left no-repeat;padding-left:20px">
+本站使用COOKIE，请打开浏览器的COOKIE功能
+</li>
+
+
+</ul>
+
+</div>
+</div>
+
+

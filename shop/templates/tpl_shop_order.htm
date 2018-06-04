@@ -1,0 +1,67 @@
+<!-start->
+<link href="css/order.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/order.js"></script>
+<script language="javascript" src="{#CP#}js/Date/WdatePicker.js"></script>
+<table width="100%" border="0" cellpadding="5" cellspacing="1" class="ordersearch">
+  <tr>
+    <td><form action="" method="get" name="ordersearch" id="ordersearch">
+	  &nbsp; 
+	   <input name="startday" type="text"  class="input" id="startday" style="cursor:pointer" onClick="WdatePicker()"  value="{#startday#}" size="10"  readonly/>
+	-
+	<input name="endday" type="text"  class="input" id="endday" style="cursor:pointer" onClick="WdatePicker()"  value="{#endday#}" size="10"  readonly/>
+    <select name="showpay" id="showpay">
+      <option value="all">付款状态</option>
+      <option value="0">未付款</option>
+      <option value="1">已付款</option>
+    </select>
+    <select name="showyun" id="showyun">
+      <option value="all">配送状态</option>
+      <option value="0">未配送</option>
+      <option value="1">已配送</option>
+    </select>
+	    <select name="showok" id="showok">
+      <option value="0">处理中订单</option>
+      <option value="1">已完成订单</option>
+    </select>
+        <input name="key" type="text" class="input" id="key" value="{#key#}" size="15">
+        <input name="imageField" id="searchbutton" type="image" src="images/search5.gif"  border="0">
+        <input  type="hidden" id="nowshowpay" value="{#showpay#}">
+		 <input  type="hidden" id="nowshowyun" value="{#showyun#}">
+		  <input  type="hidden" id="nowshowok" value="{#showok#}">
+    </form></td>
+  </tr>
+</table>
+<table width="100%" border="0" cellspacing="0" cellpadding="5" class="ordergl">
+  <tr>
+    <td width="75" height="26" align="center" class="biaoti">订单号</td>
+    <td class="biaoti">订购商品</td>
+    <td width="90" class="biaoti">订单金额（元）</td>
+    <td width="75" height="26" class="biaoti">下单时间</td>
+	<td width="35" class="biaoti">付款</td>
+    <td width="35" class="biaoti">配送</td>
+    <td width="35" class="biaoti">完成</td>
+    <td width="35" height="26" class="biaoti">详情</td>
+  </tr>
+ 
+<!-start->  
+<!-list->
+   <tr>
+     <td width="75" align="center" class="hang">{#OrderNo#}</td>
+    <td  class="hang">{#items#}</td>
+     <td width="90"  class="hang">{#paytotal#}</td>
+     <td width="75"  class="hang">{#dtime#}</td>
+    <td width="35"  class="hang"><img id="paystat_{#orderid#}" class="paystat" src="images/{#payimg#}" border="0" /></td>
+    <td width="35"  class="hang"><img src="images/{#yunimg#}" border="0" /></td>
+     <td width="35"  class="hang"><img src="images/{#okimg#}" border="0" /></td>
+     <td width="35"  class="hang"><a href="orderdetail.php?orderid={#orderid#}" target="_blank"><img src="images/edit.png" width="24" height="24" border="0" /></a></td>
+   </tr>
+<!-list->
+<!-end-> 
+</table>
+<div id="showpages" >
+	  <div id="pagesinfo">共{#totalnums#}条 每页{#pagesshownum#}条 页次：{#pagesnow#}/{#pagestotal#}</div>
+	  <div id="pages">{#showpages#}</div>
+</div>
+
+<!-end->
+

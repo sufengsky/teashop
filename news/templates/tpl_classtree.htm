@@ -1,0 +1,24 @@
+<!-start->
+<link href="css/dtree.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/dtree.js"></script>
+<script  type=text/javascript>
+
+function dtree(){
+d = new dTree('d');
+d.add(0,-1,'请选择分类','./','','{#target#}');
+<!-start->
+<!-list->
+d.add('{#catid#}','{#pid#}','{#cat#}({#nums#})','{#url#}','','{#target#}');
+<!-list->
+
+
+<!-end-> 
+document.write(d); 
+} 
+
+</script>
+<script>
+dtree();
+</script>
+
+<!-end-> 

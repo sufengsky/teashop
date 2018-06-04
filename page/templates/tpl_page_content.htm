@@ -1,0 +1,17 @@
+<link href="css/pagecontent.css" rel="stylesheet" type="text/css" />
+<div id='pagecontent' class='page_content'>{#body#}</div>
+<script>
+
+$(window).load(function(){
+	$("#pagecontent").find("img").hide();
+	var w=$("#pagecontent")[0].offsetWidth;
+	$("#pagecontent").find("img").each(function(){
+		$(this).show();
+		if(this.offsetWidth>w){
+			this.style.width=w + "px";
+		}
+	});
+		
+});
+
+</script>

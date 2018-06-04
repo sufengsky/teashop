@@ -1,0 +1,62 @@
+<!-start->
+<link href="css/shoplist_cyrano_lef.css" rel="stylesheet" type="text/css" />
+
+<div class="shoplist_cyrano_lef">
+<div id="demo">
+ <table align=left cellpadding=0 cellspace=0 border=0>
+  	<tr>
+		<td id="demo1" valign=top>
+  			<table border=0 cellpadding=0 cellspacing=0>
+  				<tr>
+<!-start->
+<!-list->
+<td>
+	<div class="border">
+	<div class="fang" style="width:{#picw#}px;height:{#pich#}px">
+	<div class="picFit" style="width:{#picw#}px;height:{#pich#}px">
+		<a href="{#link#}" target="{#target#}" ><img src="{#src#}" style="width:{#picw#}px;height:{#pich#}px;" border="0" /></a>
+	</div>
+	</div>
+	<a href="{#link#}" target="{#target#}" class="prodtitle" {#bold#} {#red#} >{#title#}</a>
+	<span class="price">￥{#price#}</span><br />
+	</div>
+</td>
+<!-list->
+
+<!-end->
+				</tr>
+  			</table>
+ 		</td>
+		<td id="demo2" valign=top></td>
+	</tr>
+</table>
+
+</div>
+</div>
+
+
+<script>
+$(function() {
+$().picFit("{#fittype#}");
+});
+</script>
+
+<script>
+	var speed=20;
+	var GD=document.getElementById('demo'); 
+	var GD1=document.getElementById('demo1');
+	var GD2=document.getElementById('demo2');
+	GD2.innerHTML=GD1.innerHTML;
+	function Marquee(){
+		if(GD2.offsetWidth-GD.scrollLeft<=0){
+			GD.scrollLeft-=GD1.offsetWidth;
+		}else{
+			GD.scrollLeft++;
+		}
+	}
+	var MyMar=setInterval(Marquee,speed);
+	GD.onmouseover=function() {clearInterval(MyMar);}
+	GD.onmouseout=function() {MyMar=setInterval(Marquee,speed);}
+</script>
+<!-end->
+

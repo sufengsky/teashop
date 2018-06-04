@@ -1,0 +1,58 @@
+.hztwoclass{
+width: 100%; 
+}
+
+.hztwoclass .hztwoclass_top{ 
+height:23px;
+color: #999999;
+font:12px/23px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+cursor: pointer;
+}
+
+.hztwoclass .hztwoclass_top a{
+color: #505050;
+font:14px/23px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+background:url(../images/li.gif) 5px no-repeat;  
+padding-left:18px;
+text-decoration: none;
+}
+
+.hztwoclass .hztwoclass_top a:visited{
+color: #505050;
+}
+
+.hztwoclass .hztwoclass_top a:hover{ 
+color: #ff6600;
+}
+
+
+.hztwoclass ul{ 
+padding:2px 0px 5px 0px;
+margin:0px;
+}
+
+.hztwoclass ul li{
+list-style-type: none;
+height:18px;
+font:12px/18px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+padding:0px; 
+margin:0px;
+color: #999999;
+}
+
+.hztwoclass ul li a{
+color: #505050;
+font:14px/18px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+padding-left:30px;
+background:url(../images/li.gif) 18px no-repeat;  
+text-decoration: none;
+}
+
+.hztwoclass ul li a:visited{
+color: #505050;
+}
+
+.hztwoclass ul li a:hover{ 
+color: #ff6600;
+}
+

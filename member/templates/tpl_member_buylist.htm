@@ -1,0 +1,38 @@
+<!-start->
+<link href="css/member.css" rel="stylesheet" type="text/css" />
+<link href="css/pages.css" rel="stylesheet" type="text/css" />
+<table width="100%%" border=0 align=center cellpadding=5 cellspacing=1 class="table">
+  
+    <tr>
+      <td style="padding-left:10px">帐户余额： {#account#} &nbsp; 付款总额： {#paytotal#} &nbsp; 消费总额： {#buytotal#} &nbsp;</td>
+    </tr>
+ 
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" class="table" style="margin-top:5px">
+  <tr>
+    <td width="160" height="26" class="biaoti" style="padding-left:10px">消费时间</td>
+    <td width="100" class="biaoti">消费金额</td>
+    <td width="100" class="biaoti">消费来源</td>
+    <td class="biaoti">相关订单</td>
+    <td width="80"  height="26" class="biaoti">操作员</td>
+  </tr>
+ 
+<!-start->  
+<!-list->
+   <tr> 
+     <td width="160" class="hang" style="padding-left:10px">{#daytime#}</td>
+    <td width="100" class="hang">{#paytotal#}</td>
+     <td width="100" class="hang">{#buyfrom#} &nbsp;</td>
+     <td class="hang">{#OrderNo#} &nbsp;</td>
+     <td width="80" class="hang">{#logname#}</td>
+   </tr>
+<!-list->
+<!-end-> 
+</table>
+<div id="showpages" >
+	  <div id="pagesinfo">共{#totalnums#}条 每页{#pagesshownum#}条 页次：{#pagesnow#}/{#pagestotal#}</div>
+	  <div id="pages">{#showpages#}</div>
+</div>
+<!-end->
+

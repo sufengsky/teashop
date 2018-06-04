@@ -1,0 +1,18 @@
+<!-start->
+<form action="{#RP#}tools/vote.php?action=add&pollid={#id#}"  method="post" name="voteform" target="vote">
+<div style="line-height:30px;padding-left:10px">{#groupname#}</div>
+<!-start->
+
+<!-list->
+<div style="line-height:25px;padding-left:10px">
+<input type="radio" name="option_id" value="{#option_id#}" {#checked#}>&nbsp;{#option_text#} ({#votes#})
+</div>
+<!-list->
+<!-end->
+<div style="margin-top:5px;line-height:35px;text-align:center;border-top:1px #e8e8e8 dotted">
+
+<input type="submit" name="Submit" class="button"  value="投票" onClick="window.open('','vote','width=500,height=300,left=300,scrollbars=1')">
+<input name="submit" type="button" class="button" value="查看" onClick="window.open('{#RP#}tools/vote.php?action=show&pollid={#id#}','view','width=500,height=300,left=300,scrollbars=1')">
+</div>
+</form>
+<!-end->

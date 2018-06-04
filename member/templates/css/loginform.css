@@ -1,0 +1,36 @@
+/*=============µÇÂ¼±íµ¥===========*/
+
+div.loginform {
+display:none;
+margin:0;
+padding:0;
+}
+
+div.loginform .col{
+height:28px;
+line-height:28px;
+float:left;
+white-space:nowrap;
+}
+
+div.loginform .con{
+height:28px;
+}
+
+div.loginform .yanzheng{
+height:28px;
+white-space:nowrap;
+float:left;
+margin-right:1px;
+}
+
+
+div.loginform_islogin{
+display:none;
+clear:both;
+text-align:center;
+line-height:32px;
+padding:12px;
+}
+
+#loginform_logout{cursor:pointer}

@@ -1,0 +1,37 @@
+<!-- 弹出式登录框 -->
+<link href="css/poplogin.css" rel="stylesheet" type="text/css" />
+<div id='loginDialog'>
+<div id="popLogin" >
+<div class='topBar'>会员登录<div class='pwClose'></div></div><div class='border'><div class='ntc' >
+<div  id="loginnotice" class="noticediv"></div>
+<form id="LoginForm" method="post" action="">
+<table width="220"  border="0" cellspacing="0" cellpadding="3">
+    <tr>
+      <td width="80">登录账号</td>
+      <td ><input type="text" id="muser" name="muser"  class="input" maxlength=20 style="width:135px"></td>
+    </tr>
+    <tr>
+      <td width="80">登录密码</td>
+      <td><input type="password" id="mpass" name="mpass" class="input"  style="width:135px" maxlength="20"></td>
+    </tr>
+    <tr>
+      <td width="80">验 证 码</td>
+      <td><table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td><input type="text" id="ImgCode" name="ImgCode" style="width:59px"  class="input" /></td>
+    <td><img id="fmCodeImg" src="{#RP#}codeimg.php" width="70" height="20" style="border:1px #dddddd solid;cursor:pointer"></td>
+  </tr>
+</table>
+</td>
+    </tr>
+    <tr>
+      <td width="80"><input name="act" type="hidden" id="act" value="memberlogin" /></td>
+      <td><input name="imageField" type="image" src="images/denglu.gif"  border="0" /><img id="zhuce" src="images/zhuce.gif" width="40" height="19" border="0" style=" cursor:pointer;margin-left:2px"></td>
+    </tr>
+  </table>
+
+</form>
+</div></div>
+</div>
+</div>
+<!-- 登录框结束 -->

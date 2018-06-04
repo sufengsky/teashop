@@ -1,0 +1,31 @@
+<!-- 弹出式短信发送框 -->
+<link href="css/msnform.css" rel="stylesheet" type="text/css" />
+<div id='msnDialog'>
+<div class='topBar'>发送短信<div class='pwClose'></div>
+</div><div class='border'><div class='ntc' >
+<div  id="msnnotice" class="noticediv"></div>
+<form id="msnForm" method="post" action="">
+<table width="300"  border="0" cellspacing="0" cellpadding="3">
+    <tr>
+      <td>给{#pname#}发送站内短信：</td>
+    </tr>
+    <tr>
+      <td>
+	  <textarea name="body" rows="5" id="body" class="msnbody"></textarea>
+	  <input name="act" type="hidden" id="act" value="sendmsn" />
+	   <input name="tomemberid" type="hidden"  value="{#tomemberid#}" />
+	 
+	  </td>
+    </tr>
+     <tr>
+    <td>
+	 <input name="sub" type="submit" value="立即发送" border="0" class="an65_1" />
+	</td>
+  </tr>
+</table>
+
+</form>
+</div>
+</div>
+</div>
+<!-- 弹出式短信发送框结束 -->

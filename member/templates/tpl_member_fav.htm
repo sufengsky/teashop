@@ -1,0 +1,31 @@
+<!-start->
+<link href="css/member.css" rel="stylesheet" type="text/css" />
+<link href="css/pages.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/member.js"></script>
+<table width="100%" border="0" cellspacing="0" cellpadding="5" class="table">
+  <tr>
+    <td width="50" height="26" align="center" class="biaoti">编号</td>
+    <td  height="26" class="biaoti">收藏主题</td>
+  <td width="39" class="biaoti">&nbsp; </td>
+    <td width="50" class="biaoti">&nbsp; </td>
+  </tr>
+ 
+<!-start->  
+<!-list->
+   <tr id="tr_{#id#}"> 
+     <td width="50" height="20" align="center" class="hang">{#id#}</td>
+    <td height="20" class="hang"><a href="{#url#}" target="_blank">{#title#}</a>
+    </td>
+   <td width="39" height="20" class="hang"><a href="{#url#}" target="_blank" class="lookfav">查看</a></td>
+    <td width="50" height="20" class="hang"> 
+   <span id="del_{#id#}" class="delfav">删除</span></td>
+   </tr>
+<!-list->
+<!-end-> 
+</table>
+<div id="showpages" >
+	  <div id="pagesinfo">共{#totalnums#}条 每页{#pagesshownum#}条 页次：{#pagesnow#}/{#pagestotal#}</div>
+	  <div id="pages">{#showpages#}</div>
+</div>
+<!-end->
+

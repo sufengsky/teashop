@@ -1,0 +1,21 @@
+<!-start->
+<script language="javascript" src="{#RP#}advs/js/duilian.js"></script>
+<!-start->
+<!-list->
+<script>
+theFloaters.addItem('followDiv1','document.body.clientWidth-{#w#}-{#l#}-{#l#}',0,'{#w#}','{#h#}','<a href="{#link2#}"><img src="{#src2#}" border="0" width="100%" /></a><br><img src=images/close.gif onClick="closeBanner();">');
+theFloaters.addItem('followDiv2',0,0,'{#w#}','{#h#}','<a href="{#link#}"><img src="{#src#}" border="0" width="100%" /></a><br><img src=images/close.gif onClick="closeBanner();">');
+</script>
+<!-list->
+<!-menu->
+<script>
+
+	theFloaters.addItem('followDiv1','document.body.clientWidth-{#w#}-{#l#}-{#l#}',0,'{#w#}','{#h#}','<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0" width="{#w#}" height="{#h#}"><param name="movie" value="{#src2#}"><param name="quality" value="high"><embed src="{#src2#}" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash" width="{#w#}" height="{#h#}"></embed></object><br><img src=images/close.gif onClick="closeBanner();">');
+	theFloaters.addItem('followDiv2',0,0,'{#w#}','{#h#}','<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,29,0"  width="{#w#}" height="{#h#}><param name="movie" value="{#src#}"><param name="quality" value="high"><embed src="{#src#}" quality="high" pluginspage="http://www.macromedia.com/go/getflashplayer" type="application/x-shockwave-flash"  width="{#w#}" height="{#h#}></embed></object><br><img src=images/close.gif onClick="closeBanner();">');
+</script>
+<!-menu->
+<!-end->
+<script>
+theFloaters.play();
+</script>
+<!-end->

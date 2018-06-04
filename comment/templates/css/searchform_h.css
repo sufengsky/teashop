@@ -1,0 +1,17 @@
+/* ============ËÑË÷±íµ¥============== */
+div.searchform{
+padding:0px 3px 3px 0px;
+}
+
+div.searchform .input{
+border:1px #ddd solid;
+width:152px;
+height:20px;
+line-height:20px;
+background:##f7f7f7;
+}
+
+div.searchform select{
+width:160px;
+}
+

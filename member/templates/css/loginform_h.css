@@ -1,0 +1,68 @@
+/*=============µÇÂ¼±íµ¥===========*/
+
+div.loginform_h {
+display:none;
+margin:0;
+padding-left:23px;
+background:url(../images/membericon.png) 8px no-repeat;
+height:24px;
+}
+
+div.loginform_h .col{
+height:24px;
+line-height:24px;
+float:left;
+white-space:nowrap;
+margin-left:6px;
+}
+
+div.loginform_h .con{
+height:24px;
+line-height:24px;
+float:left;
+white-space:nowrap;
+margin-left:3px;
+}
+
+div.loginform_h .input{
+height:18px;
+line-height:18px;
+}
+
+div.loginform_h .yanzheng{
+height:20px;
+white-space:nowrap;
+float:left;
+margin-right:5px;
+}
+
+
+#loginCodeimg{
+border:1px #ddd solid;
+cursor:pointer;
+margin-left:2px;
+}
+
+div.loginform_h .lostpass{
+float:left;
+margin-left:10px;
+background:url(../images/key.png) left no-repeat;
+padding-left:20px;
+}
+
+div.loginform_h .lostpass a{
+line-height:24px;
+}
+
+div.loginform_h_islogin{
+display:none;
+clear:both;
+text-align:left;
+line-height:24px;
+padding-left:30px;
+background:url(../images/membericon.png) 8px no-repeat;
+}
+
+#loginform_logout{
+cursor:pointer
+}

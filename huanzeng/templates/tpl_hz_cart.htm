@@ -1,0 +1,75 @@
+<!-start->
+<link href="css/hzcart.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/cart.js"></script>
+
+
+<!-start->
+
+<!-m0->
+<table width="100%" height="27" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td class="hzcarttitle">您的礼品车中有以下商品</td>
+  </tr>
+</table>
+<br>
+<br>
+<table width="100%" border="0" cellpadding="3" cellspacing="0" class="hzcart">
+		  <tr>
+		    <td class="cap" width="3" height="23">&nbsp;</td> 
+			<td class="cap" width="50" height="23">编号</td>
+			<td class="cap" height="23">赠品名称</div></td>
+			<td class="cap" width="60" height="23">所需积分</td>
+			<td height="23" colspan="2" class="cap">数量</td>
+			<td class="cap" width="45" height="23">小计</td>
+			<td class="cap" width="35" height="23">删除</td>
+		  </tr>
+<!-m0->
+<!-list->
+		 
+		  <tr>
+		    <td width="3" height="28"></td>
+			<td width="50" height="28">{#gid#}</td>
+			<td height="28" ><a href="{#goodsurl#}">{#goodsname#}</a></td>
+			<td width="60" height="28">{#cent#}</td>
+			<td width="30" height="28"><input class="cartacc" id="cartacc_{#gid#}" value="{#acc#}" size="2" maxlength="6"></td>
+			<td width="43" height="28"><img src="images/reflesh.gif"  class="cartmodi" id="cartmodi_{#gid#}" style="cursor:hand" /></td>
+			<td width="45" height="28">{#jcent#}</td>
+			<td width="35" height="28"><img id="cartdel_{#gid#}" class="cartdel" src="images/delete.png" style="cursor:hand" />
+			<input type="hidden" id="fz_{#gid#}" value="{#fz#}">			</td>
+  </tr>
+<!-list->
+<!-m1->
+</table>
+ 			 <table border="0" cellpadding="3" cellspacing="0" style="margin:5px 0px">
+                <tr >
+                  <td height="20">所需总积分:&nbsp;{#tcent#}&nbsp;分&nbsp;&nbsp;&nbsp;&nbsp;当前剩余积分:&nbsp;{#symcent#}&nbsp;分&nbsp;&nbsp;</td>
+                </tr>
+</table>
+<!-m1->
+<!-m2->
+			
+			 
+			  <br />
+			  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                  <td height="30" align="center" {#visible#}>
+<img id="backtohz" src="images/cart_c.gif" width="96" height="36" style="cursor:hand"><img id="cartempty" src="images/cart_q.gif" width="96" height="36" style="cursor:hand">
+<img src="images/cartnext.gif" width="96" height="36"  style="cursor:hand" onClick="window.location='startorder.php'">
+                  </td>
+                </tr>
+              </table>
+
+
+
+<!-m2->
+
+<!-m3->
+<table border="0" align="center" cellpadding="0" cellspacing="0">
+                <tr >
+                  <td class="nogoods">购物车中没有商品</td>
+                </tr>
+</table>
+
+<!-m3->
+<!-end->
+<!-end->

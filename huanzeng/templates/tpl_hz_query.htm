@@ -1,0 +1,37 @@
+<!-start->
+<link href="css/hzquery.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/cart.js"></script>
+<!-start->
+<!-list->
+<div class="hzquery">
+    <div class="hzquery_left">
+		<div class="fang" style="width:{#picw#}px;height:{#pich#}px">
+		<div class="picFit" style="width:{#picw#}px;height:{#pich#}px">
+		<a href="{#link#}" target="{#target#}" ><img src="{#src#}" style="width:{#picw#}px;height:{#pich#}px" border="0" /></a>
+		</div>
+		</div>
+	</div>
+	
+	<div class="hzquery_right">
+		<div style="height:105px;width:100px;">
+			<div>赠品名称：<a href="{#link#}" target="{#target#}" class="prodtitle" {#bold#} {#red#} >{#title#}</a></div>
+			<div>所需积分：<font style="color:#e42616;">{#cent#}</font>分</div>
+			<div>可换件数：<font style="color:#e42616;">{#kucun#}</font>件</div>
+		</div>
+		<div style="height:30px;"><img src="images/duihuan.gif" border="0" style="cursor:pointer;" onClick="addtocart('{#id#}','1','');" /></div>
+	</div>
+</div>
+<!-list->
+<!-end->
+<script>
+$(function() {
+$().picFit("{#fittype#}");
+});
+</script>
+
+<div id="showpages" >
+	  <div id="pagesinfo">共{#totalnums#}条 每页{#pagesshownum#}条 页次：{#pagesnow#}/{#pagestotal#}</div>
+	  <div id="pages">{#showpages#}</div>
+     </div>
+
+<!-end->

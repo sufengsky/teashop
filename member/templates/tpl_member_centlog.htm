@@ -1,0 +1,42 @@
+<!-start->
+<link href="css/member.css" rel="stylesheet" type="text/css" />
+<link href="css/pages.css" rel="stylesheet" type="text/css" />
+<table width="100%%" border=0 align=center cellpadding=5 cellspacing=1 class="table">
+  
+    <tr>
+      <td style="padding-left:10px">{#centname1#}：<img src="images/cw1.gif" width="{#cw1#}" height="10"> {#cent1#} &nbsp; {#centname2#}：<img src="images/cw2.gif" width="{#cw2#}" height="10"> {#cent2#} &nbsp; {#centname3#}：<img src="images/cw3.gif" width="{#cw3#}" height="10"> {#cent3#} &nbsp; {#centname4#}：<img src="images/cw4.gif" width="{#cw4#}" height="10"> {#cent4#} &nbsp; {#centname5#}：<img src="images/cw5.gif" width="{#cw5#}" height="10"> {#cent5#}</td>
+    </tr>
+ 
+</table>
+
+<table width="100%" border="0" cellspacing="0" cellpadding="5" class="table" style="margin-top:5px">
+  <tr>
+    <td width="155" height="26" class="biaoti" style="padding-left:10px">时间</td>
+    <td width="170" class="biaoti">积分事项</td>
+    <td class="biaoti">{#centname1#}</td>
+    <td class="biaoti">{#centname2#}</td>
+    <td class="biaoti">{#centname3#}</td>
+    <td class="biaoti">{#centname4#}</td>
+    <td  height="26" class="biaoti">{#centname5#}</td>
+  </tr>
+ 
+<!-start->  
+<!-list->
+   <tr> 
+     <td width="155" class="hang" style="padding-left:10px">{#dtime#}</td>
+    <td width="170" class="hang">{#eventname#}</td>
+     <td class="hang">{#cent1#}</td>
+     <td class="hang">{#cent2#}</td>
+     <td class="hang">{#cent3#}</td>
+     <td class="hang">{#cent4#}</td>
+     <td class="hang">{#cent5#}</td>
+   </tr>
+<!-list->
+<!-end-> 
+</table>
+<div id="showpages" >
+	  <div id="pagesinfo">共{#totalnums#}条 每页{#pagesshownum#}条 页次：{#pagesnow#}/{#pagestotal#}</div>
+	  <div id="pages">{#showpages#}</div>
+</div>
+<!-end->
+

@@ -1,0 +1,30 @@
+<?php
+
+/*
+	[²å¼þÃû³Æ] ±³¾°ÒôÀÖ
+	[ÊÊÓÃ·¶Î§] È«Õ¾
+*/
+
+function BgSound(){
+
+
+		$tempname=$GLOBALS["PLUSVARS"]["tempname"];
+		$attach=$GLOBALS["PLUSVARS"]["attach"];
+		
+		$Temp=LoadTemp($tempname);
+
+		$attach=ROOTPATH.$attach;
+
+		$var=array(
+			'attach' => $attach
+			);
+		
+		$str=ShowTplTemp($Temp,$var);
+		
+
+		return $str;
+
+
+}
+
+?>

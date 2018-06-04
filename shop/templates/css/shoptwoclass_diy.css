@@ -1,0 +1,76 @@
+.shoptwoclass_diy{
+margin:0px;
+padding:0px 1px 10px 1px;
+}
+
+.shoptwoclass_diy .shoptwoclass_diy_top{ 
+clear:both;
+height:30px;
+color: #000;
+font:14px/30px 'SimSun',Arial,Sans-Serif;
+background:url(../images/catcap2.jpg) left no-repeat;  
+cursor: pointer;
+}
+
+.shoptwoclass_diy .shoptwoclass_diy_top a{
+color: #000;
+font:14px/30px 'SimSun',Arial,Sans-Serif;
+padding-left:39px;
+text-decoration: none;
+}
+
+.shoptwoclass_diy .shoptwoclass_diy_top a:visited{
+color: #000;
+}
+
+.shoptwoclass_diy .shoptwoclass_diy_top a:hover{ 
+color: #ff6600;
+}
+
+.shoptwoclass_diy .shoptwoclass_diy_topright{
+float:right;
+width:32px;
+height:30px;
+background:url(../images/catcap3.jpg) left no-repeat;  
+cursor: pointer;
+}
+
+.shoptwoclass_diy .shoptwoclass_diy_topright_open{
+float:right;
+width:32px;
+height:30px;
+background:url(../images/catcap4.jpg) left no-repeat;  
+cursor: pointer;
+}
+
+.shoptwoclass_diy ul{ 
+margin:15px 0px 14px 11px;
+width:180px;
+}
+
+.shoptwoclass_diy ul li{
+list-style-type: none;
+float:left;
+height:22px;
+font:12px/22px 'SimSun',Arial,Sans-Serif;
+margin:0px; 
+padding:0px;
+color: #333;
+white-space:nowrap;
+}
+
+.shoptwoclass_diy ul li a{
+color: #555;
+font:12px/22px 'SimSun',Arial,Sans-Serif;
+text-decoration: none;
+margin:0px 3px 0px 3px;
+}
+
+.shoptwoclass_diy ul li a:visited{
+color: #333;
+}
+
+.shoptwoclass_diy ul li a:hover{ 
+color: #ff6600;
+}
+

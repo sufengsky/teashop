@@ -1,0 +1,29 @@
+
+
+/* ============标题列表============== */
+
+ul.pagelist{
+margin:0px;
+padding:0px;
+}
+
+li.pagelist {
+margin:0;
+padding:3px 0px;
+padding-left:16px;
+list-style-type: none;
+font-weight:100;
+color:#505050;
+background: transparent url(../images/li.gif) left no-repeat;
+}
+
+a.pagelist:link,a.pagelist:visited,a.pagelist:active{
+color:#505050;
+text-decoration: none;
+}
+
+a.pagelist:hover{
+color:#ff0000;
+text-decoration: underline;
+}
+

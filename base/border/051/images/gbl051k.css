@@ -1,0 +1,85 @@
+/*===总标题层===*/
+
+div.gbl051k_bar{
+white-space:nowrap;
+overflow:hidden;
+background:url(k.png) 0px -90px repeat-x;
+height:29px;
+position:relative;
+margin:-1px -1px 0px -1px;
+}
+
+div.gbl051k_title{
+float:left;
+padding-left:12px;
+font:14px/28px simsun;
+color:#fff;
+}
+
+/*===放标签的层===*/
+
+div.gbl051k_out{
+white-space:nowrap;
+overflow:hidden;
+background:url(k.png) repeat-x;
+height:30px;
+margin:0px 0px 0px 0px;
+}
+ 
+div.gbl051k_out ul.gblable{            
+margin:0 4px;
+padding:0;
+}
+
+/*===切换标签的样式
+=====必须指定边框编号防止冲突
+===*/
+
+li.gbl051k{
+list-style-type:none;
+float:left;
+height:26px;
+padding:0px 10px;
+margin:3px 0px 0px -1px;
+border-left:1px #ddd solid;
+border-top:1px #ddd solid;
+border-right:1px #ddd solid;
+color:#555;
+text-align:center;
+font:12px/26px simsun;
+background:url(k.png) 0px -30px repeat-x;
+cursor:pointer;
+}
+
+/*===切换标签当前选中的样式===*/
+
+
+li.gbl051k_current{
+list-style-type:none;
+float:left;
+height:26px;
+padding:0px 10px;
+margin:3px 0px 0px -1px;
+border-top:1px #ddd solid;
+border-right:1px #ddd solid;
+border-left:1px #ddd solid;
+color:#555;
+text-align:center;
+font:12px/26px simsun;
+background:url(k.png)  0px -60px repeat-x;
+cursor:pointer;
+}
+
+
+/*===more区域样式===*/
+
+div.gbl051k_more{
+float:right;
+}
+
+div.gbl051k_more a{
+font:12px/28px simsun;
+color:#fff;
+margin-right:8px
+}
+

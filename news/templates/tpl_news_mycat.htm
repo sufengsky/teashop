@@ -1,0 +1,30 @@
+<!-start->
+<link href="css/newsmember.css" rel="stylesheet" type="text/css" />
+<link href="css/pages.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/newsmember.js"></script>
+<table width="100%" border="0" cellspacing="0" cellpadding="5" class="newsgl" id="newsmycat">
+  <tr>
+    <td width="50" height="26" align="center" class="biaoti">编号</td>
+    <td  height="26" class="biaoti">序号/分类名称</td>
+  <td width="130" class="biaoti"><div id="addnewscat"  class="addnewscat">新增自定义分类</div>
+  <input id="newcat" type="hidden" value="新增分类" />
+  </td>
+  </tr>
+ 
+<!-start->  
+<!-list->
+   <tr id="tr_{#catid#}">
+     <td width="50" align="center">{#catid#}</td>
+    <td >
+	<input id="catxuhao_{#catid#}" name="xuhao" type="text" class="input"  value="{#xuhao#}" size="3" />
+    <input id="cat_{#catid#}" name="cat" type="text" class="input"  value="{#cat#}" size="30" /> 
+    </td>
+   <td > 
+   <span id="dcat_{#catid#}" class="cat_del">删除</span> 
+   <span id="gcat_{#catid#}" class="cat_modify">修改</span> </td>
+   </tr>
+<!-list->
+<!-end-> 
+</table>
+<!-end->
+

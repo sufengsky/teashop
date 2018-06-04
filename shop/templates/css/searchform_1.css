@@ -1,0 +1,30 @@
+/* ============ËÑË÷±íµ¥============== */
+div.shopsearchform_1{
+height:29px;
+} 
+
+div.shopsearchform_1 div.searchform{
+float:left;
+padding:0px;
+line-height:29px;
+color:#fff;
+background:transparent url(../images/searchl.jpg) 0 0 no-repeat;
+width:413px;
+margin:0px 0px 0px 5px;
+}
+
+div.shopsearchform_1 div.searchform_1{
+float:left;
+padding:0px;
+line-height:24px;
+color:#ffffff;
+}
+
+div.shopsearchform_1 div.searchform .input{
+height:29px;
+line-height:28px;
+margin:0px;
+color:#505050;
+border:0px;
+background:transparent;
+}

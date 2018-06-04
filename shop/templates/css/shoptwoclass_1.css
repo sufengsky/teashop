@@ -1,0 +1,58 @@
+.shoptwoclass_1{
+width: 100%; 
+}
+
+.shoptwoclass_1 .shoptwoclass_1_top{ 
+height:23px;
+color: #999999;
+font:12px/23px Verdana, Arial, Helvetica, sans-serif;
+cursor: pointer;
+}
+
+.shoptwoclass_1 .shoptwoclass_1_top a{
+color: #505050;
+font:12px/23px Verdana, Arial, Helvetica, sans-serif;
+background:url(../images/78.gif) 5px no-repeat;  
+padding-left:18px;
+text-decoration: none;
+}
+
+.shoptwoclass_1 .shoptwoclass_1_top a:visited{
+color: #505050;
+}
+
+.shoptwoclass_1 .shoptwoclass_1_top a:hover{ 
+color: #ff6600;
+}
+
+
+.shoptwoclass_1 ul{ 
+padding:2px 0px 5px 0px;
+margin:0px;
+}
+
+.shoptwoclass_1 ul li{
+list-style-type: none;
+height:18px;
+font:12px/18px Verdana, Arial, Helvetica, sans-serif;
+padding:0px; 
+margin:0px;
+color: #999999;
+}
+
+.shoptwoclass_1 ul li a{
+color: #505050;
+font:12px/18px Verdana, Arial, Helvetica, sans-serif;
+padding-left:30px;
+background:url(../images/li.gif) 18px no-repeat;  
+text-decoration: none;
+}
+
+.shoptwoclass_1 ul li a:visited{
+color: #505050;
+}
+
+.shoptwoclass_1 ul li a:hover{ 
+color: #ff6600;
+}
+

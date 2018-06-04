@@ -1,0 +1,63 @@
+/*=============µÇÂ¼±íµ¥===========*/
+
+div.loginform_dolphin {
+display:none;
+margin:0px;
+padding:13px 0px 0px 16px;
+}
+
+div.loginform_dolphin .col{
+height:28px;
+padding:0px 9px 0px 0px;
+line-height:28px;
+float:left;
+color:#4b4b4b;
+}
+
+div.loginform_dolphin .con{
+height:28px;
+padding:0px;
+}
+
+div.loginform_dolphin .input{
+border:1px #d5d4d5 solid;
+background-color:#f9f9f9;
+}
+
+div.loginform_dolphin .inputcheck{
+border:1px #d5d4d5 solid;
+background-color:#f9f9f9;
+margin:0px;
+height:18px;
+padding:0px;
+}
+
+div.loginform_dolphin .lostpass{
+float:left;
+margin:0px;
+padding-left:20px;
+color:#333;
+}
+
+div.loginform_dolphin .yanzheng{
+height:28px;
+white-space:nowrap;
+float:left;
+margin:0px;
+}
+
+
+div.loginform_dolphin_islogin{
+display:none;
+clear:both;
+text-align:center;
+line-height:32px;
+padding:12px;
+color:#707070;
+}
+
+div.loginform_dolphin_islogin span.islogintext{
+color:#707070;
+}
+
+#loginform_dolphin_logout{cursor:pointer}

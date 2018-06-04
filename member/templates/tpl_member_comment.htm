@@ -1,0 +1,41 @@
+<!-start->
+<link href="css/member.css" rel="stylesheet" type="text/css" />
+<link href="css/pages.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="js/member.js"></script>
+<div id="commentquery">
+<ul >
+	<li class="cap">
+	<div class="cbi"></div>
+	<div class="bt">点评主题</div>
+	<div class="au">删除</div>
+	<div class="bk">最后回复</div>
+	<div class="cl">点击/回复</div>
+	</li>
+</ul>
+<ul id="queryul">
+<!-start->
+
+
+<!-list-> 
+<li id="comli_{#id#}">
+	<div class="{#querycss#}"></div>
+	<div class="bt"><a href="{#link#}" target="_blank">{#title#}</a></div>
+	<div id="del_{#id#}" class="delcomm">删除</div>
+	<div class="bk">{#uptime#} BY <a href="{#lastmemberurl#}">{#lastname#}</a></div>
+	<div class="cl">{#cl#}/{#backcount#}</div>
+
+
+</li>
+<!-list->
+<!-end->
+</ul>
+
+</div>
+
+
+<div id="showpages">
+	  <div id="pagesinfo">共{#totalnums#}条 每页{#pagesshownum#}条 页次：{#pagesnow#}/{#pagestotal#}</div>
+	  <div id="pages">{#showpages#}</div>
+</div>
+<!-end->
+

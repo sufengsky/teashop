@@ -1,0 +1,32 @@
+<link href="css/searchform_h.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="{#CP#}js/searchform.js"></script>
+<form id="globalsearchform" method="get" action="{#RP#}search/index.php">
+  
+   <div class="globalsearchform">
+    <select name="myord" id="myord"  >
+      <option value="uptime" >按更新时间排序</option>
+	  <option value="dtime" >按发布时间排序</option>
+	  <option value="cl" >按点击次数排序</option>
+    
+    </select>  
+  </div>
+   <div class="globalsearchform">
+    <select name="myshownums" id="myshownums"  >
+      <option value="20" >每页20条</option>
+	   <option value="30">每页30条</option>
+	   <option value="50" >每页50条</option>
+    
+    </select>
+	 <script>
+	selOption(globalsearchform.myshownums,'{#myshownums#}');
+	selOption(globalsearchform.myord,'{#myord#}');
+</script>
+	
+  </div>
+    <div class="globalsearchform">
+    <input name="key" type="text" id="globalsearchform_key" value="{#key#}" size="20" class="input">
+  </div>
+  <div class="globalsearchform">
+  <input name="imageField" id="button" type="image" src="images/search5.gif" >
+  </div>
+</form>

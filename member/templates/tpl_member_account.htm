@@ -1,0 +1,44 @@
+<link href="css/memberset.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="{#CP#}js/memberset.js"></script>
+
+<div id="reg" >
+<div  id="notice" class="noticediv"></div>
+<form id="memberModify"  method="post" action="" name="regform" >
+
+<div class="row">
+	<div class="left">登录账号：</div> <div class="mustfill"></div>
+	<div class="con">
+	<input type="text" name="user"  class="input" style="width:150px" value="{#user#}" readonly />
+	</div>
+</div>
+
+<div class="row">
+	<div class="left">登录密码：</div> <div class="mustfill"></div>
+	<div class="con">
+	<input type="password" name="password" style="width:150px" class="input" disabled value="******" />
+    <input type="checkbox" name="resetpass" value="yes" onClick="regform.password.disabled=false; regform.password.value='';regform.password.focus()">重设密码
+	</div>
+</div>
+
+<div class="row">
+	<div class="left">电子邮件：</div> <div class="mustfill">*</div>
+	<div class="con">
+	<input type="text" id="email" name="email"  class="input"  value="{#email#}" size="38" />
+	
+	</div>
+</div>
+
+
+
+
+<div class="row" style="margin:10px 0px">
+	<div class="left"></div> <div class="mustfill"></div>
+	<div class="con">
+	<input type="submit" name="Submit" value="确定" class="submit" />
+    <input type="hidden" name="act" value="memberaccount" />
+	</div>
+</div>
+</form>
+</div>
+
+

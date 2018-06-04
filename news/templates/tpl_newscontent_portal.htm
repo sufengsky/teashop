@@ -1,0 +1,30 @@
+<!-start->
+<link href="css/newscontent_portal.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/newscontent.js"></script>
+<div id="newscontent">
+	<div class="newstitle">{#title#}</div>
+
+	<div class="info">{#source#} &nbsp;&nbsp; {#dtime#} &nbsp;&nbsp; 文字：【<a  href="javascript:fontZoom(16)">大</a>】【<a  href="javascript:fontZoom(14)">中</a>】【<a   href="javascript:fontZoom(12)">小</a>】</div>
+	<div id="memo" class="memo" style="display:{#showmemo#}"><span style="color:#ff6600">摘要：</span>{#memo#}</div>
+	<div id="con" class="con">{#body#}</div>
+	<div id="contentpages">
+	</div>
+	<div class="bzone">
+	<div class="down" style="display:{#showdown#}">附件下载：<span id="downlink">{#fname#}</span> (已下载{#downcount#}次) <span id="downcentnotice"></span><input type="hidden" id="downcent" value="{#downcentstr#}"></div>
+	<div class="source" >浏览 ({#cl#}) | <a href="{#commentutl#}">评论</a> ({#commentcount#}) | 评分({#centavg#}) | <span id="zhichi"  title="支持一票">支持(<span id="zhichinum">{#zhichi#}</span>) </span> | <span id="fandui" title="反对一票">反对(<span id="fanduinum">{#fandui#}</span>) </span> | 发布人：<a href="{#memberurl#}">{#author#}</a> 
+	  <input type="hidden" id="newsid" value="{#id#}"> 
+	  </div>
+	<div id="addfav" class="addfav" >将本文加入收藏夹</div>
+	<div class="tags" style="display:{#showtag#}">标签：{#tagstr#}</div>
+	<div id="banzhu" class="banzhu"></div>
+	</div>
+</div>
+<script>
+$(function(){
+$().contentPages('{#id#}');
+});
+
+</script>
+<!-start->
+<!-err1-><div class="securenotice">当前ID不存在或尚未发布</div><!-err1->
+<!-err2-><div class="securenotice">对不起,本内容设置了阅读权限,您无权访问当前内容</div><!-err2->

@@ -1,0 +1,58 @@
+.newstwoclass{
+width: 100%; 
+}
+
+.newstwoclass .newstwoclass_top{ 
+height:23px;
+color: #999999;
+font:12px/23px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+cursor: pointer;
+}
+
+.newstwoclass .newstwoclass_top a{
+color: #505050;
+font:14px/23px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+background:url(../images/li.gif) 5px no-repeat;  
+padding-left:18px;
+text-decoration: none;
+}
+
+.newstwoclass .newstwoclass_top a:visited{
+color: #505050;
+}
+
+.newstwoclass .newstwoclass_top a:hover{ 
+color: #ff6600;
+}
+
+
+.newstwoclass ul{ 
+padding:2px 0px 5px 0px;
+margin:0px;
+}
+
+.newstwoclass ul li{
+list-style-type: none;
+height:18px;
+font:12px/18px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+padding:0px; 
+margin:0px;
+color: #999999;
+}
+
+.newstwoclass ul li a{
+color: #505050;
+font:14px/18px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+padding-left:30px;
+background:url(../images/li.gif) 18px no-repeat;  
+text-decoration: none;
+}
+
+.newstwoclass ul li a:visited{
+color: #505050;
+}
+
+.newstwoclass ul li a:hover{ 
+color: #ff6600;
+}
+

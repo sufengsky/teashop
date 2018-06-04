@@ -1,0 +1,31 @@
+<link href="css/loginform_h.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="{#CP#}js/loginform.js"></script>
+
+<div id="loginform_notLogin" class="loginform_h">
+
+<form id="loginform_Form" method="post" action="">
+<div  id="loginnotice" class="noticediv"></div>
+<div class="col">登录账号</div>
+<div class="con"><input type="text" id="muser" name="muser"  class="input" maxlength=20 style="width:60px"></div>
+
+<div class="col">密码</div>
+<div class="con"><input type="password" id="mpass" name="mpass" class="input"  style="width:60px" maxlength="20"></div>
+
+<div class="col">验证码</div>
+<div class="con"><input type="text" id="ImgCode" name="ImgCode" style="width:39px"  class="input" /></div>
+<div class="yanzheng"><img id="loginCodeimg" src="{#RP#}codeimg.php"  ></div>
+
+<div class="con">
+<input name="imageField" type="image" src="images/dl2.gif"  />
+</div>
+
+<div class="con">
+<a href="{#CP#}reg.php" ><img src="images/zc2.gif"  border="0"></a><input name="act" type="hidden" id="act" value="memberlogin" />
+</div>
+<div class="lostpass"><a href="{#CP#}lostpass.php" >忘记密码?重设密码</a></div>
+</form>
+</div>
+
+<div id="loginform_isLogin" class="loginform_h_islogin">
+<span id="loginform_username"></span>您好，您已登录！ &nbsp;<a href="{#RP#}member/member_msn.php">您有<span id="loginform_countmsn" style="color:#ff6600"></span>条新到站内短信</a> &nbsp;<a href={#RP#}member/>进入会员中心</a> &nbsp;<span id="loginform_logout">退出登录</span>
+</div>

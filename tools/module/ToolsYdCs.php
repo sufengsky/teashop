@@ -1,0 +1,44 @@
+<?php
+
+/*
+	[²å¼þÃû³Æ] ÒÆ¶¯¶ÌÐÅÁôÑÔ°å²å¼þ
+	[ÊÊÓÃ·¶Î§] È«Õ¾
+*/
+
+function ToolsYdCs() { 
+	
+	global $msql;
+	
+	$coltitle=$GLOBALS["PLUSVARS"]["coltitle"];
+	$tempname=$GLOBALS["PLUSVARS"]["tempname"];
+	
+	$scl=" cat='yd' and iffb='1' ";
+	
+
+	//Ä£°æ½âÊÍ
+	$Temp=LoadTemp($tempname);
+	$TempArr=SplitTblTemp($Temp);
+	
+	$str=$TempArr["start"];
+	
+	$msql->query("select * from {P}_tools_code where $scl order by id");
+	if($msql->next_record()){
+		$id=$msql->f("id");
+		$code=$msql->f("code");
+				
+		$var=array (
+			'id' => $id,
+			'code' => $code
+		);
+				
+	}
+	
+
+	$str.=ShowTplTemp($TempArr["end"],$var);
+	
+	return $str;
+
+}
+
+
+?>

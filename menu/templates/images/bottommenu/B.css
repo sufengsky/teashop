@@ -1,0 +1,26 @@
+/*=========½Å×¢²Ëµ¥===========*/
+div#bottommenu{
+margin: 0;
+padding:0;
+border: 0;
+height: 28px;
+line-height:28px;
+color:#ffffff;
+text-align:center;
+background: url(bg.png) 0px -30px repeat-x;
+}
+
+
+div#bottommenu a:link,div#bottommenu a:visited,div#bottommenu a:active{
+margin:0 5px;
+color:#ffffff;
+font-weight:bold;
+text-decoration: none;
+}
+
+div#bottommenu a:hover{
+margin:0 5px;
+font-weight:bold;
+color:#ffcc00;
+text-decoration: none;
+}

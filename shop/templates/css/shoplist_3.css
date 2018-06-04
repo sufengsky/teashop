@@ -1,0 +1,87 @@
+/* ============ап╠М============== */
+
+div.shoplist_3{
+margin:0px 10px 8px 0px;
+text-align:center;
+float:left;
+width:45%;
+overflow:hidden;
+}
+
+div.shoplist_3_left{
+float:left;
+text-align:left;
+margin-right:15px;
+}
+
+div.shoplist_3_right{
+float:left;
+text-align:left;
+}
+
+
+div.shoplist_3 div.fang{
+border:1px #ddd solid;
+background: #fff;
+padding:1px;
+text-align:center;
+}
+
+div.shoplist_3 div.picFit{
+overflow: hidden;
+}
+
+
+
+div.shoplist_3 div.picFit img{
+}
+
+
+div.shoplist_3 a.prodtitle:link,div.shoplist_3 a.prodtitle:visited,div.shoplist_3 a.prodtitle:active{
+display:block;
+color:#393939;
+font:14px/20px Verdana, Arial, Helvetica, sans-serif;
+text-decoration: none;
+margin-bottom:5px;
+}
+
+div.shoplist_3 a.prodtitle:hover{
+display:block;
+color:#ff0000;
+text-decoration: underline;
+font:14px/20px Verdana, Arial, Helvetica, sans-serif;
+margin-bottom:5px;
+}
+
+div.shoplist_3 span.memo{
+font:12px/20px Verdana, Arial, Helvetica, sans-serif;
+color:#393939;
+word-break:break-all; 
+}
+
+div.shoplist_3 span.prop{
+font:12px/20px Verdana, Arial, Helvetica, sans-serif;
+color:#393939;
+overflow: hidden;
+word-break:break-all; 
+}
+
+div.shoplist_3 span.price{
+color:#ff8100;
+font:bold 14px/20px Verdana, Arial, Helvetica, sans-serif;
+}
+
+div.shoplist_3 span.marketprice{
+color:#707070;
+font:12px/20px Verdana, Arial, Helvetica, sans-serif;
+text-decoration:line-through;
+}
+
+div.shoplist_3 div.buttonzone{
+margin:10px 0px 0px 0px;
+}
+
+
+img.addtocart{
+cursor:pointer;
+}

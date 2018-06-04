@@ -1,0 +1,37 @@
+<!-start->
+<link href="css/photopollquery.css" rel="stylesheet" type="text/css" />
+<script src="{#CP#}js/ajax_cyrano.js" type="text/javascript"></script>
+
+<div id="photopollquery">
+<ul >
+<!-start->
+
+
+<!-list-> 
+<li>
+	<div class="fang" style="width:{#picw#}px;height:{#pich#}px">
+		<div class="picFit" style="width:{#picw#}px;height:{#pich#}px">
+		<img src="{#src#}" style="width:{#picw#}px;height:{#pich#}px" border="0" onClick="getContent('{#id#}');" />
+		</div>
+	</div>
+	<div class="title">{#title#}</div>
+	<div class="votes">{#votes#}票</div>
+	<div class="votebutton" onClick='vote("{#RP#}", "{#id#}", "{#catid#}");'>投一票</div>
+</li>
+<!-list->
+<!-end->
+</ul>
+<script>
+$(function() {
+$().picFit("{#fittype#}");
+});
+</script>
+</div>
+
+
+<div id="showpages" >
+	  <div id="pagesinfo">共{#totalnums#}条 每页{#pagesshownum#}条 页次：{#pagesnow#}/{#pagestotal#}</div>
+	  <div id="pages">{#showpages#}</div>
+     </div>
+
+<!-end->

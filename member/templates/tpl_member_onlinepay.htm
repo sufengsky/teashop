@@ -1,0 +1,53 @@
+<!-start->
+<link href="css/memberpay.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="{#CP#}js/memberpay.js"></script>
+<div id="memberpay">
+<!-start->
+
+
+<!-m1->
+<form method="get" action="member_onlinepay.php" id="memberpayform">
+<div class="memberpay_cap">会员帐户在线充值</div>
+<div class="memberpay_txt">
+请选择支付接口：
+<select name="payid" id="payid">
+{#paylist#}
+</select>
+</div>
+
+<div class="memberpay_txt">
+请填写充值金额：
+<input name="paytotal" type="text"  class="input" id="paytotal" value="0" size="5" maxlength="12" /> 
+元
+</div>
+<div class="memberpay_txt">
+<br /><input type="submit" name="Submit" value="确定" class="button" />
+</div>
+ </form>
+<!-m1->
+
+<!-m2->
+<div class="memberpay_cap">会员帐户在线充值</div>
+<div class="memberpay_txt">
+充值金额：<span class="money">{#paytotal#}</span> 元<br />
+支付接口：{#pcenter#}<br /><br />
+{#intro#}<br /><br />
+{#hiddenString#}
+</div>
+<!-m2->
+
+
+
+<!-ok1->
+<div class="memberpayok_cap">会员帐户充值成功</div>
+<div class="memberpay_txt">
+充值编号：{#payorderid#}<br />
+充值金额：<span class="money">{#paytotal#}</span> 元<br />
+付款方式：{#paytype#}<br /><br />
+</div>
+<!-ok1->
+
+<!-err1-><div class="payerr">{#ntc#}</div><!-err1->
+<!-end->
+</div>
+<!-end->

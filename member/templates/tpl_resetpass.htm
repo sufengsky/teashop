@@ -1,0 +1,22 @@
+<form method="post" action="lostpass.php">
+
+		 <div style="margin:8px 0px"><strong> 
+        忘记密码？请重设密码
+		 </strong></div>
+		<div>
+          <li>填写登录账号和新密码</li>
+             <li>进入注册邮箱收取确认邮件</li>
+             
+          <li>点击邮件中的确认链接，即可重设密码</li>
+        </div><br />
+          <div> 
+            登录账号：
+              <input type=text name=username size=8 class="input" />
+              &nbsp; 新密码 
+              <input type=password name=newpass size=8  class="input" />
+              <input type=submit name=Submit value="提交" class="submit" />
+              &nbsp;
+              <input type=hidden name=step value='2' />
+        </div>
+      
+</form>

@@ -1,0 +1,40 @@
+/* ============µ„∆¿¡–±Ì============== */
+
+ul.hotlist{
+margin:0px;
+}
+
+li.hotlist {
+margin:0;
+padding:3px 0px;
+padding-left:16px;
+list-style-type: none;
+font: 12px Verdana, Arial, Helvetica, sans-serif;
+font-weight:100;
+color:#505050;
+background: transparent url(../images/articleitems.gif) left no-repeat;
+}
+
+a.hotlist:link,a.hotlist:visited,a.hotlist:active{
+color:#505050;
+text-decoration: none;
+font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+a.hotlist:hover{
+color:#ff0000;
+text-decoration: underline;
+font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+li.hotlist a.pname:link,li.hotlist a.pname:visited,li.hotlist a.pname:active{
+color:#999;
+text-decoration: none;
+font: 12px Verdana, Arial, Helvetica, sans-serif;
+}
+
+li.hotlist a.pname:hover{
+color:#ff0000;
+text-decoration: underline;
+font: 12px Verdana, Arial, Helvetica, sans-serif;
+}

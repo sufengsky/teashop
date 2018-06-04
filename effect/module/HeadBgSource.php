@@ -1,0 +1,30 @@
+<?php
+
+/*
+	[²å¼þÃû³Æ] Í·²¿Í¼Æ¬ËØ²Ä
+	[ÊÊÓÃ·¶Î§] È«Õ¾
+*/
+
+function HeadBgSource() { 
+
+	$tempname=$GLOBALS["PLUSVARS"]["tempname"];
+	$sourceurl=$GLOBALS["PLUSVARS"]["sourceurl"];
+
+	$Temp=LoadTemp($tempname);
+
+	$var=array (
+		'sourceurl' => $sourceurl
+	);
+
+	$str=ShowTplTemp($Temp,$var);
+
+
+	return $str;
+
+
+		
+}
+
+
+
+?>

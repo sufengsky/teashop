@@ -1,0 +1,39 @@
+#menumain_dolphin{
+   margin:0;
+   white-space:nowrap;
+   overflow:hidden;
+   height:36px;
+}
+
+#menumain_dolphin .mainmenuiner {
+    height:36px;
+	padding:0;
+    line-height:36px;
+    overflow: hidden;
+    margin:0px;
+}
+
+#menumain_dolphin a.menumain_dolphin:link,#menumain_dolphin a.menumain_dolphin:active,#menumain_dolphin a.menumain_dolphin:visited{
+   display:block;
+   float:left;
+   height:36px;
+   text-decoration: none;
+   text-align:center;
+   width:110px;
+   color:#fff;
+   font:14px/34px 'SimSun',Arial,Sans-Serif;
+   background:url(menu.jpg) 0px 0px no-repeat;
+   margin:0px;
+}
+
+#menumain_dolphin a.menumain_dolphin:hover{
+   display:block;
+   float:left;
+   height:36px;
+   color:#fff; 
+   text-decoration: none;
+   text-align:center;
+   width:110px;
+   font:14px/34px 'SimSun',Arial,Sans-Serif;
+   margin:0px;
+} 

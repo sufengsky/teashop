@@ -1,0 +1,27 @@
+ul.titlemenu{
+margin:0;
+padding:0;
+}
+
+li.titlemenu{
+list-style-type:none;
+text-align:left;
+border-bottom:1px #fff solid;
+}
+
+a.titlemenu:link,a.titlemenu:visited,a.titlemenu:active{
+display:block;
+color: #555; 
+background-color:#f7fbfe;
+text-decoration: none;
+line-height:28px;
+padding-left:12px;
+}
+
+a.titlemenu:hover{
+color: #555; 
+text-decoration: none;
+background-color:#def;
+line-height:28px;
+padding-left:12px;
+}

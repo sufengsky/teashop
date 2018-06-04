@@ -1,0 +1,57 @@
+<!-start->
+<link href="css/feedbackform.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="{#CP#}js/feedback.js"></script>
+<div  id="notice" class="noticediv"></div>
+<form id="feedbacksmallform" method="post" action="" name="gform">
+<table border="0" cellspacing="0" cellpadding="3" >
+<!-start->
+
+<!-input->
+<tr> 
+      <td align="right">{#title#}：</td>
+      <td> 
+        <input type="text" name="{#fieldname#}" value="{#fieldvalue#}" class="input" style="width:120px" /></td>
+</tr>
+<!-input->
+
+<!-textarea->
+    <tr> 
+      <td align="right">{#title#}：</td>
+      <td> 
+        <textarea name="{#fieldname#}"  rows="3" class="textarea" style="width:120px" >{#fieldvalue#}</textarea>
+      </td>
+    </tr>
+
+<!-textarea->
+
+<!-list->
+    <tr> 
+      <td align="right">{#title#}：</td>
+      <td> 
+        <select name="{#fieldname#}" >
+		{#list#}
+        </select>
+      </td>
+    </tr>
+
+<!-list->
+
+<!-end->
+	<tr> 
+      <td align="right"></td>
+      <td>
+	  </td>
+    </tr>
+    <tr> 
+      <td align="right">&nbsp;</td>
+      <td height="30">
+        <input type="submit" name="Submit" value="提交" class="submit">
+        <input type='hidden' name='act' value='formsend'>
+        <input name='groupid' type='hidden' id="groupid" value='{#groupid#}'>
+        <input name='checkimgcode' type='hidden' id="checkimgcode" value='no'>		
+	  </td>
+    </tr>
+  </table>
+</form>
+
+<!-end->

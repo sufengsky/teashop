@@ -1,0 +1,27 @@
+div#noticecontent{
+text-align: center;
+}
+
+
+div#noticecontent .noticetitle{
+    font-size:22px;
+    font-weight: bold;
+	line-height:100px;
+}
+
+
+div#noticecontent .info{
+background-color: #F2F8FD;
+height:25px;
+line-height:25px;
+border:1px #bed2e4 dotted;
+margin:0px -1px;
+}
+
+
+
+div#con{
+padding:30px;
+text-align: left;
+font: 14px/1.5 Verdana, Arial, Helvetica, sans-serif;
+}

@@ -1,0 +1,155 @@
+.shoptwoclass_brand_cap{
+height:37px;
+background:url(../images/cap.jpg) 0px 0px no-repeat;
+padding:0px 0px 0px 18px;
+margin:0px;
+}
+
+.shoptwoclass_brand_cat{
+width:95px;
+height:25px;
+float:left;
+cursor: pointer;
+background:url(../images/cbcap1.jpg) 0px 0px no-repeat;
+margin-right:3px;
+font:12px/28px Simsun;
+color:#000;
+text-align:center;
+margin-top:6px;
+}
+
+.shoptwoclass_brand_cat_on{
+width:95px;
+height:25px;
+float:left;
+cursor: pointer;
+background:url(../images/cbcap2.jpg) 0px 0px no-repeat;
+margin-right:3px;
+font:12px/28px Simsun;
+color:#000;
+text-align:center;
+margin-top:6px;
+}
+
+.shoptwoclass_brand_brand{
+width:95px;
+height:25px;
+float:left;
+cursor: pointer;
+background:url(../images/cbcap2.jpg) 0px 0px no-repeat;
+font:12px/28px Simsun;
+color:#000;
+text-align:center;
+margin-top:6px;
+}
+
+.shoptwoclass_brand_brand_on{
+width:95px;
+height:25px;
+float:left;
+cursor: pointer;
+background:url(../images/cbcap1.jpg) 0px 0px no-repeat;
+font:12px/28px Simsun;
+color:#000;
+text-align:center;
+margin-top:6px;
+}
+
+
+.shoptwoclass{
+border:1px #eaeaea solid;
+}
+
+.shoptwoclass .shoptwoclass_top{ 
+clear:both;
+height:33px;
+color:#2e2e2e;
+background:url(../images/catcap2.jpg) left no-repeat;  
+font:12px/32px Verdana, Arial, Helvetica, sans-serif;
+border-bottom:1px #eaeaea solid;
+border-top:1px #eaeaea solid;
+margin-top:-1px;
+padding-left:25px;
+}
+
+
+
+.shoptwoclass .shoptwoclass_top a{
+color:#2e2e2e;
+font:12px/32px Verdana, Arial, Helvetica, sans-serif;
+padding-left:12px;
+text-decoration: none;
+}
+
+.shoptwoclass .shoptwoclass_top a:visited{
+color: #505050;
+text-decoration: none;
+}
+
+.shoptwoclass .shoptwoclass_top a:hover{ 
+color: #ff6600;
+text-decoration: underline;
+}
+
+.shoptwoclass .shoptwoclass_topright{
+float:right;
+width:34px;
+height:33px;
+background:url(../images/catcap4.jpg) left no-repeat;  
+cursor: pointer;
+}
+
+.shoptwoclass .shoptwoclass_topright_open{
+float:right;
+width:34px;
+height:33px;
+background:url(../images/catcap3.jpg) left no-repeat;  
+cursor: pointer;
+}
+
+
+.shoptwoclass ul{ 
+margin:13px 0px 14px 15px;
+padding:0px;
+background:#ffffff;
+width:200px;
+}
+
+.shoptwoclass ul li{
+list-style-type: none;
+float:left;
+height:22px;
+font:12px/22px Verdana, Arial, Helvetica, sans-serif;
+margin:0px; 
+padding:0px;
+color:#5c5c5c;
+white-space:nowrap;
+}
+
+.shoptwoclass ul li a{
+color: #5c5c5c;
+font:12px/22px Verdana, Arial, Helvetica, sans-serif;
+text-decoration: none;
+margin:0px 3px 0px 3px
+}
+
+.shoptwoclass ul li a:visited{
+color: #505050;
+}
+
+.shoptwoclass ul li a:hover{ 
+color: #ff6600;
+}
+
+.shoptwoclass_brand{
+display:none;
+border:1px #eaeaea solid; 
+text-align:center;
+}
+
+.shoptwoclass_brand li{
+list-style-type: none;
+border:1px #eaeaea solid; 
+margin:5px;
+text-align:left;
+}

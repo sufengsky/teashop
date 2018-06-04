@@ -1,0 +1,105 @@
+/* ============ап╠М============== */
+
+div.shoplist_diy{
+margin:0px;
+padding:0px 0px 5px 15px;
+text-align:center;
+overflow:hidden;
+}
+
+div.shoplist_title{
+margin:0px;
+padding:3px 0px 0px 15px;
+text-align:left;
+overflow:hidden;
+height:23px;
+}
+
+div.shoplist_diy_left{
+float:left;
+text-align:left;
+margin-right:15px;
+}
+
+div.shoplist_diy_right{
+float:left;
+text-align:left;
+}
+
+
+div.shoplist_diy div.fang{
+background: #fff;
+padding:0px;
+text-align:center;
+}
+
+div.shoplist_diy div.picFit{
+overflow: hidden;
+}
+
+div.shoplist_diy div.picFit img{
+}
+
+div.shoplist_diy a.prodtitle:link,div.shoplist_diy a.prodtitle:visited,div.shoplist_diy a.prodtitle:active{
+display:block;
+color:#2152a1;
+font:12px/20px 'SimSun',Arial,Sans-Serif;
+text-decoration: none;
+margin-bottom:10px;
+}
+
+div.shoplist_diy a.prodtitle:hover{
+display:block;
+color:#ff0000;
+text-decoration: underline;
+font:12px/20px 'SimSun',Arial,Sans-Serif;
+margin-bottom:10px;
+}
+
+div.shoplist_title a.title:link,div.shoplist_title a.title:visited,div.shoplist_title a.title:active{
+color:#333;
+font:12px/20px 'SimSun',Arial,Sans-Serif;
+text-decoration: none;
+margin-bottom:5px;
+padding-left:5px;
+}
+
+div.shoplist_title a.title:hover{
+color:#ff0000;
+text-decoration: underline;
+font:12px/20px 'SimSun',Arial,Sans-Serif;
+margin-bottom:5px;
+}
+
+div.shoplist_diy span.memo{
+font:12px/20px 'SimSun',Arial,Sans-Serif;
+color:#393939;
+word-break:break-all; 
+}
+
+div.shoplist_diy span.prop{
+font:12px/20px 'SimSun',Arial,Sans-Serif;
+color:#393939;
+overflow: hidden;
+word-break:break-all; 
+}
+
+div.shoplist_diy span.price{
+color:#ff8100;
+font:12px/20px 'SimSun',Arial,Sans-Serif;
+}
+
+div.shoplist_diy span.marketprice{
+color:#707070;
+font:12px/20px 'SimSun',Arial,Sans-Serif;
+text-decoration:line-through;
+}
+
+div.shoplist_diy div.buttonzone{
+margin:10px 0px 0px 0px;
+}
+
+
+img.addtocart{
+cursor:pointer;
+}

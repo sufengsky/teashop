@@ -1,0 +1,43 @@
+#menumain{
+   margin:0;
+   white-space:nowrap;
+   overflow:hidden;
+   width:100%;
+   color:#fff;
+   background-color:#e60000;
+}
+
+#menumain .menumain{
+   float:left;
+   width:99px;
+   height:30px;
+   color:#fff;
+   border-left:1px solid #ef5959;
+   border-top:1px solid #ef5959;
+   line-height:30px;
+   text-align:center;
+   margin:-1px 1px 1px -1px ;
+}
+
+
+#menumain .menumain a:link {
+   color: #fff; 
+   display:block;
+   text-decoration: none;
+   line-height:30px;
+}
+
+#menumain .menumain a:visited {
+   color: #fff; 
+   display:block;
+   text-decoration: none;
+   line-height:30px;
+}
+
+#menumain .menumain a:hover {
+   color: #fff; 
+   text-decoration: none;
+   background-color:#eb3232;
+   line-height:30px;
+} 
+

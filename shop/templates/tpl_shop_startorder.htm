@@ -1,0 +1,255 @@
+<!-start->
+<link href="css/startorder.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/startorder.js"></script>
+<!-start->
+
+<!-m0->
+<style type="text/css">
+<!--
+.style1 {color: #FF3300}
+-->
+</style>
+<table width="100%" height="27" border="0" cellpadding="0" cellspacing="0" >
+  <tr>
+    <td class="startordertitle">订购商品清单</td>
+  </tr>
+</table>
+<br>
+<br>
+<table width="100%" border="0" cellpadding="3" cellspacing="0" class="startorder">
+		  <tr >
+		    <td class="cap" width="3" height="23" >&nbsp;</td> 
+			<td class="cap" width="75" height="23" >商品编号</td>
+			<td class="cap" height="23"   >商品名称</div></td>
+			<td class="cap" width="85" height="23" >单价(元)</td>
+			<td width="50" height="23" class="cap"  >数量</td>
+			<td width="45" height="23" class="cap"  >单位</td>
+			<td class="cap" width="85" height="23" >小计(元)</td>
+			<td class="cap" width="50"  {#showcent#}>积分</td>
+		  </tr>
+<!-m0->
+<!-list->
+		 
+		  <tr>
+		    <td width="3" height="28" ></td>
+			<td width="75" height="28" >{#bn#}</td>
+			<td height="28" ><a href="{#goodsurl#}">{#goodsname#}</a></td>
+			<td width="85" height="28"  >{#price#}</td>
+			<td width="50" height="28"  >{#acc#}</td>
+			<td width="45" height="28"  >{#danwei#}</td>
+			<td width="85" height="28"  >{#jine#}</td>
+			<td width="50" height="28"  {#showcent#}>{#cent#}</td>
+  </tr>
+<!-list->
+<!-m1->
+</table>
+ 			 <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+               <tr>
+                 <td><table border="0" cellpadding="3" cellspacing="0" style="margin:5px 0px">
+                   <tr >
+                     <td height="20">
+					 商品总价: <span id="span_tjine">{#tjine#}</span> 元 &nbsp; <input type="hidden" id="tweight" value="{#tweight#}">
+					 <input type="hidden" id="tjine" value="{#tjine#}">
+					 </td>
+                     <td  {#showcent#}>可获积分: {#tcent#} 分</td>
+                   </tr>
+                 </table></td>
+                 <td width="23" align="right"><img src="images/smallcart.gif" width="16" height="16"></td>
+                 <td width="75" align="center"><a href="cart.php">返回购物车</a></td>
+               </tr>
+             </table>
+ 			
+<!-m1->
+<!-m2->
+<br />
+
+ <table width="100%" height="27" border="0" cellpadding="0" cellspacing="0" >
+               <tr>
+                 <td class="startordersel">填写订单信息</td>
+               </tr>
+</table>
+<input id="noMemberOrder" type="hidden" value="{#nomemberorder#}">
+
+	<div id="notLogin">
+	您尚未登录，如果您是会员请 <span class="loginlink">登录</span> | 还不是会员？<a href="{#RP#}member/reg.php" class="nomal">立即注册</a>
+	<br />
+	如果您不希望注册会员，请直接填写以下订单信息：
+	</div>
+	<div id="isLogin">
+	<span id="username"></span> 您好！您已登录，请填写以下订单信息：&nbsp;  &nbsp;<a href="{#RP#}member/" class="nomal">会员中心</a> | &nbsp;<span class="logoutlink">退出登录</span>
+	</div>
+	
+	<div  id="notice" class="noticediv"></div>
+	<div class="orderform">
+		
+		<form id="OrderForm" method="post" action="">
+          
+          <table width="100%"  border="0" cellspacing="1" cellpadding="2" >
+            <tr>
+              <td height="23" colspan="3" class="biaoti">订购人信息</td>
+            </tr>
+            <tr>
+              <td height="8" colspan="3" align="right">&nbsp;</td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">订购人姓名：</td>
+              <td height="23"><span class="style1">* </span></td>
+              <td height="23"><input name="name" type="text"  class="input" id="name" size="20" />                  </td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">联系电话：</td>
+              <td height="23"><span class="style1">*</span></td>
+              <td height="23"><input name="tel" type="text"  class="input" id="tel" size="30" />                  </td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">手机号码：</td>
+              <td height="23">&nbsp;</td>
+              <td height="23"><input name="mobi" type="text"  class="input" id="mobi" size="30" />                  </td>
+            </tr>
+            <tr>
+              <td height="23" align="right">电子邮箱：</td>
+              <td height="23"><span class="style1">*</span></td>
+              <td height="23"><input name="email" type="text"  class="input" id="email" size="30" /></td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">QQ号码：</td>
+              <td width="3" height="23">&nbsp;</td>
+              <td height="23"><input name="qq" type="text"  class="input" id="qq" size="30" /></td>
+            </tr>
+            <tr>
+              <td height="8" colspan="3" align="right">&nbsp;</td>
+            </tr>
+            <tr>
+              <td height="23" colspan="3" class="biaoti1">收货人信息</td>
+            </tr>
+            <tr>
+              <td height="8" colspan="3" align="right">&nbsp;</td>
+            </tr>
+            <tr>
+              <td height="23" align="right">配送地区：</td>
+              <td height="23"><span class="style1">*</span> </td>
+              <td height="23"> 
+			  <span><select name="yunzone" id="yunzone">
+			  <option value='0'>请选择配送区域</option>
+			  </select></span> 
+			    <span>
+				<select name="subzone" id="subzone"></select>
+				</span> 
+				<input type="hidden" id="zoneid" name="zoneid"  value="0">
+			  </td>
+            </tr>
+            <tr id="tr_yunmethod" >
+              <td height="23" align="right">配送方法：</td>
+              <td height="23"><span class="style1">*</span></td>
+              <td height="23">
+               <select name="yunmethod" id="yunmethod">
+                </select>
+              </td>
+            </tr>
+            <tr id="tr_yunfei" >
+              <td height="23" align="right">&nbsp;</td>
+              <td height="23">&nbsp;</td>
+              <td height="23" class="yunfeitd">配送费用：<span id="span_yunfei"></span> 元 &nbsp; 保险费：<span id="span_baofei"></span> 元</td>
+            </tr>
+            <tr id="tr_yunintro" >
+              <td height="23" align="right">&nbsp;</td>
+              <td height="23">&nbsp;</td>
+              <td height="23" ><div id="yunintro">
+			   <div id="yunintro_close"></div>
+			   <div id="yunintro_t">配送说明</div>
+			   
+			   <div id="yunintro_text"></div>
+			  </div></td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">详细地址：</td>
+              <td height="23"><span class="style1">*</span></td>
+              <td height="23"><input name="s_addr" type="text"  class="input" id="s_addr"  value="{#addr#}" size="60" />              </td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">邮政编码：</td>
+              <td width="3" height="23"><span class="style1">*</span></td>
+              <td height="23"><input name="s_postcode" type="text"  class="input" id="s_postcode"  value="{#postcode#}" size="12" />              </td>
+            </tr>
+            <tr>
+              <td height="23" align="right">收 货 人：</td>
+              <td height="23"><span class="style1">*</span></td>
+              <td height="23"><input name="s_name" type="text"  class="input" id="s_name"  value="{#name#}" size="20" />                  </td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">联系电话：</td>
+              <td width="3" height="23"><span class="style1">*</span></td>
+              <td height="23"><input name="s_tel" type="text"  class="input" id="s_tel"  value="{#tel#}" size="30" />              </td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">手机号码：</td>
+              <td width="3" height="23">&nbsp;</td>
+              <td height="23"><input name="s_mobi" type="text"  class="input" id="s_mobi"  value="{#mobi#}" size="30" />              </td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">QQ号码：</td>
+              <td width="3" height="23">&nbsp;</td>
+              <td height="23"><input name="s_qq" type="text"  class="input" id="s_qq"  value="{#qq#}" size="30" />              </td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">我的留言：</td>
+              <td width="3" height="23">&nbsp;</td>
+              <td height="23"><textarea name="bz" cols="60"  rows="5" class="textarea" id="bz" ></textarea></td>
+            </tr>
+            <tr>
+              <td height="8" colspan="3" align="right">&nbsp;</td>
+            </tr>
+            <tr>
+              <td height="23" colspan="3" class="biaoti1">选择付款方式</td>
+            </tr>
+            <tr>
+              <td height="8" colspan="3" align="right">&nbsp;</td>
+            </tr>
+            <tr>
+              <td height="23" align="right">付款方式：</td>
+              <td height="23">&nbsp;</td>
+              <td height="23">
+			  <select name="payid" id="payid">
+			  
+              </select>
+			  </td>
+            </tr>
+            <tr id="tr_payintro">
+              <td height="23" align="right"></td>
+              <td height="23">&nbsp;</td>
+              <td height="23">
+			  <div id="payintro">
+			  
+			     	<div id="payintro_t">
+				 	订单总金额：<span id="ordertotal">{#tjine#}</span> 元
+				 	</div>
+			   		<div id="payintro_text"></div>
+			  
+			  	</div>
+			
+			  
+			  
+			 </td>
+            </tr>
+            <tr>
+              <td width="96" height="23" align="right">&nbsp;</td>
+              <td width="3" height="23">&nbsp;</td>
+              <td height="23"><input name="imageField" type="image" src="images/order.gif" width="106" height="36" border="0">
+			    <input name="act" type="hidden" id="act" value="orderformsubmit">
+				
+              </td>
+            </tr>
+            <tr>
+              <td height="23" align="right">&nbsp;</td>
+              <td height="23">&nbsp;</td>
+              <td height="23">&nbsp;</td>
+            </tr>
+          </table>	
+		  
+      </form>
+		</div>
+	
+<!-m2->
+<!-end->
+<br />
+<!-end->

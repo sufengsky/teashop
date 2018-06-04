@@ -1,0 +1,25 @@
+.pname{
+width:100px;
+text-align:center;
+line-height:25px; 
+font-weight:bold;
+}
+
+
+.user_add{
+width:90px;
+line-height:16px; 
+text-align:left;
+background:url(../images/user_add.gif) left no-repeat;
+padding-left:19px;
+cursor:pointer;
+}
+
+.send_msg{
+width:90px;
+line-height:16px; 
+text-align:left;
+background:url(../images/sn.gif) left no-repeat;
+padding-left:19px;
+cursor:pointer;
+}

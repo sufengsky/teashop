@@ -1,0 +1,115 @@
+.shoplistx a:link {
+	color: #432121;
+	text-decoration: none;
+	font-size: 12px;
+}
+
+.shoplistx a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+.shoplistx a:hover {
+	color: #666666;
+}
+
+.shoplistx a:active {
+    color: #666666;
+	text-decoration: none;
+}
+
+.shoplistx {
+	visibility:visible;
+	margin:0px;
+	padding:0px;
+	position: relative;
+	font-family: "Lucida Grande", Helvetica, Arial, sans-serif;
+	color: #000000;
+	font-size: 12px;
+	overflow: hidden;
+	width:100%;
+}
+
+.rollshoplists {
+	margin:0px;
+	padding:0px;
+	overflow:hidden;
+	width:100%;
+}
+
+.blkshoplistx {
+	border:0px; 
+	padding:0px; 
+	overflow: hidden;
+	ZOOM: 1; 
+	position: relative;
+}
+
+.blkshoplistx .LeftButton {
+	background: url(../images/slide.jpg) no-repeat 0px 0px;
+	left:0px;
+	float:left;
+	width:10px;
+	cursor: pointer;
+	position: absolute;
+	height:53px;
+	top:55px;
+}
+
+.blkshoplistx .RightButton {
+	background: url(../images/slide.jpg) no-repeat -10px 0px;
+	right:0px;
+	float:right;
+	width:10px;
+	cursor: pointer;
+	position: absolute;
+	height:53px;
+	top:55px;
+}
+
+.blkshoplistx .Cont {
+	padding:18px 0px 0px;
+	margin:0px 0px 0px 21px; 
+	text-align:center;
+	overflow: hidden;
+}
+
+.blkshoplistx .box {
+	float:left;
+	text-align:center;
+	margin:0px;
+	padding:0px;
+	width:129px;
+}
+
+.box .fang{
+	border:1px #ddd solid;
+	padding:3px;
+	margin:0px;
+	text-align:center;
+}
+
+.box .picFit{
+	overflow:hidden;
+}
+
+.blkshoplistx .box img {
+}
+
+.protitle{
+text-align:center;
+overflow: hidden;
+white-space:nowrap;
+}
+
+div.box a.prodtitle:link,div.box a.prodtitle:visited,div.box a.prodtitle:active{
+color:#2e2e2e;
+font:12px/33px SimSun,Arial,Sans-Serif;
+text-decoration: none;
+}
+
+div.box a.prodtitle:hover{
+color:#e10000;
+text-decoration: underline;
+font:12px/33px SimSun,Arial,Sans-Serif;
+}

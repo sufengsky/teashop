@@ -1,0 +1,30 @@
+<?php
+
+/*
+	[²å¼þÃû³Æ] ¼ò·±×ª»»²å¼þ
+	[ÊÊÓÃ·¶Î§] È«Õ¾
+*/
+
+function JianFan() { 
+	
+
+
+	$coltitle=$GLOBALS["PLUSVARS"]["coltitle"];
+	$tempname=$GLOBALS["PLUSVARS"]["tempname"];
+
+	$Temp=LoadTemp($tempname);
+
+	$var=array (
+		'coltitle' => $coltitle
+	);
+
+	$str=ShowTplTemp($Temp,$var);
+	return $str;
+
+
+		
+}
+
+
+
+?>

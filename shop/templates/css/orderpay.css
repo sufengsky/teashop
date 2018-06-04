@@ -1,0 +1,50 @@
+div#orderpay{
+border:1px #def solid;
+padding:20px;
+background-color:#f7fbfe;
+}
+
+div#orderpay .ordererr{
+margin:0;
+padding-left:35px;
+font:bold 14px/30px Verdana, Arial, Helvetica, sans-serif;
+color:#ff0000;
+background:url(../images/alert.png) 5px center no-repeat;
+}
+
+div#orderpay .orderpay_cap{
+background:url(../images/bar.gif) left no-repeat;
+font:bold 14px/30px Verdana, Arial, Helvetica, sans-serif;
+color:#505050;
+padding-left:23px;
+}
+
+div#orderpay .orderpay_txt{
+font:12px/22px Verdana, Arial, Helvetica, sans-serif;
+color:#505050;
+margin:10px 0px;
+}
+
+div#orderpay span.money{
+color:#ff6600;
+font:bold 12px/22px Verdana, Arial, Helvetica, sans-serif;
+}
+
+div#orderpay input.bigbutton{
+color:#505050;
+border-top:1px #fece96 solid;
+border-left:1px #fece96 solid;
+border-right:1px #fe9222 solid;
+border-bottom:1px #fe9222 solid;
+font:12px/23px Verdana, Arial, Helvetica, sans-serif;
+padding:0px 5px;
+background:url(../images/buttonbg.gif) left center repeat-x;
+}
+
+div#orderpay .orderpayok_cap{
+background:url(../images/yes.gif) left no-repeat;
+font:bold 14px/30px Verdana, Arial, Helvetica, sans-serif;
+color:#505050;
+padding-left:23px;
+}
+

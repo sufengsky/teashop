@@ -1,0 +1,90 @@
+/* ============产品图片列表============== */
+div .shoplist_cyrano_lef{
+	border:0px #ebebeb solid;
+	padding:6px 0px 0px 0px;
+}
+
+div#demo{
+	overflow:hidden;
+	width:730px;
+	color:#ff0000;
+}
+
+div.shoplist_cyrano_lef div.border{
+background: #fff;
+margin:0px 23px 0px 0px;
+text-align:center;
+}
+
+div.shoplist_cyrano_lef div.fang{
+border:1px #ddd solid;
+background: #fff;
+padding:3px;
+margin:0px 0px 10px 0px;
+text-align:center;
+}
+
+div.shoplist_cyrano_lef div.picFit{
+overflow: hidden;
+}
+
+
+div.shoplist_cyrano_lef div.title{
+text-align:center;
+overflow: hidden;
+white-space:nowrap;
+}
+
+div.shoplist_cyrano_lef div.picFit{
+overflow: hidden;
+}
+
+
+
+div.shoplist_cyrano_lef div.picFit img{
+}
+
+
+div.shoplist_cyrano_lef a.prodtitle:link,div.shoplist_cyrano_lef a.prodtitle:visited,div.shoplist_cyrano_lef a.prodtitle:active{
+display:block;
+color:#2e2e2e;
+font:12px/16px Verdana, Arial, Helvetica, sans-serif;
+text-decoration: none;
+margin-bottom:4px;
+text-align:center;
+}
+
+div.shoplist_cyrano_lef a.prodtitle:hover{
+display:block;
+color:#ff0000;
+text-decoration: underline;
+font:12px/16px Verdana, Arial, Helvetica, sans-serif;
+margin-bottom:4px;
+}
+
+div.shoplist_cyrano_lef span.memo{
+font:12px/16px Verdana, Arial, Helvetica, sans-serif;
+color:#393939;
+word-break:break-all; 
+}
+
+div.shoplist_cyrano_lef span.prop{
+font:12px/16px Verdana, Arial, Helvetica, sans-serif;
+color:#393939;
+word-break:break-all; 
+}
+
+div.shoplist_cyrano_lef span.price{
+color:#ff7300;
+font:bold 12px/16px Verdana, Arial, Helvetica, sans-serif;
+}
+
+div.shoplist_cyrano_lef span.marketprice{
+color:#707070;
+font:12px/16px Verdana, Arial, Helvetica, sans-serif;
+text-decoration:line-through;
+}
+
+div.shoplist_cyrano_lef div.buttonzone{
+margin:10px 0px 0px 0px;
+}

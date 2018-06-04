@@ -1,0 +1,64 @@
+<link href="css/searchform.css" rel="stylesheet" type="text/css" />
+<script>
+$(document).ready(function(){
+	if($("#shopkeyword")[0].value==""){
+		$("#shopkeyword")[0].value="请输入关键词";
+		$("#shopkeyword").focus(function(){
+			$("#shopkeyword")[0].value="";
+		});
+	}
+	if($("#shopkeyword")[0].value=="请输入关键词"){
+		$("#shopkeyword").focus(function(){
+			$("#shopkeyword")[0].value="";
+		});
+	}
+	$("#searchbutton").mouseover(function(){
+			if($("#shopkeyword")[0].value=="请输入关键词"){
+				$("#shopkeyword")[0].value="";
+			}
+	});
+});
+</script>
+<div class="shopsearchform">
+<form id="searchform" method="get" action="{#CP#}class/index.php">
+ 
+  <div class="searchform">
+  商品搜索：<select name="catid" id="catid"  >
+      <option value="0" >选择商品分类</option>
+	  {#catlist#}
+    </select>  
+  </div>
+  <div class="searchform">
+    <select name="showbrandid" id="showbrandid"  >
+      <option value="0" >选择品牌</option>
+	  {#brandlist#}
+    </select>  
+  </div>
+  
+   <div class="searchform">
+    <select name="myord" id="myord"  >
+      <option value="uptime" >按商品更新时间排序</option>
+	  <option value="priceasc" >按价格由低到高排序</option>
+	  <option value="pricedesc" >按价格由高到低排序</option>
+	  <option value="dtime" >按商品上架时间排序</option>
+	   <option value="salenums">按销量从高到低排序</option>
+	  <option value="cl" >按浏览次数排序</option>
+    </select>  
+  </div>
+  
+  <div class="searchform" style="margin-left:10px;">
+    价格 <input name="pricefrom" type="text" id="pricefrom" value="{#pricefrom#}" size="4" class="input"> 
+  </div>
+  
+  <div class="searchform">
+    到 <input name="priceto" type="text" id="priceto" value="{#priceto#}" size="4" class="input">
+  </div>
+  
+    <div class="searchform">
+    <input name="key" type="text" id="shopkeyword" value="{#key#}" size="20" class="input">
+  </div>
+  <div class="searchform">
+  <input name="imageField" id="searchbutton" type="image" src="images/searchxx.gif" border="0">
+  </div>
+</form>
+</div>

@@ -1,0 +1,31 @@
+<?php
+
+/*
+	[²å¼þÃû³Æ] ËÑË÷±íµ¥
+	[ÊÊÓÃ·¶Î§] ÕÐÆ¸
+*/
+
+
+function JobSearchForm(){
+
+	
+	$tempname=$GLOBALS["PLUSVARS"]["tempname"];
+	
+
+	$key=$_GET["key"];
+	
+
+	//Ä£°æ½âÊÍ
+	$Temp=LoadTemp($tempname);
+
+	$var=array (
+	'key' => $key
+	);
+
+	$str=ShowTplTemp($Temp,$var);
+
+	return $str;
+
+
+}
+?>

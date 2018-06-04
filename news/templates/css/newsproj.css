@@ -1,0 +1,29 @@
+/* ============专题列表============== */
+
+ul.newsproj{
+margin:0px;
+padding:0px;
+}
+
+li.newsproj {
+float:left;
+margin-right:12px;
+padding-left:16px;
+list-style-type: none;
+white-space: nowrap;
+background: transparent url(../images/76.gif) left no-repeat;
+}
+
+
+
+a.newsproj:link,a.newsproj:visited,a.newsproj:active{
+color:#555;
+text-decoration: none;
+font: 12px/18px simsun;
+}
+
+a.newsproj:hover{
+color:#ff0000;
+text-decoration: underline;
+font: 12px/18px simsun;
+}

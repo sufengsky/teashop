@@ -1,0 +1,96 @@
+/*===放标签的层===*/
+
+div.gbl209_out{
+white-space:nowrap;
+overflow:hidden;
+background:url(bar.gif) repeat-x;
+height:25px;
+position:relative;
+margin:-1px -1px 0px -1px;
+}
+ 
+div.gbl209_out ul.gblable{            
+margin:0 2px;
+padding:0;
+}
+
+div.gbl209_out .gbl209_left{
+float:left;
+width:3px;
+height:24px;
+background:url(bar.gif) -70px -25px no-repeat;
+}
+
+div.gbl209_out .gbl209_right{
+float:right;
+width:3px;
+height:24px;
+background:url(bar.gif) -75px -25px no-repeat;
+}
+
+
+div.gbl209_bleft{
+float:left;
+width:3px;
+height:3px;
+background:url(bar.gif) -70px -49px no-repeat;
+line-height:3px;
+margin-top:-3px;
+}
+
+div.gbl209_bright{
+float:right;
+width:3px;
+height:3px;
+background:url(bar.gif) -75px -49px no-repeat;
+line-height:3px;
+margin-top:-3px;
+}
+
+
+/*===切换标签的样式
+=====必须指定边框编号防止冲突
+===*/
+
+li.gbl209{
+list-style-type:none;
+float:left;
+width:67px;
+height:22px;
+margin:3px 0px 0px 0px;
+color:#555;
+text-align:center;
+font:12px/22px simsun;
+background:url(bar.gif) 0px -30px no-repeat;
+cursor:pointer;
+}
+
+/*===切换标签当前选中的样式===*/
+
+
+li.gbl209_current{
+list-style-type:none;
+float:left;
+height:22px;
+width:67px;
+margin:3px 0px 0px 0px;
+color:#555;
+text-align:center;
+font:12px/22px simsun;
+background:url(bar.gif)  0px -60px no-repeat;
+cursor:pointer;
+}
+
+
+/*===more区域样式===*/
+
+div.gbl209_more{
+float:right;
+}
+
+div.gbl209_more a{
+font:12px/24px simsun;
+color:#555;
+margin-right:8px
+}
+

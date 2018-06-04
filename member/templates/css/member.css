@@ -1,0 +1,134 @@
+/* ============通用============== */
+
+.table{ 
+border:1px #def solid;
+}
+
+.biaoti{ 
+background-color: #f7fbfe; 
+border-bottom:1px #def solid;
+}
+
+.hang{
+border-bottom:1px #ebf7fc solid;
+}
+
+/* ============收藏夹============== */
+
+span.delfav{ 
+width:40px;
+height:19px;
+line-height:19px;
+cursor:pointer;
+background:url(../images/an.gif) left no-repeat;
+display:block;
+text-align:center;
+color:#555;
+}
+
+a.lookfav:link,a.lookfav:active,a.lookfav:visited,a.lookfav:hover{ 
+width:40px;
+height:19px;
+color:#555;
+line-height:19px;
+cursor:pointer;
+background:url(../images/an.gif) left no-repeat;
+text-decoration: none;
+display:block;
+text-align:center;
+}
+
+/* ============好友============== */
+
+
+span.delfri{ 
+width:40px;
+height:19px;
+line-height:19px;
+cursor:pointer;
+background:url(../images/an.gif) left no-repeat;
+display:block;
+text-align:center;
+}
+
+a.lookfri{ 
+width:40px;
+height:19px;
+line-height:19px;
+cursor:pointer;
+background:url(../images/an.gif) left no-repeat;
+text-decoration: none;
+display:block;
+text-align:center;
+}
+
+td.hang{
+padding:12px 0px;
+border-bottom:1px #def solid;
+}
+
+a.pname{
+font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif;
+font-weight:bold;
+line-height:26px;
+}
+
+.list{BACKGROUND-COLOR: expression((this.sectionRowIndex%2==0) ? "#fbfbfb":"ffffff");font-size:12px; }
+
+
+/* ============我的点评============== */
+
+#commentquery {margin:0;border:1px #def solid}
+#commentquery ul{margin:0;padding:0}
+#commentquery li{border-bottom:1px #def solid;list-style-type: none;padding-left:10px;height:35px;}
+#commentquery li.cap{border-bottom:1px #def solid;background:#F7FBFF}
+#commentquery .cbi{float:left;height:35px;width:38px;text-align:center}
+#commentquery .binew{float:left;height:35px;width:38px;text-align:center;background:url(../images/bbs_new.gif) 5px no-repeat;}
+#commentquery .bi{float:left;height:35px;width:38px;text-align:center;background:url(../images/bbs.gif) 5px no-repeat;}
+#commentquery .bt{float:left;line-height:35px;margin-right:10px;}
+#commentquery .bt a{font: 12px Verdana, Arial, Helvetica, sans-serif;line-height:35px;}
+#commentquery .bk{float:right;width:180px;line-height:35px;}
+#commentquery .cl{float:right;width:80px;line-height:35px;}
+#commentquery .au{float:right;width:40px;margin-right:10px;line-height:35px;text-align:center;}
+#commentquery .delcomm{float:right;width:40px;margin-right:10px;height:35px;line-height:35px;text-align:center;cursor:pointer;background:url(../images/an.gif) left no-repeat;}
+
+
+
+/* ============我的短信============== */
+
+div.delmsn{ 
+width:40px;
+height:25px;
+line-height:25px;
+cursor:pointer;
+background:url(../images/an.gif) left no-repeat;
+display:block;
+text-align:center;
+}
+
+div.send_msg{ 
+width:40px;
+height:25px;
+line-height:25px;
+cursor:pointer;
+background:url(../images/an_1.gif) left no-repeat;
+display:block;
+text-align:center;
+}
+
+
+span.msnbody{
+margin:6px 30px 0px 0px;
+font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif;
+display:block;
+}
+
+span.dtime{
+font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif;
+color:#666;
+}
+
+a.fromname{
+font: 12px/1.5 Verdana, Arial, Helvetica, sans-serif;
+color:#666;
+}

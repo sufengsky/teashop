@@ -1,0 +1,58 @@
+/* ============产品图片列表============== */
+
+div.pagepiclist{
+margin:0px 20px 5px 0px;
+text-align:left;
+overflow:hidden;
+}
+
+div.pagepiclist_left{
+float:left;
+text-align:left;
+margin-right:15px;
+}
+
+div.pagepiclist_right{
+float:left;
+text-align:left;
+}
+
+
+div.pagepiclist div.fang{
+border:0px #ccc solid;
+background: #fff;
+padding:0px;
+text-align:center;
+}
+
+div.pagepiclist div.picFit{
+overflow: hidden;
+}
+
+
+
+div.pagepiclist div.picFit img{
+}
+
+
+div.pagepiclist a.pagepictitle:link,div.pagepiclist a.pagepictitle:visited,div.pagepiclist a.pagepictitle:active{
+display:block;
+color:#393939;
+font:bold 14px/18px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+text-decoration: none;
+margin-bottom:8px;
+}
+
+div.pagepiclist a.pagepictitle:hover{
+display:block;
+color:#ff0000;
+text-decoration: underline;
+font:bold 14px/18px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+margin-bottom:8px;
+}
+
+div.pagepiclist span.memo{
+font:12px/20px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+color:#393939;
+word-break:break-all; 
+}

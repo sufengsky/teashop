@@ -1,0 +1,137 @@
+<link href="css/newsmember.css" rel="stylesheet" type="text/css" />
+<script language="javascript" src="{#CP#}js/newsmember.js"></script>
+<script language="javascript" src="{#CP#}js/multicat.js"></script>
+
+<div  id="notice" class="noticediv"></div>
+<form id="newsfabu" method="post" action="" enctype="multipart/form-data" name="form">
+<table width="100%" border="0" cellspacing="1" cellpadding="2">
+             
+        <tr >
+                        <td width="80" align="center" height="24">我的分类</td>
+          <td height="22"  style="color:#666666">
+                          <select  name="pcatid" >
+					    <option value="0">请选择分类</option>
+							{#pcatlist#}
+                          </select> &nbsp; <a href="news_cat.php">添加自定义分类</a>            
+						  </td>
+          </tr>
+               <tr >
+                        <td width="80" align="center" height="24">文章分类</td>
+                        <td height="22"  style="color:#666666">
+                          <select id="selcatid"  name="catid" >
+						  <option value="0">只发布到个人分类</option>
+							{#catlist#}
+                          </select>
+                        </td>
+          </tr>
+   
+
+                      <tr > 
+                        <td width="80" align="center" height="24">文章标题</td>
+                        <td height="22"  style="color:#666666"> 
+                          <input id="title" type="text" name="title"  class="input"  value="{#title#}" style="width:399px" /> 
+                           <span style="color:#ff0000">*</span></td>
+                      </tr>
+  </table>
+				<div id="proplist"></div>
+				<table width="100%" border="0" cellspacing="1" cellpadding="2">
+                      <tr >
+                        <td width="80" align="center">内容摘要</td>
+                        <td height="22" style="color:#666666"><textarea name="memo" style="WIDTH: 399px;font-size:12px;" class="textarea" rows="5"></textarea></td>
+                      </tr>
+                      <tr >
+                        <td width="80" align="center">主题图片</td>
+                        <td height="22" style="color:#666666">
+						<input type="file" name="jpg" class=input style='WIDTH: 399px;' /></td>
+                      </tr>
+                      <tr > 
+                        <td width="80" align="center">文章内容</td>
+                        <td height="22" style="color:#666666"> 
+                           <input type="hidden" name="body" value="{#body#}" />
+						   <div id="kedit" style="position:relative">
+			<script type="text/javascript" src="{#RP#}kedit/memberEditor.js"></script>
+            <script type="text/javascript">
+            var editor = new KindEditor("editor");
+            editor.hiddenName = "body";
+            editor.editorWidth = "560px";
+            editor.editorHeight = "250px";
+            editor.skinPath = "{#RP#}kedit/skins/default/";
+			editor.uploadPath = "{#RP#}news/upload.php";
+			editor.imageAttachPath="news/pics/";
+            editor.iconPath = "{#RP#}kedit/icons/";
+            editor.show();
+            function KindSubmit() {
+	          editor.data();
+            }
+             </script>
+			 </div>
+						   
+                        </td>
+                      </tr>
+                      <tr >
+                        <td width="80" align="center" >自定标签</td>
+                        <td  style="color:#666666" ><input name="tags[]" type="text" class="input" id="tags"  value="" size="9" />
+                          <input name="tags[]" type="text" class="input" id="tags"  value="" size="10" />
+                          <input name="tags[]" type="text" class="input" id="tags"  value="" size="10" />
+                          <input name="tags[]" type="text" class="input" id="tags"  value="" size="10" />
+                          <input name="tags[]" type="text" class="input" id="tags"  value="" size="10" /></td>
+                      </tr>
+					  
+					  <tr> 
+      <td height="30" width="80" align="center" >附件下载</td>
+      <td height="30" valign=top> 
+        
+          <input id="divsuo" type="file" name="file" style='WIDTH: 399px;display:none' class="input" />
+          <input id="divurl" type="text" name="fileurl" style='WIDTH: 399px;' value="http://" class="input" />
+          <input type="radio" name="addtype" value="addurl" checked onClick="document.getElementById('divurl').style.display='inline';document.getElementById('divsuo').style.display='none';">
+        链接网址
+        <input type="radio" name="addtype" value="addfile" onClick="document.getElementById('divurl').style.display='none';document.getElementById('divsuo').style.display='inline';">
+       上传文件
+      </td>
+    </tr>
+					  
+                      <tr > 
+                        <td width="80" align="center" >文章作者</td>
+                        <td  style="color:#666666" > 
+                          <input id="author" type="text" name="author"  class="input"  value="{#pname#}" style="width:399px" />
+                        </td>
+                      </tr>
+                      <tr > 
+                        <td width="80" align="center" >文章来源</td>
+                        <td  style="color:#666666" > 
+                          <input id="source"  type="text" name="source"  class="input"  value="" style="width:399px" />
+                        </td>
+                      </tr>
+                      <tr >
+                        <td align="center" >所属专题</td>
+                        <td  style="color:#666666" >
+						<table cellspacing=0 cellpadding=0><tr><td >
+						<select style="WIDTH: 239px;" multiple size="5" name="spe_funct">
+						{#musellist#}
+						</select></td><td width=20>
+						<input class="button" onClick="JavaScript:AddItem('spe_funct', 'spe_selec[]')" type="button" value="添加" name="Input">
+						<input class="button" onClick="JavaScript:DelItem('spe_selec[]')" type="button" value="删除" name="Input">
+				</td>
+				<td>
+				  <select  style="WIDTH: 239px" multiple size="5" name="spe_selec[]">
+				  </select>
+				  </td></tr></table>
+				  
+						</td>
+                      </tr>
+                      <tr > 
+                        <td width="80" align="center" >&nbsp;</td>
+                        <td  style="color:#666666" > 
+           				<input type="submit" name="Submit2" onClick="KindSubmit();" value="提交" class="submit" />
+						<input type="hidden" name="act" value="newsfabu" />
+						 <input type="hidden" id="nowid" name="id" value="" />
+            </td>
+                      </tr>
+  </table>
+
+</form>
+<script>
+$(function(){
+$().getPropList();
+});
+</script>

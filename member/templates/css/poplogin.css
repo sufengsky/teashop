@@ -1,0 +1,10 @@
+/* ============登录窗口============== */
+div#loginDialog {cursor:default;}
+div#loginDialog .border{border:1px #97A0AA solid;}
+div#loginDialog .ntc{padding:30px;text-align:left;background:#fff;font: 14px/1.6 Verdana, Arial, Helvetica, sans-serif;}
+div#loginDialog .topBar{height:20px;line-height:20px;background:#cbddef;text-align:left;padding:0px 0px 5px 5px ;font-size:12px;}
+div#loginDialog .topBar .pwClose{position: absolute;top:0px;right:8px;width:45px;height:18px;background:url(../images/pwin3.gif) no-repeat;cursor:pointer}
+
+/* ==提示样式== */
+.noticediv{display:none;border:1px #fc5959 solid;background:#FFFDF4 url(../images/chk_error.gif) 10px no-repeat;padding-left:33px;line-height:25px;margin:3px 0px 10px 0px}
+.okdiv{display:none;border:1px #fc5959 solid;background:#FFFDF4 url(../images/chk_right.gif) 10px no-repeat;padding-left:33px;line-height:25px;margin:3px 0px 10px 0px}

@@ -1,0 +1,6 @@
+<div style="color:#fff">当前时间：<label id="nnowdate"></label>
+<script>
+  setInterval("document.getElementById('nnowdate').innerHTML=new Date().toLocaleString().substring(0,10) + '  ' + new Date().toLocaleTimeString();",1000);
+</script>
+</div>
+

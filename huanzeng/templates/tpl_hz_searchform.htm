@@ -1,0 +1,37 @@
+<link href="css/searchform.css" rel="stylesheet" type="text/css" />
+
+<div class="productsearchform">
+<form id="searchform" method="get" action="{#CP#}class/index.php">
+ 
+  <div class="searchform">
+    {#coltitle#}
+    <select name="catid" id="catid"  >
+      <option value="0" >请选择分类</option>
+	  {#catlist#}
+    </select>  
+  </div>
+  
+   <div class="searchform">
+    <select name="myshownums" id="myshownums"  >
+       <option value="20" >每页20条</option>
+	   <option value="30">每页30条</option>
+	   <option value="50" >每页50条</option>
+    </select>
+	 <script>
+		selOption(searchform.myshownums,'{#myshownums#}');
+	</script>
+  </div>
+  
+  <div class="searchform">
+     <input name="cent_min" type="text" id="cent_min" value="{#cent_min#}" size="15" class="input" style="color:#666666;" onFocus="this.value=''" /> － 
+  </div>
+  
+  <div class="searchform">
+    <input name="cent_max" type="text" id="cent_max" value="{#cent_max#}" size="15" class="input" style="color:#666666;" onFocus="this.value=''" />
+  </div>
+  
+  <div class="searchform">
+    <input name="imageField" id="button" type="image" src="images/sb_hz.gif" border="0" />
+  </div>
+</form>
+</div>

@@ -1,0 +1,60 @@
+<!-start->
+<link href="css/hzdetail.css" rel="stylesheet" type="text/css" />
+<script type=text/javascript src="{#CP#}js/hzdetail.js"></script>
+
+<div id="hzdetail">
+	  <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td width="330" valign="top">
+		  <div class="piczone">
+				<table align="center" cellpadding="0" cellspacing="0">
+				<tr>
+				<td align="center">
+				<div id="hzview">
+					<img src="images/loading.gif" border="0" id="hzloading" class="hzloading">
+				</div>
+				</td>
+				</tr>
+				</table>
+			</div>
+			<div id="contentpages"></div>
+		  </td>
+          <td>
+		  <div id="prodtitle">{#title#}</div>
+			<div id="prop">
+				{#propstr#}
+				<div id="memo" style="display:{#showmemo#};"><li class="memo" style="list-style-type:square;">商品简介：{#memo#}</li></div>
+			</div>
+			<div style="padding-left:12px;margin-right:20px;">
+				<li style="list-style-type:square;">所需积分：{#cent#}</li>
+			</div>
+			<div id="dgnums">
+			订购数量：
+              <input name="buynums" type="text" class="input" id="buynums" style="height:18px" value="1" size="3" maxlength="6" /> 
+              <input name="gid" type="hidden" id="gid" value="{#gid#}" />
+              {#danwei#}
+			</div>
+			<div class="buttonzone"><img src="images/addcart2.gif" alt="订购" border="0"  id="addtocart" class="addtocart" ></div>
+			
+		  </td>
+        </tr>
+      </table>
+
+	<br clear="all" />
+	<div class="bodyzone">{#body#}</div>
+	
+	<div class="bzone">
+	<input type="hidden" id="hzid" value="{#id#}"> 
+	<div id="banzhu" class="banzhu"></div>
+	</div>
+	
+</div>
+<!-start->
+<!-list->
+<li style="list-style-type:square;line-height:200%;">{#propname#}：{#prop#}</li>
+<!-list->
+
+<!-end->
+<!-end->
+<!-err1-><div class="notice">当前ID不存在或尚未发布</div><!-err1->
+<!-err2-><div class="notice">对不起,本内容设置了阅读权限,您无权访问当前内容</div><!-err2->

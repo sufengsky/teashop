@@ -1,0 +1,34 @@
+/* ============ндубап╠М============== */
+
+ul.newslist_mul{
+margin:0px;
+padding:0px;
+}
+
+li.newslist_mul {
+margin:0;
+padding:0;
+list-style-type: none;
+overflow:hidden;
+white-space:nowrap;
+float:left;
+height:22px;
+width:50%;
+color:#505050;
+}
+
+a.newslist_mul:link,a.newslist_mul:visited,a.newslist_mul:active{
+color:#505050;
+text-decoration: none;
+font:12px/22px simsun;
+padding-left:12px;
+background: transparent url(../images/li.gif) left no-repeat;
+}
+
+a.newslist_mul:hover{
+color:#ff0000;
+text-decoration: underline;
+font:12px/22px simsun;
+padding-left:12px;
+background: transparent url(../images/li.gif) left no-repeat;
+}

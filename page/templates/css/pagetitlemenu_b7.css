@@ -1,0 +1,30 @@
+div.titlemenu_b7{
+margin-top:1px;
+padding:0;
+width:200px;
+background:#575757;
+}
+
+div.titlemenu_b7 a.titlemenu_b7:link,div.titlemenu_b7 a.titlemenu_b7:visited,div.titlemenu_b7 a.titlemenu_b7:active{
+display:block;
+color: #ffffff; 
+text-decoration: none;
+height:40px;
+font:bold 14px/37px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+text-align:center;
+background:url(../images/titlemenu_b7.png) 0px 0px no-repeat;
+margin:0px;
+padding-left:30px;
+}
+
+div.titlemenu_b7 a.titlemenu_b7:hover{
+display:block;
+color: #ffffff; 
+text-decoration: none;
+height:40px;
+font:bold 14px/37px 'Microsoft YaHei','SimSun',Arial,Sans-Serif;
+text-align:center;
+background:url(../images/titlemenu_b7.png) 0px -40px no-repeat;
+margin:0px;
+padding-left:30px;
+}

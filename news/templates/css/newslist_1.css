@@ -1,0 +1,28 @@
+/* ============ндубап╠М============== */
+
+ul.newslist_1{
+margin:0px;
+padding:0px 0px 0px 11px;
+}
+
+li.newslist_1 {
+margin:0;
+padding-left:21px;
+list-style-type: none;
+font-weight:100;
+color:#737373;
+height:30px;
+background: transparent url(../images/list.jpg) left no-repeat;
+}
+
+a.newslist_1:link,a.newslist_1:visited,a.newslist_1:active{
+color:#737373;
+text-decoration: none;
+font:12px/23px simsun;
+}
+
+a.newslist_1:hover{
+color:#ff0000;
+text-decoration: underline;
+font:12px/23px simsun;
+}
